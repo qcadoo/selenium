@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_technology &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_technology_productionLines &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>X</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>LP${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.productionLine.mainTabGridLayout.description_input</td>
+	<td>Linia Produkcyjna ${X}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

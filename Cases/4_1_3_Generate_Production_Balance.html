@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>4_1_3_Generate_Production_Balance</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">4_1_3_Generate_Production_Balance</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_ordersTracking &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_ordersTracking_productionBalance &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionBalanceDetails.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.grid_sortArrow_lookupCode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>400</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionBalanceDetails.gridLayout.description_input</td>
+	<td>Generowanie rozliczenia produkcji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Dane dla kosztów</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.parametersBorderLayout.parametersGridLayout.sourceOfMaterialCosts_input</td>
+	<td>label=z bieżących definicji produktów</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.parametersBorderLayout.parametersGridLayout.calculateMaterialCostsMode_input</td>
+	<td>label=nominalny</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.assumptionsBorderLayout.assumptionsGridLayout.averageMachineHourlyCost_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.assumptionsBorderLayout.assumptionsGridLayout.averageLaborHourlyCost_input</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.overheadsBorderLayout.overheadsGridLayout.productionCostMargin_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.overheadsBorderLayout.overheadsGridLayout.materialCostMargin_input</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataForCostsTab.inputDataForCostsGridLayout.overheadsBorderLayout.overheadsGridLayout.additionalOverhead_input</td>
+	<td>102</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[4]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
