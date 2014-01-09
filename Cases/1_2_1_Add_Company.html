@@ -42,7 +42,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.name_input</td>
 	<td>javascript{&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.85 }).join(&quot;&quot;)}</td>
 </tr>
@@ -67,9 +67,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>pl${KEY_ENTER}</td>
+	<td>pl</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -92,27 +102,27 @@
 	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_input</td>
 	<td>123-456-32-18</td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.phone_input</td>
 	<td>javascript{Math.floor(Math.random()*1111111111)}</td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.email_input</td>
 	<td>${X}@gmail.com</td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.website_input</td>
 	<td>${X}.com.pl</td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.street_input</td>
 	<td>J. Lea</td>
 </tr>
@@ -157,9 +167,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
+	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>pl${KEY_ENTER}</td>
+	<td>pl</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
 </tr>
 <tr>
 	<td>pause</td>
