@@ -20,10 +20,12 @@
 			                <goals>
 			                    <goal>xvfb</goal>
 			                </goals>
+			                <configuration>
+                            	<display>:20</display>
+                            </configuration>
 			            </execution>
-			            
 		                <execution>
-		                    <id>test</id>
+		                    <id>selenium</id>
 		                    <phase>integration-test</phase>
 		                    <goals>
 		                        <goal>selenese</goal>
