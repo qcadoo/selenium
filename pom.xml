@@ -30,7 +30,7 @@
 		                    </goals>
 		                    <configuration>
 		                   		<browser>*firefox</browser>
-				                <suite>ShortTestSuite.html</suite>
+				                <suite>Test_Suite.html</suite>
 				                <startURL>http://daily-build.qcadoo.org</startURL>
 			                </configuration>
 		                </execution>
