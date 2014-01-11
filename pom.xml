@@ -3,18 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.qcadoo</groupId>
   <artifactId>selenium</artifactId>
-  <packaging>jar</packaging>
   <version>1.0.0-SNAPSHOT</version>
-  <name>selenium</name>
-  
-  <dependencies>
-  	 <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>2.39.0</version>
-    </dependency>  
-  </dependencies>
-  
 	<build>
 		<plugins>
 			<plugin>  
@@ -32,19 +21,7 @@
                             	<display>:20</display>
                             </configuration>
 			            </execution>
-			            <execution>
-		                    <id>selenium-chrome</id>
-		                    <phase>integration-test</phase>
-		                    <goals>
-		                        <goal>selenese</goal>
-		                    </goals>
-		                    <configuration>
-		                   		<browser>*googlechrome</browser>
-				                <suite>Test_Suite.html</suite>
-				                <startURL>http://daily-build.qcadoo.org</startURL>
-			                </configuration>
-		                </execution>
-<!-- 		                <execution>
+<!-- 			            <execution>
 		                    <id>selenium-firefox</id>
 		                    <phase>integration-test</phase>
 		                    <goals>
@@ -52,6 +29,18 @@
 		                    </goals>
 		                    <configuration>
 		                   		<browser>*firefox</browser>
+				                <suite>Test_Suite.html</suite>
+				                <startURL>http://daily-build.qcadoo.org</startURL>
+			                </configuration>
+		                </execution>
+		                <execution>
+		                    <id>selenium-chrome</id>
+		                    <phase>integration-test</phase>
+		                    <goals>
+		                        <goal>selenese</goal>
+		                    </goals>
+		                    <configuration>
+		                   		<browser>*googlechrome</browser>
 				                <suite>Test_Suite.html</suite>
 				                <startURL>http://daily-build.qcadoo.org</startURL>
 			                </configuration>
