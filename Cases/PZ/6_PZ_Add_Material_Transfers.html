@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>6_PZ_Add_Material_Transfers</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">5_2_1_Add_Material_Transfers</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_materialFlow &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_materialFlow_transfers &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-B</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-B&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-BS</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-BS&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-DS-1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-DS-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 4</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-BS</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-BS&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-DS-2</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-DS-2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>0.005</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PZ_Przesunięcie 6</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=Produkcja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>Pokrycie Zapotrzebowania Magazyn1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.grid.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>PZ_PR-P</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PZ_PR-P&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
