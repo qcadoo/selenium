@@ -9,7 +9,7 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">3_1_3_Add_Order_With_Technology</td></tr>
+<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL1</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -42,14 +42,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
+	<td>waitForValue</td>
+	<td>window.mainTab.order.gridLayout.number_input</td>
+	<td>000001</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.number_input</td>
-	<td>PZ-ZL-1</td>
+	<td>Test</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
@@ -188,7 +188,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -322,8 +322,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
 	<td>pause</td>
-	<td>15000</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,8 +342,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementNotPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
 	<td>pause</td>
-	<td>15000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -349,6 +364,16 @@
 <tr>
 	<td>storeConfirmation</td>
 	<td>(Rozpocząć zlecenie?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
 	<td></td>
 </tr>
 </tbody></table>
