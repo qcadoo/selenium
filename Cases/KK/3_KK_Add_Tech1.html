@@ -74,7 +74,7 @@
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>PZ_PR-A</td>
+	<td>KK_PR-A</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -82,13 +82,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-A&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-A&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -109,22 +109,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
-	<td>PZ_TECH-1</td>
+	<td>KK_Tech-1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Technologia 1</td>
+	<td>Kalkulacja Kosztów Technologia 1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.description_input</td>
-	<td>Pokrycie Zapotrzebowania Technologia 1</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>Kalkulacja Kosztów Technologia 1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -132,18 +127,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Drzewo</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,19 +147,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>selectFrame</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>PZ_OP-A</td>
+	<td>KK_OP-A</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -182,13 +167,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_OP-A&quot;]</td>
+	<td>css=td[title=&quot;KK_OP-A&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -202,19 +187,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForNotSelectedLabel</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
+	<td>- brak -</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja A</td>
+	<td>Kalkulacja Kosztów Operacja A</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -224,11 +209,6 @@
 <tr>
 	<td>waitForNotTable</td>
 	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,13 +222,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -268,7 +253,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -279,7 +264,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-A</td>
+	<td>KK_PR-A</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -287,13 +272,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-A&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-A&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -307,18 +292,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -347,18 +332,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>xpath=/html/body/div[11]/div/iframe</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -384,16 +369,16 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-B</td>
+	<td>KK_PR-B</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-B&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-B&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -407,19 +392,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=3</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -439,6 +424,11 @@
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
 	<td></td>
 </tr>
 <tr>
@@ -469,7 +459,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-C</td>
+	<td>KK_PR-C</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -477,13 +467,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-C&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-C&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -497,8 +487,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -537,8 +537,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForNotValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -553,13 +553,13 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>PZ_OP-B</td>
+	<td>KK_OP-B</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -567,13 +567,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_OP-B&quot;]</td>
+	<td>css=td[title=&quot;KK_OP-B&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -587,19 +587,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForNotSelectedLabel</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
+	<td>- brak -</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja B</td>
+	<td>Kalkulacja Kosztów Operacja B</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -607,8 +607,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -617,14 +617,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=2. PZ_OP-B Pokrycie Zapotrzebowania Operacja B</td>
+	<td>waitForElementPresent</td>
+	<td>link=2. KK_OP-B Kalkulacja Kosztów Operacja B</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>click</td>
+	<td>link=2. KK_OP-B Kalkulacja Kosztów Operacja B</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -632,13 +637,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -669,7 +679,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-B</td>
+	<td>KK_PR-B</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -677,13 +687,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-B&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-B&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -697,14 +707,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -757,14 +767,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-BO</td>
+	<td>KK_PR-BO</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -778,7 +788,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-BO&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-BO&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -792,14 +802,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -874,7 +884,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-BS</td>
+	<td>KK_PR-BS</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -882,13 +892,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-BS&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-BS&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -902,14 +912,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -927,24 +937,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=1. PZ_OP-A Pokrycie Zapotrzebowania Operacja A</td>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForElementPresent</td>
+	<td>link=1. KK_OP-A Kalkulacja Kosztów Operacja A</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=1. KK_OP-A Kalkulacja Kosztów Operacja A</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -952,8 +967,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForNotValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -968,13 +983,13 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>PZ_OP-C</td>
+	<td>KK_OP-C</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -982,13 +997,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_OP-C&quot;]</td>
+	<td>css=td[title=&quot;KK_OP-C&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1002,19 +1017,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForNotSelectedLabel</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
+	<td>- brak -</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja C</td>
+	<td>Kalkulacja Kosztów Operacja C</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1022,8 +1037,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -1032,14 +1047,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=1.B.1. PZ_OP-C Pokrycie Zapotrzebowania Operacja C</td>
+	<td>waitForElementPresent</td>
+	<td>link=1.B.1. KK_OP-C Kalkulacja Kosztów Operacja C</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>click</td>
+	<td>link=1.B.1. KK_OP-C Kalkulacja Kosztów Operacja C</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1084,7 +1104,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-C</td>
+	<td>KK_PR-C</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1092,13 +1112,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-C&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-C&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1112,14 +1132,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1194,7 +1214,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-D</td>
+	<td>KK_PR-D</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1202,13 +1222,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-D&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-D&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1222,13 +1242,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>100</td>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -1247,13 +1267,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -1262,8 +1282,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForNotValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -1284,7 +1304,7 @@
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>PZ_OP-D</td>
+	<td>KK_OP-D</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1292,13 +1312,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_OP-D&quot;]</td>
+	<td>css=td[title=&quot;KK_OP-D&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1312,14 +1332,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForNotSelectedLabel</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
+	<td>- brak -</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1332,8 +1352,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -1342,14 +1362,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=1.B.2. PZ_OP-D Pokrycie Zapotrzebowania Operacja D</td>
+	<td>waitForElementPresent</td>
+	<td>link=1.B.2. KK_OP-D Kalkulacja Kosztów Operacja D</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>click</td>
+	<td>link=1.B.2. KK_OP-D Kalkulacja Kosztów Operacja D</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1394,7 +1419,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-D</td>
+	<td>KK_PR-D</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1402,13 +1427,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-D&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-D&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1422,14 +1447,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1504,7 +1529,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-DS-1</td>
+	<td>KK_PR-DS-1</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1512,13 +1537,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-DS-1&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-DS-1&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1532,14 +1557,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1594,7 +1619,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ_PR-DS-2</td>
+	<td>KK_PR-DS-2</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1602,13 +1627,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-DS-2&quot;]</td>
+	<td>css=td[title=&quot;KK_PR-DS-2&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1622,14 +1647,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1664,6 +1689,16 @@
 <tr>
 	<td>storeConfirmation</td>
 	<td>(Zaakceptować technologię?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[11]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[11]/div/iframe</td>
 	<td></td>
 </tr>
 </tbody></table>
