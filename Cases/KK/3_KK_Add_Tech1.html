@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>150</td>
 	<td></td>
 </tr>
 <tr>
@@ -34,6 +34,16 @@
 <tr>
 	<td>waitForPageToLoad</td>
 	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -333,7 +343,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -398,7 +408,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -938,7 +948,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>relative=top</td>
 	<td></td>
 </tr>
 <tr>
@@ -947,8 +957,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>link=Drzewo</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=1. KK_OP-A Kalkulacja Kosztów Operacja A</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -1672,14 +1692,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>selectFrame</td>
+	<td>relative=top</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
+	<td>(2)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1692,13 +1717,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
 	<td></td>
 </tr>
 </tbody></table>
