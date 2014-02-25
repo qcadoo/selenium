@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>8_KK_Add_Cost_Calculation_1B</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">5_KK_Add_Cost_Calculation</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_calculations &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_calculations_costCalculation &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>KK-1B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.form.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>KK_ZL-1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;KK_ZL-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutOverheads.overheads.productionCostMargin_input</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutOverheads.overheads.materialCostMargin_input</td>
+	<td>5,25</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutOverheads.overheads.additionalOverhead_input</td>
+	<td>350,55</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateMaterialCostsMode_input</td>
+	<td>label=nominalny</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateOperationCostsMode_input</td>
+	<td>label=akord</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>//div[@id='window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost_layoutComponents']/table.3.0</td>
+	<td>Koszty akordowe <br /> <br /><br /><br /> -</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost.totalMaterialCosts_text</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost.totalMaterialCosts_text</td>
+	<td>9,11</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost.totalPieceworkCosts_text</td>
+	<td>741,5</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.borderLayoutTotalTechnicalProductionCosts.gridTechnicalProductionCost.totalTechnicalProductionCosts_text</td>
+	<td>750,61</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutOverheadsValue.gridProductionCostMargin.productionCostMarginValue_text</td>
+	<td>111,225</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutOverheadsValue.gridProductionCostMargin.materialCostMarginValue_text</td>
+	<td>0,47828</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutOverheadsValue.gridProductionCostMargin.additionalOverheadValue_text</td>
+	<td>350,55</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutOverheadsValue.borderLayoutTotalOverhead.gridTechnicalTotalOverhead.totalOverhead_text</td>
+	<td>462,25328</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTotalCost.gridLayoutTotalCost.totalCosts_text</td>
+	<td>1 212,86328</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTotalCostPerUnit.gridLayoutTotalCostPerUnit.totalCostPerUnit_text</td>
+	<td>24,25727</td>
+</tr>
+</tbody></table>
+</body>
+</html>

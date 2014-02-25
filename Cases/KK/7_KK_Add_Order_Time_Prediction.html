@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>7_KK_Add_Order_Time_Prediction</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL1</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_orders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_orders_productionOrders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_number</td>
+	<td>KK_ZL-1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_number</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.order.gridLayout.plannedQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[13]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridsLayout.gridQuantity.plannedQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridsLayout.borderLayoutIncludedInWorkTime.includedInWorkTime.includeTpz_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridsLayout.borderLayoutIncludedInWorkTime.includedInWorkTime.includeAdditionalTime_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.form.gridsLayout.borderLayoutWorkTime.workTimeGridLayout.laborWorkTime_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.4.4</td>
+	<td>2012-01-02 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.3.4</td>
+	<td>2012-01-02 08:35:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.2.4</td>
+	<td>2012-01-02 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.1.4</td>
+	<td>2012-01-03 14:45:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.4.5</td>
+	<td>2012-01-02 09:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.3.5</td>
+	<td>2012-01-02 08:40:30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.2.5</td>
+	<td>2012-01-03 14:45:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.1.5</td>
+	<td>2012-01-03 17:53:30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.1.7</td>
+	<td>03:08:30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.2.7</td>
+	<td>exact:06:21:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.3.7</td>
+	<td>exact:00:04:57</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.4.7</td>
+	<td>exact:00:24:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.1.8</td>
+	<td>exact:03:08:30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.2.8</td>
+	<td>exact:31:45:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.3.8</td>
+	<td>exact:00:00:33</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridsLayout_technologyGridLayout_technologyOperationComponents_grid.4.8</td>
+	<td>exact:01:36:00</td>
+</tr>
+</tbody></table>
+</body>
+</html>
