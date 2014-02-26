@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>1_ZM_Add_Prod</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_PZ_Add_Prod</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_basic_products &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=finalny produkt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt A</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-BO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt BO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt C</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt D</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt E</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-DS-1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt DS-1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>ZM_PR-DS-2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe Produkt DS-2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>4_ZM_Add_Order_ZL1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL1</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_orders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_orders_productionOrders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>window.mainTab.order.gridLayout.number_input</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.number_input</td>
+	<td>ZM_ZL-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.description_input</td>
+	<td>Zapotrzebowanie Materiałowe ZL-1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.order.gridLayout.company_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.dateFrom_input</td>
+	<td>2012-01-02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateFrom_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateTo_input</td>
+	<td>2020-05-18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateTo_timeInput</td>
+	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.deadline_input</td>
+	<td>2020-05-18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.deadline_timeInput</td>
+	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.order.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;ZM_PR-A&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.order.gridLayout.unit_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.order.gridLayout.productionLine_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.technology_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>xpath=/html/body/div[9]/div/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_lookupCode</td>
+	<td>ZM_Tech-1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;ZM_Tech-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.productionCounting.gridLayout.typeOfProductionRecording_input</td>
+	<td>label=podstawowy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.plannedQuantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.name_input</td>
+	<td>Zapotrzebowanie Materiałowe ZL-1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[4]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Zaakceptować zlecenie?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
