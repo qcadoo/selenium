@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>6_ZM_Verify_Production_Counting_1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL1</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_orders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_orders_productionOrders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_ZL-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.order.gridLayout.plannedQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Ilości wyprodukowane/zużyte']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jqgh_productNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.2.3</td>
+	<td>34</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.3.3</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.4.3</td>
+	<td>5,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.5.3</td>
+	<td>180,75</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.6.3</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.7.3</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.8.3</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Szczegółowe zapotrzebowanie']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>css=#window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>51</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>35,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>34</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
+	<td>135</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.8</td>
+	<td>5,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.8</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.8</td>
+	<td>95</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.8</td>
+	<td>168,75</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.8</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.8</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.8</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.8</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.basicProductionCounting.productionCountingQuantities_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Zapotrzebowanie na produkt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_OP-B']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_PR-X']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.role_input</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.typeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(13)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.basicProductionCounting.productionCountingQuantities_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Zapotrzebowanie na produkt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_OP-C']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_PR-Z']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>4,5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.role_input</td>
+	<td>label=wyprodukowany</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.typeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(14)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.basicProductionCounting.productionCountingQuantities_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Zapotrzebowanie na produkt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_PR-Y']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.role_input</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.typeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(15)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.basicProductionCounting.productionCountingQuantities_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Zapotrzebowanie na produkt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_OP-D']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.technologyOperationComponent_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_PR-C']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.role_input</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.typeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(16)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[15]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;300&quot;]</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[7]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantityUnit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionCountingQuantityDetails.gridLayout.plannedQuantityGridLayout.plannedQuantity_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;5&quot;]</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>51</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>35,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>34</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
+	<td>ZM_PR-BO</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
+	<td>135</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.8</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.8</td>
+	<td>5,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.8</td>
+	<td>95</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.8</td>
+	<td>168,75</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.8</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.1</td>
+	<td>ZM_PR-DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.8</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.1</td>
+	<td>ZM_PR-DS-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.8</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.8</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.14.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.14.8</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.15.1</td>
+	<td>ZM_PR-X</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.15.8</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.16.1</td>
+	<td>ZM_PR-Y</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.16.8</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.17.1</td>
+	<td>ZM_PR-Z</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.17.8</td>
+	<td>4,5</td>
+</tr>
+</tbody></table>
+</body>
+</html>
