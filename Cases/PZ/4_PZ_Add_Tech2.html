@@ -37,14 +37,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.iconElement.hasIcon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowa technologia:</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -62,28 +77,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>PZ_PR-1</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='PZ_PR-1']</td>
 	<td></td>
 </tr>
 <tr>
