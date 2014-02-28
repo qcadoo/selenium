@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
 <title>3_ZM_Add_Tech1</title>
 </head>
 <body>
@@ -52,19 +52,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowa technologia:</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -77,8 +72,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -99,7 +94,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
-	<td>ZM_Tech-12</td>
+	<td>ZM_Tech-1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -113,12 +108,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
 	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Drzewo</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.operation_openLookupButton</td>
+	<td>id=window.mainTab.form.gridLayout.operation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -168,7 +168,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,18 +192,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
+	<td>id=window.mainTab.form.gridLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -212,18 +207,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,9 +232,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
+	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
-	<td></td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -268,7 +258,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -277,23 +267,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -303,7 +283,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -333,22 +318,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -357,18 +327,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -383,22 +353,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForNotValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
 	<td></td>
 </tr>
 <tr>
@@ -408,18 +368,18 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
+	<td>(2)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -433,17 +393,22 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.operation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>id=window.mainTab.form.gridLayout.operation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -468,7 +433,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -502,23 +467,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -533,7 +488,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -552,14 +507,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td>szt</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -568,22 +523,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -592,23 +532,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -628,7 +563,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -638,7 +573,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -653,22 +588,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -677,18 +607,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -702,14 +632,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td>szt</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -718,7 +648,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -772,13 +702,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -803,12 +733,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -837,13 +767,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -857,13 +787,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -877,14 +807,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td>szt</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -897,33 +827,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
-	<td></td>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>click</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -938,12 +863,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -963,7 +888,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -973,7 +898,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1005,6 +930,11 @@
 	<td>selectFrame</td>
 	<td>index=2</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>waitForTable</td>
@@ -1033,12 +963,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1068,12 +998,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1088,7 +1018,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1102,14 +1037,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td>szt</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1118,12 +1053,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1132,23 +1062,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
+	<td>id=window.mainTab.form.gridLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -1158,12 +1093,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1183,7 +1118,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1193,22 +1128,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[2]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1217,18 +1137,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1242,14 +1162,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForValue</td>
 	<td>id=window.mainTab.form.gridLayout.unit_input</td>
 	<td>szt</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1258,17 +1178,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=top</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
 	<td></td>
 </tr>
 <tr>
@@ -1280,6 +1195,11 @@
 	<td>click</td>
 	<td>link=1.A.1. ZM_OP-B Zapotrzebowanie Materiałowe Operacja B</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1302,13 +1222,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForTable</td>
+	<td>id=window_grid_grid.1.0</td>
 	<td></td>
 </tr>
 <tr>
@@ -1333,12 +1253,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1367,23 +1287,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -1393,7 +1303,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1407,14 +1322,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.form.gridLayout.unit_input</td>
-	<td>szt</td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1423,7 +1338,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1438,7 +1353,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1447,13 +1362,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1468,12 +1378,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[10]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1503,7 +1413,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1512,18 +1422,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForText</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
+	<td>(1)</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[4]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Akceptuj']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1533,7 +1438,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
+	<td>//a[.='Wycofaj']</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
-<title>4_ZM_Add_Order_ZL1</title>
+<title>7_ZM_Add_Order_ZL2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL1</td></tr>
+<tr><td rowspan="1" colspan="3">7_PZ_Add_Order_ZL2</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -52,9 +52,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
+	<td>waitForNotValue</td>
 	<td>window.mainTab.order.gridLayout.number_input</td>
-	<td>000001</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -158,7 +158,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.order.gridLayout.productionLine_openLookupButton</td>
+	<td>id=window.mainTab.order.gridLayout.productionLine_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -188,7 +188,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.technology_openLookupButton</td>
+	<td>id=window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.technology_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -214,7 +214,7 @@
 <tr>
 	<td>select</td>
 	<td>id=window.productionCounting.gridLayout.typeOfProductionRecording_input</td>
-	<td>label=podstawowy</td>
+	<td>label=zbiorczy</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -224,17 +224,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.number_input</td>
-	<td>ZM_ZL-1</td>
+	<td>ZM_ZL-2</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.description_input</td>
-	<td>Zapotrzebowanie Materiałowe ZL-1</td>
+	<td>Zapotrzebowanie Materiałowe ZL-2</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.name_input</td>
-	<td>Zapotrzebowanie Materiałowe ZL-1</td>
+	<td>Zapotrzebowanie Materiałowe ZL-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -244,11 +244,6 @@
 <tr>
 	<td>waitForElementPresent</td>
 	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -264,6 +259,36 @@
 <tr>
 	<td>waitForElementPresent</td>
 	<td>//a[.='Rozpocznij']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Rozpocznij']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Rozpocząć zlecenie?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[.='Zakończ']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Przerwij']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Przerwać zlecenie?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[.='Wznów']</td>
 	<td></td>
 </tr>
 </tbody></table>
