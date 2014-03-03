@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl5.test-buka.qcadoo.org/main.html" />
 <title>8_ZM_Verify_Production_Counting2</title>
 </head>
 <body>
@@ -32,23 +32,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_ZL-22']</td>
+	<td>//span[text()='ZM_ZL-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -72,19 +62,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.3</td>
-	<td>50</td>
+	<td>waitForTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.1</td>
+	<td>ZM_PR-A</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -132,69 +112,289 @@
 	<td></td>
 </tr>
 <tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(7)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(3)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.A.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>168,75</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-DS-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(4)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.4</td>
+	<td>ZM_OP-A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>34</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.4</td>
+	<td>ZM_OP-A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>5,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=wyprodukowany</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(4)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=finalny produkt</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.</td>
+</tr>
+<tr>
 	<td>verifyTable</td>
 	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
 	<td>51</td>
 </tr>
 <tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(4)</td>
+</tr>
+<tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
 	<td>35,1</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
-	<td>34</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-C</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
-	<td>135</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.B.1.</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
-	<td>5,1</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
 	<td>6</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
 	<td>95</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.8</td>
-	<td>12</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
+	<td>ZM_PR-E</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.8</td>
-	<td>168,75</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.3</td>
+	<td>1.A.2.</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.8</td>
-	<td>100</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.8</td>
-	<td>0,01</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
 	<td>270</td>
 </tr>
 <tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
+</tr>
+<tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.8</td>
-	<td>270</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-BO</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>135</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(6)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(13)</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -382,16 +582,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//span[text()='ZM_PR-Z']</td>
 	<td></td>
@@ -474,16 +664,6 @@
 <tr>
 	<td>waitForNotTable</td>
 	<td>id=window_grid_grid.1.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
 	<td></td>
 </tr>
 <tr>
@@ -602,16 +782,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//span[text()='ZM_PR-C']</td>
 	<td></td>
@@ -662,8 +832,23 @@
 	<td>(16)</td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=gs_productNumber</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_productNumber</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[15]/td[2]/span</td>
+	<td>//span[text()='ZM_OP-B']</td>
 	<td></td>
 </tr>
 <tr>
@@ -702,8 +887,23 @@
 	<td>300</td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=gs_productNumber</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_productNumber</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(3)</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[7]/td[2]/span</td>
+	<td>//span[text()='ZM_OP-C']</td>
 	<td></td>
 </tr>
 <tr>
@@ -742,174 +942,344 @@
 	<td>5</td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=gs_productNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_productNumber</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(17)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(10)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(5)</td>
+</tr>
+<tr>
 	<td>verifyTable</td>
 	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
-	<td>ZM_PR-A</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.B.2.</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
 	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
-	<td>51</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
-	<td>ZM_PR-B</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
-	<td>35,1</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
-	<td>ZM_PR-B</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
-	<td>34</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
-	<td>ZM_PR-BO</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
-	<td>135</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.1</td>
-	<td>ZM_PR-C</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
 	<td>15</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.1</td>
-	<td>ZM_PR-C</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.6.8</td>
-	<td>5</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.1</td>
-	<td>ZM_PR-C</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.7.8</td>
-	<td>5,1</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.1</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
 	<td>ZM_PR-D</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.8.8</td>
-	<td>95</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.A.2.</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.1</td>
-	<td>ZM_PR-D</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.9.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
 	<td>168,75</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.1</td>
-	<td>ZM_PR-D</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.10.8</td>
-	<td>12</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.1</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
 	<td>ZM_PR-DS-1</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.11.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
 	<td>100</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.1</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
 	<td>ZM_PR-DS-2</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.12.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
 	<td>0,01</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.1</td>
-	<td>ZM_PR-E</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.13.8</td>
-	<td>270</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.14.1</td>
-	<td>ZM_PR-E</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.14.8</td>
-	<td>300</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.15.1</td>
-	<td>ZM_PR-X</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.15.8</td>
-	<td>30</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.16.1</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.1</td>
 	<td>ZM_PR-Y</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.16.8</td>
-	<td>11</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.3</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.17.1</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=wyprodukowany</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-BO</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>135</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
 	<td>ZM_PR-Z</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
-	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.17.8</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.B.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
 	<td>4,5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=finalny produkt</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>51</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_typeOfMaterial</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(4)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>35,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.B.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>95</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.3</td>
+	<td>1.A.2.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_role</td>
+	<td>label=użyty</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(5)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
+	<td>ZM_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.3</td>
+	<td>1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.8</td>
+	<td>34</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.3</td>
+	<td>1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.2.8</td>
+	<td>5,1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.3</td>
+	<td>1.B.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.3.8</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.4.8</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.1</td>
+	<td>ZM_PR-X</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.3</td>
+	<td>1.A.1.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_basicProductionCounting_productionCountingQuantities_grid.5.8</td>
+	<td>30</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -927,14 +1297,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForTable</td>
+	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.1</td>
+	<td>ZM_PR-A</td>
 </tr>
 <tr>
 	<td>verifyTable</td>

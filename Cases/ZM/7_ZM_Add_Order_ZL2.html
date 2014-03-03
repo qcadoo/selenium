@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl5.test-buka.qcadoo.org/main.html" />
 <title>7_ZM_Add_Order_ZL2</title>
 </head>
 <body>
@@ -32,19 +32,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
