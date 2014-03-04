@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl5.test-buka.qcadoo.org/main.html" />
+<title>13_ZM_Add_Production_Tracking_Records_ZL-3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">9_ZM_Add_Production_Tracking_Records</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_ordersTracking &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_ordersTracking_productionTracking &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='ZM_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Produkty we./wyj.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-Y&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-DS-2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>0,003</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-DS-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-D&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>4,6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-B&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.form.grid.number_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-Z&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.form.grid.usedQuantity_input</td>
+	<td>0.5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-D&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.form.grid.usedQuantity_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.form.grid.usedQuantity_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-A&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.form.grid.usedQuantity_input</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;25&quot;]</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Akceptuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Zaakceptować zlecenie?)</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
