@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
 <title>9_ZM_Add_Production_Tracking_Records</title>
 </head>
 <body>
@@ -32,12 +32,22 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.loading_div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>css=label.ribbonLabel:contains('nowy')</td>
 	<td></td>
 </tr>
@@ -94,6 +104,11 @@
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-Y&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForFrameToLoad</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
@@ -395,6 +410,11 @@
 	<td>waitForText</td>
 	<td>css=td[title=&quot;25&quot;]</td>
 	<td>25</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
+	<td>ZM_ZL-2</td>
 </tr>
 <tr>
 	<td>click</td>
