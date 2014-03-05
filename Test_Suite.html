@@ -7,17 +7,19 @@
   <style type="text/css">
   table.t1 
   { 
-  margin: 2em left; 
+    font-variant: small-caps;
+    margin: 2em left; 
   border-collapse: collapse; 
-  font-family: Arial, Helvetica, sans-serif; 
-  } 
+  font-family: Arial, Helvetica, sans-serif;  
+    } 
   
   .t1 caption 
   { 
-  font-size: 16px; 
+  text-decoration: blink;
+  text-transform: capitalize;
   text-align: left; 
-  padding: 4px 8px;
-  line-height: 2px
+  font-variant: normal;
+  line-height: 0px
   } 
   
   .t1 th, .t1 td 
@@ -25,13 +27,15 @@
   padding: 4px 8px;
   } 
   
-  .t1 thead th 
+  .thead 
   { 
-  background: #4f81bd; 
-  text-transform: lowercase; 
-  text-align: left; 
-  font-size: 15px; 
-  color: #fff; 
+  
+  font-style: oblique;
+  background: transparent; 
+  text-align: center; 
+  font-size: 38px;
+  font-weight: bold;
+  color: blue; 
   } 
   
   .t1 tr 
@@ -48,7 +52,7 @@
   
   .t1 tbody tr:nth-child(odd) 
   {
-  background: #dbe5f0; 
+  background: rgba(219,229,240,0.3); 
   } 
   
   .t1 tbody th, .t1 tbody tr:nth-child(even) td 
@@ -64,16 +68,11 @@
   font-size: 10px; 
   color: #fff; 
   } 
-  
-  .t1 tr *:nth-child(3), .t1 tr *:nth-child(4) 
-  { 
-  text-align: right; 
-  } 
-  
+    
 .t1 a:link 
 {
 color:#0040FF; 
-text-decoration:none
+text-decoration:blink
 }
 
 .t1 a:visited 
@@ -81,11 +80,12 @@ text-decoration:none
 color:#81BEF7;
 }
 
-a:hover 
+.t1 a:hover 
 {
 color:#819FF7;
 }   
-a:active 
+
+.t1 a:active 
 {
 color:red;
 }
@@ -95,11 +95,11 @@ color:red;
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="t1"><tbody>
 <caption align="top">
-ZM - Zapotrzebowanie Materiałowe <p>
-KK - Kalkulacja Kosztów<p>
-PZ - Pokrycie Zapotrzebowania
+<tt>ZM - Zapotrzebowanie Materiałowe</tt> <p>
+<tt>KK - Kalkulacja Kosztów</tt><p>
+<tt>PZ - Pokrycie Zapotrzebowania</tt>
 </caption>
-<tr><td><H2 align="center"><i>Test Suite</i></H2></td></tr>
+<tr><td class=thead><tt>Test Suite</tt></td></tr>
 <tr><td><a href="../Cases/0_0_0_Log_In.html">0_0_0_Log_In</a></td></tr>
 <tr><td><a href="../Cases/0_1_1_Add_Category.html">0_1_1_Add_Category</a></td></tr>
 <tr><td><a href="../Cases/1_1_1_Add_Product.html">1_1_1_Add_Product</a></td></tr>
