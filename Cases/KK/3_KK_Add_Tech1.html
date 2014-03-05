@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl4.test-buka.qcadoo.org/main.html" />
 <title>3_KK_Add_Tech1</title>
 </head>
 <body>
@@ -48,23 +48,18 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.iconElement.hasIcon</td>
+	<td>css=label.ribbonLabel:contains('nowy')</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowa technologia:</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -77,33 +72,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>KK_PR-A</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;KK_PR-A&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='KK_PR-A']</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,12 +108,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
 	<td>class=ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Drzewo</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,33 +147,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>KK_OP-A</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=td[title=&quot;KK_OP-A&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='KK_OP-A']</td>
 	<td></td>
 </tr>
 <tr>
@@ -213,7 +168,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -237,18 +192,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
+	<td>id=window.mainTab.form.gridLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -257,48 +207,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>KK_PR-A</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;KK_PR-A&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='KK_PR-A']</td>
 	<td></td>
 </tr>
 <tr>
@@ -327,18 +247,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -347,13 +267,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.loading_div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.loading_div</td>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>

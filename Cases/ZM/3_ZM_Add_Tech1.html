@@ -11,7 +11,6 @@
 <thead>
 <tr><td rowspan="1" colspan="3">3_PZ_Add_Tech1</td></tr>
 </thead><tbody>
-<!--Na buce ustawic predkosc na ok 300ms-->
 <tr>
 	<td>setSpeed</td>
 	<td>150</td>
@@ -49,7 +48,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.iconElement.hasIcon</td>
+	<td>css=label.ribbonLabel:contains('nowy')</td>
 	<td></td>
 </tr>
 <tr>
@@ -248,14 +247,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(0)</td>
 </tr>
 <tr>
 	<td>click</td>
