@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
 <title>7_PZ_Add_Order_ZL1</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>150</td>
 	<td></td>
 </tr>
 <tr>
@@ -37,29 +37,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=label.ribbonLabel</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
+	<td>waitForNotValue</td>
 	<td>window.mainTab.order.gridLayout.number_input</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.number_input</td>
-	<td>Test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania ZL-1</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.description_input</td>
-	<td>Pokrycie Zapotrzebowania ZL-1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -67,13 +52,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,9 +72,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.number_input</td>
+	<td>PZ_ZL-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania ZL-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.description_input</td>
+	<td>Pokrycie Zapotrzebowania ZL-1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -127,43 +127,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>PZ_PR-A</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_PR-A&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='PZ_PR-A']</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,18 +147,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.order.gridLayout.productionLine_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,44 +162,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[text()='000001']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -237,54 +187,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[9]/div/iframe</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>PZ_TECH-1</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForNotTable</td>
+	<td>id=window_grid_grid.1.1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PZ_TECH-1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//span[text()='PZ_TECH-1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -312,28 +237,23 @@
 	<td>label=dla każdej operacji</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[4]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Akceptuj']</td>
 	<td></td>
 </tr>
 <tr>
@@ -342,23 +262,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//a[.='Rozpocznij']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[4]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>//a[.='Rozpocznij']</td>
 	<td></td>
 </tr>
 <tr>
@@ -367,13 +277,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
+	<td>//a[.='Zakończ']</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -68,18 +68,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td>css=a:contains('Generuj')</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridsLayout.borderLayoutWorkTime.workTimeGridLayout.laborWorkTime_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
