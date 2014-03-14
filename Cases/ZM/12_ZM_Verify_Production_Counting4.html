@@ -62,9 +62,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.1</td>
-	<td>ZM_PR-A</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -122,9 +122,9 @@
 	<td>label=użyty</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(7)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -132,9 +132,9 @@
 	<td>label=surowiec</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(3)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -217,9 +217,9 @@
 	<td>label=półprodukt</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(4)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -327,9 +327,9 @@
 	<td>label=wyprodukowany</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(4)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -337,9 +337,9 @@
 	<td>label=finalny produkt</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(1)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -372,9 +372,9 @@
 	<td>label=półprodukt</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(4)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -482,9 +482,9 @@
 	<td>label=odpad</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(1)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -517,9 +517,9 @@
 	<td>label=</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(6)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -527,9 +527,9 @@
 	<td>label=</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(13)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -592,9 +592,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>ZM</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -647,9 +662,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(13)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -682,11 +697,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//span[text()='ZM_OP-C']</td>
 	<td></td>
@@ -712,9 +722,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>ZM</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -762,9 +787,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(14)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -832,9 +857,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>ZM</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -882,9 +922,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(15)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -947,9 +987,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>ZM</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -997,9 +1052,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(16)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1012,9 +1067,9 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(2)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1067,9 +1122,9 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(3)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1122,9 +1177,9 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(17)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -1132,9 +1187,9 @@
 	<td>label=użyty</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(10)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -1142,9 +1197,9 @@
 	<td>label=surowiec</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(5)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -1277,9 +1332,9 @@
 	<td>label=wyprodukowany</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -1287,9 +1342,9 @@
 	<td>label=odpad</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(2)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -1347,9 +1402,9 @@
 	<td>label=finalny produkt</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(1)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -1382,9 +1437,9 @@
 	<td>label=półprodukt</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(4)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -1492,9 +1547,9 @@
 	<td>label=użyty</td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(5)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyTable</td>

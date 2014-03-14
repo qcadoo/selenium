@@ -117,19 +117,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=gs_lookupCode</td>
+	<td>gs_lookupCode</td>
 	<td>ZM</td>
 </tr>
 <tr>
 	<td>keyUp</td>
 	<td>id=gs_lookupCode</td>
 	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -142,9 +147,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.order.gridLayout.unit_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -157,8 +162,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='000001']</td>
 	<td></td>
 </tr>
 <tr>
@@ -187,8 +192,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='ZM_Tech-1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -200,6 +205,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
