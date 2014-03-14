@@ -62,33 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>KK_ZL-1</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='KK_KK_ZL-1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;KK_ZL-1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='KK_KK_ZL-1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -127,29 +107,29 @@
 	<td>label=akord</td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>//div[@id='window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost_layoutComponents']/table.3.0</td>
-	<td>Koszty akordowe <br /> <br /><br /><br /> -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td>//label[contains(text(),'Generuj')]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost.totalMaterialCosts_text</td>
-	<td>-</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyText</td>
