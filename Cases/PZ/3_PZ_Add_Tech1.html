@@ -11,9 +11,10 @@
 <thead>
 <tr><td rowspan="1" colspan="3">3_PZ_Add_Tech1</td></tr>
 </thead><tbody>
+<!--https://qcadoo.atlassian.net/wiki/display/QCD/Pokrycie+zapotrzebowania+-+dane+testowe+-+1-->
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>150</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,9 +63,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -77,9 +93,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -102,9 +118,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>class=ui-pnotify-text</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -132,8 +148,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ_OP-A']</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,9 +163,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -162,14 +178,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
+	<td>waitForPageToLoad</td>
+	<td>7000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -202,9 +218,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -242,9 +273,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -277,9 +308,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -307,6 +353,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
+	<td>btnOne enabled</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
 	<td></td>
@@ -322,9 +373,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -344,7 +410,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
-	<td>0.3</td>
+	<td>0,3</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -357,9 +423,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
-	<td>(2)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -382,13 +448,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -402,9 +463,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -417,9 +478,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
+	<td>waitForPageToLoad</td>
+	<td>7000</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -427,19 +493,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=2. PZ_OP-B Pokrycie Zapotrzebowania Operacja B</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=2. PZ_OP-B Pokrycie Zapotrzebowania Operacja B</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -447,14 +508,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>1000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -472,9 +538,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -499,12 +580,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
-	<td>1.3</td>
+	<td>1,3</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -522,9 +608,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -557,9 +658,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
+	<td>btnOne enabled</td>
+</tr>
+<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -573,8 +684,8 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
-	<td>btnOne enabled</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -592,9 +703,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -632,19 +758,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1. PZ_OP-A Pokrycie Zapotrzebowania Operacja A</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -652,9 +768,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -677,8 +793,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ_OP-C']</td>
 	<td></td>
 </tr>
 <tr>
@@ -692,9 +808,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -708,18 +824,13 @@
 </tr>
 <tr>
 	<td>waitForPageToLoad</td>
-	<td>5000</td>
+	<td>7000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
+	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1.B.1. PZ_OP-C Pokrycie Zapotrzebowania Operacja C</td>
-	<td></td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -727,9 +838,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -737,14 +848,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -762,9 +873,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -802,9 +928,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -837,9 +963,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -877,9 +1018,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -902,13 +1043,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ_OP-D']</td>
 	<td></td>
 </tr>
 <tr>
@@ -922,9 +1058,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -938,18 +1074,13 @@
 </tr>
 <tr>
 	<td>waitForPageToLoad</td>
-	<td>5000</td>
+	<td>7000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
+	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1.B.2. PZ_OP-D Pokrycie Zapotrzebowania Operacja D</td>
-	<td></td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -957,9 +1088,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -992,9 +1123,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1032,9 +1178,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1067,9 +1213,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1082,14 +1243,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.form.gridLayout.unit_input</td>
-	<td>szt</td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=5</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1100,6 +1261,11 @@
 	<td>click</td>
 	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1117,9 +1283,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1157,9 +1338,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
-	<td>(2)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>

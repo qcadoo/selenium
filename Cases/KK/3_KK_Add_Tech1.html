@@ -11,9 +11,10 @@
 <thead>
 <tr><td rowspan="1" colspan="3">3_KK_Add_Tech1</td></tr>
 </thead><tbody>
+<!--https://qcadoo.atlassian.net/wiki/display/QCDMESDOC/Calculations+for+discrete+technology?focusedCommentId=14024755#Calculationsfordiscretetechnology-Technology-->
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>150</td>
 	<td></td>
 </tr>
 <tr>
@@ -63,7 +64,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_PR-A']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -154,7 +155,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja A</td>
+	<td>Kalkulacja Kosztów Operacja A</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -203,7 +204,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_PR-A']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -278,7 +279,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_PR-B']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -308,7 +309,7 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
 	<td>btnOne enabled</td>
 </tr>
 <tr>
@@ -328,7 +329,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_PR-C']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -388,7 +389,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_OP-B']</td>
+	<td>//span[contains(text(),'OP-A')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -409,7 +410,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja B</td>
+	<td>Kalkulacja Kosztów Operacja B</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -447,13 +448,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
 	<td>btnOne enabled</td>
 </tr>
 <tr>
@@ -473,12 +479,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_PR-B']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
+	<td>//span[text()='KK_PR-B']</td>
 	<td></td>
 </tr>
 <tr>
@@ -508,7 +514,7 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
 	<td>btnOne enabled</td>
 </tr>
 <tr>
@@ -528,12 +534,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_PR-BO']</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BO']</td>
+	<td>//span[text()='KK_PR-BO']</td>
 	<td></td>
 </tr>
 <tr>
@@ -562,9 +568,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li@class</td>
+	<td>btnOne enabled</td>
+</tr>
+<tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -578,8 +594,8 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
-	<td>btnOne enabled</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -597,13 +613,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>//span[text()='KK_PR-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -637,29 +653,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.treeTab.gridsLayout_layoutComponents']/table.1.0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1. PZ_OP-A Pokrycie Zapotrzebowania Operacja A</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=1. PZ_OP-A Pokrycie Zapotrzebowania Operacja A</td>
+	<td>link=1. KK_OP-A Kalkulacja Kosztów Operacja A</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -682,13 +688,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='KK_OP-C']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_OP-C']</td>
+	<td>//span[text()='KK_OP-C']</td>
 	<td></td>
 </tr>
 <tr>
@@ -697,14 +703,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja C</td>
+	<td>Kalkulacja Kosztów Operacja C</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -713,28 +719,23 @@
 </tr>
 <tr>
 	<td>waitForPageToLoad</td>
-	<td>5000</td>
+	<td>7000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
+	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1.B.1. PZ_OP-C Pokrycie Zapotrzebowania Operacja C</td>
-	<td></td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=1.B.1. PZ_OP-C Pokrycie Zapotrzebowania Operacja C</td>
+	<td>link=1.B.1. KK_OP-C Kalkulacja Kosztów Operacja C</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -742,14 +743,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=3</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -767,13 +768,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-C']</td>
+	<td>//span[text()='KK_PR-C']</td>
 	<td></td>
 </tr>
 <tr>
@@ -807,9 +808,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -842,13 +843,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-D']</td>
+	<td>//span[text()='KK_PR-D']</td>
 	<td></td>
 </tr>
 <tr>
@@ -882,9 +883,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -907,18 +908,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_grid_grid.1.0</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='KK_OP-D']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_OP-D']</td>
+	<td>//span[text()='KK_OP-D']</td>
 	<td></td>
 </tr>
 <tr>
@@ -927,14 +923,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotSelectedLabel</td>
-	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycleUNIT_input</td>
-	<td>- brak -</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Pokrycie Zapotrzebowania Operacja D</td>
+	<td>Kalkulacja Kosztów Operacja D</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -943,28 +939,23 @@
 </tr>
 <tr>
 	<td>waitForPageToLoad</td>
-	<td>5000</td>
+	<td>7000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
+	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=1.B.2. PZ_OP-D Pokrycie Zapotrzebowania Operacja D</td>
-	<td></td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=1.B.2. PZ_OP-D Pokrycie Zapotrzebowania Operacja D</td>
+	<td>link=1.B.2. KK_OP-D Kalkulacja Kosztów Operacja D</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]@class</td>
-	<td>btnOne</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -997,13 +988,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-D']</td>
+	<td>//span[text()='KK_PR-D']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1037,9 +1028,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1072,13 +1063,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-1']</td>
+	<td>//span[text()='KK_PR-DS-1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1087,14 +1078,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.form.gridLayout.unit_input</td>
-	<td>szt</td>
-</tr>
-<tr>
 	<td>selectFrame</td>
 	<td>index=5</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1105,6 +1096,11 @@
 	<td>click</td>
 	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1122,13 +1118,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-2']</td>
+	<td>//span[text()='KK_PR-DS-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1162,9 +1158,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/span[2]</td>
-	<td>(2)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
