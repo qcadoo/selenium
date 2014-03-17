@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
-<title>1_PZ_Add_Prod</title>
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>1_PZ2_Add_Prod_and_ Prod_Families</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_PZ_Add_Prod</td></tr>
+<tr><td rowspan="1" colspan="3">1_PZ2_Add_Prod_and_ Prod_Families</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -49,7 +49,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-A</td>
+	<td>PZ2_PR-F</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -59,7 +59,12 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt A</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt F</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>label=rodzinę produktów</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -74,17 +79,42 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-B</td>
+	<td>PZ2_PR-S2</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
+	<td>label=surowiec</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt B</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt S2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-F']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -99,7 +129,162 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-BO</td>
+	<td>PZ2_PR-S3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt S3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>label=rodzinę produktów</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-F']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-S4</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt S4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-S3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-S5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt S5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-S3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-O</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -109,32 +294,12 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt BO</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-BS</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt O</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=surowiec</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt BS</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>label=rodzinę produktów</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -149,232 +314,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-C</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt C</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-D</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt D</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-DS-1</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=surowiec</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt DS-1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-DS-2</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=surowiec</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt DS-2</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-1</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=finalny produkt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt 1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-2</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt 2</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-3</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt 3</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-4S</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=surowiec</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt 4S</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-P</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
-	<td>label=półprodukt</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt P</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.number_input</td>
-	<td>PZ_PR-O</td>
+	<td>PZ2_PR-DO</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -384,7 +324,367 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.name_input</td>
-	<td>Pokrycie Zapotrzebowania Produkt O</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt DO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-O']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-ZO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt ZO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-O']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-S1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt S1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>label=rodzinę produktów</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-O']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-BO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt BO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>label=rodzinę produktów</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-S1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-AO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt AO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productFamily.gridLayout.parent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PZ2_PR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ2_PR-BO']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-B</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-A</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt A</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-C</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt C</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-D</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt D</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>PZ2_PR-E</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Pokrycie Zapotrzebowania 2 Produkt E</td>
 </tr>
 <tr>
 	<td>click</td>
