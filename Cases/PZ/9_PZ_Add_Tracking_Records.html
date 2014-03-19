@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/" />
 <title>9_PZ_Add_Tracking_Records</title>
 </head>
 <body>
@@ -37,13 +37,8 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=label.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForPageToLoad</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -83,36 +78,6 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='1.B.2.']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='1.B.2.']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
@@ -120,6 +85,36 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.dateFrom_input</td>
+	<td>2012-01-02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateFrom_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateTo_input</td>
+	<td>2020-05-18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.dateTo_timeInput</td>
+	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.deadline_input</td>
+	<td>2020-05-18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.deadline_timeInput</td>
+	<td>00:00:00</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -242,6 +237,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>link=Rejestracja produkcji</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
@@ -272,9 +272,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForElementPresent</td>
+	<td>//a[.='Rozpocznij']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
