@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>11_PZ3_Add_Oper_Tasks_ZL3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">11_PZ3_Add_Oper_Tasks_ZL3</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_orders &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_orders_operationalTasks &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.typeTask_input</td>
+	<td>label=wykonanie operacji w zleceniu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.number_input</td>
+	<td>PZ3_ZL-3_1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_input</td>
+	<td>2012-03-11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_input</td>
+	<td>2012-03-15</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Operacja w zleceniu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.orderTab.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.orderTab.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='1.A.1.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='1.A.1.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.typeTask_input</td>
+	<td>label=wykonanie operacji w zleceniu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.number_input</td>
+	<td>PZ3_ZL-3_2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_input</td>
+	<td>2012-03-12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_input</td>
+	<td>2012-03-14</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_timeInput</td>
+	<td>14:45:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Operacja w zleceniu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.orderTab.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.orderTab.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='1.A.1.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='1.A.1.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.typeTask_input</td>
+	<td>label=wykonanie operacji w zleceniu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.number_input</td>
+	<td>PZ3_ZL-3_3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_input</td>
+	<td>2012-03-04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_timeInput</td>
+	<td>15:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_input</td>
+	<td>2012-03-05</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_timeInput</td>
+	<td>09:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Operacja w zleceniu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.orderTab.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.orderTab.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.typeTask_input</td>
+	<td>label=wykonanie operacji w zleceniu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.number_input</td>
+	<td>PZ3_ZL-3_4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_input</td>
+	<td>2012-03-05</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_input</td>
+	<td>2012-03-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_timeInput</td>
+	<td>10:30:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Operacja w zleceniu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.orderTab.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.orderTab.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.typeTask_input</td>
+	<td>label=wykonanie operacji w zleceniu</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operationalTasksDetails.gridLayout.number_input</td>
+	<td>PZ3_ZL-3_5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_input</td>
+	<td>2012-03-11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.startDate_timeInput</td>
+	<td>11:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_input</td>
+	<td>2012-03-16</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.operationalTasksDetails.gridLayout.finishDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Operacja w zleceniu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.orderTab.gridLayout.order_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_ZL-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.orderTab.gridLayout.technologyOperationComponent_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='1.B.2.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
