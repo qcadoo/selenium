@@ -212,9 +212,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>id=window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout.pricePerUnitCurrency_text</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -307,9 +307,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>id=window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout.pricePerUnitCurrency_text</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -407,9 +407,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -507,9 +507,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -607,9 +607,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -737,21 +737,6 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
 	<td></td>
@@ -774,12 +759,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D2</td>
+	<td>PZ3_D2</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 2</td>
+	<td>PZ3_Dostawa 2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -787,13 +772,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[text()='Qcadoo Limited Sp. z o.o.']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//span[contains(text(),'Limited')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
@@ -804,12 +799,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-05</td>
+	<td>2012-03-03</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_timeInput</td>
-	<td>09:00:00</td>
+	<td>07:30:00</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -842,9 +837,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -869,7 +864,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -883,7 +878,57 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-4S']</td>
+	<td>//span[text()='PZ3_PR-BS']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.techSubcontr.gridLayout.operation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ3_OP</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_OP-PW-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -899,7 +944,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>1.2</td>
+	<td>130</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -919,7 +964,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-4S</td>
+	<td>PZ3_PR-BS</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -942,9 +987,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -969,7 +1014,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -983,7 +1028,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-4S']</td>
+	<td>//span[text()='PZ3_PR-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -999,12 +1044,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>1.3</td>
+	<td>140</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>0.1</td>
+	<td>5</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -1024,7 +1069,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-4S</td>
+	<td>PZ3_PR-BS</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1043,27 +1088,17 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Potwierdź']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>(Potwierdzić dostawę?)</td>
 	<td></td>
 </tr>
 <tr>
@@ -1094,16 +1129,21 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D3</td>
+	<td>PZ3_D3</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 3</td>
+	<td>PZ3_Dostawa 3</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.supplier_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1117,6 +1157,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
@@ -1124,7 +1169,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-05</td>
+	<td>2012-03-04</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -1162,9 +1207,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1189,7 +1234,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1203,7 +1248,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
+	<td>//span[text()='PZ3_PR-DS-1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1219,7 +1264,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>21</td>
+	<td>40</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -1239,7 +1284,12 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-B</td>
+	<td>PZ3_PR-DS-1</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1257,9 +1307,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1284,7 +1334,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1298,7 +1348,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>//span[text()='PZ3_PR-DS-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1314,7 +1364,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>150</td>
+	<td>0,005</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -1334,102 +1384,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.2.2</td>
-	<td>PZ_PR-BS</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.orderedProductTab.orderedProductsGridLayout.orderedProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-P']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>2</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.3.2</td>
-	<td>PZ_PR-P</td>
+	<td>PZ3_PR-DS-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1479,7 +1434,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1493,7 +1448,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
+	<td>//span[text()='PZ3_PR-DS-1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1509,12 +1464,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>25</td>
+	<td>60</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>5</td>
+	<td>30</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -1534,7 +1489,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-B</td>
+	<td>PZ3_PR-DS-1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1579,7 +1534,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -1593,7 +1548,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>//span[text()='PZ3_PR-DS-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1609,12 +1564,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>166</td>
+	<td>0,005</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>20</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -1634,107 +1589,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.2.2</td>
-	<td>PZ_PR-BS</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.deliveredProductTab.deliveredProductsGridLayout.deliveredProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-P']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>4</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>2</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.3.2</td>
-	<td>PZ_PR-P</td>
+	<td>PZ3_PR-DS-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1753,12 +1608,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1804,16 +1659,21 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D4</td>
+	<td>PZ3_D4</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 4</td>
+	<td>PZ3_Dostawa 4</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.supplier_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
@@ -1824,6 +1684,11 @@
 <tr>
 	<td>click</td>
 	<td>//span[contains(text(),'Limited')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
@@ -1834,647 +1699,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-06</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_timeInput</td>
-	<td>06:00:00</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Zamówione produkty</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.orderedProductTab.orderedProductsGridLayout.orderedProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>3</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-DS-1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Odbiór dostawy</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.deliveredProductTab.deliveredProductsGridLayout.deliveredProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>15</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>12</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-DS-1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Miejsce</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.locationTab.gridLayout.location_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Potwierdź']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>(Potwierdzić dostawę?)</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Główna</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>${a}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D5</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 5</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.supplier_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-06</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_timeInput</td>
-	<td>15:00:00</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Zamówione produkty</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.orderedProductTab.orderedProductsGridLayout.orderedProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>7</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-B</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Odbiór dostawy</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.deliveredProductTab.deliveredProductsGridLayout.deliveredProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>12</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>4</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-B</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Miejsce</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.locationTab.gridLayout.location_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Potwierdź']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>(Potwierdzić dostawę?)</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Główna</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>${a}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D6</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 6</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.supplier_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-07</td>
+	<td>2012-03-05</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -2539,7 +1764,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -2553,7 +1778,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>//span[text()='PZ3_PR-DS-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2569,7 +1794,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>100</td>
+	<td>2</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -2589,102 +1814,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-BS</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.orderedProductTab.orderedProductsGridLayout.orderedProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-4S']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>0,1</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.2.2</td>
-	<td>PZ_PR-4S</td>
+	<td>PZ3_PR-DS-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2734,7 +1864,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -2748,7 +1878,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>//span[text()='PZ3_PR-DS-2']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2764,12 +1894,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>116</td>
+	<td>4</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>16</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -2789,107 +1919,7 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-BS</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.deliveredProductTab.deliveredProductsGridLayout.deliveredProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
-</tr>
-<tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>PZ</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-4S']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>0,1</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTable</td>
-	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.2.2</td>
-	<td>PZ_PR-4S</td>
+	<td>PZ3_PR-DS-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2908,27 +1938,17 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Potwierdź']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>(Potwierdzić dostawę?)</td>
 	<td></td>
 </tr>
 <tr>
@@ -2959,16 +1979,21 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td>PZ_D7</td>
+	<td>PZ3_D5</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.name_input</td>
-	<td>PZ_Dostawa 7</td>
+	<td>PZ3_Dostawa 5</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.supplier_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
@@ -2982,6 +2007,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
@@ -2989,12 +2019,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_input</td>
-	<td>2012-01-08</td>
+	<td>2012-03-12</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveriesDetails.gridLayout.deliveryDate_timeInput</td>
-	<td>09:30:00</td>
+	<td>12:00:00</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -3054,7 +2084,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -3068,7 +2098,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-P']</td>
+	<td>//span[text()='PZ3_PR-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -3084,7 +2114,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
-	<td>1</td>
+	<td>150</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -3104,7 +2134,107 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.1.2</td>
-	<td>PZ_PR-P</td>
+	<td>PZ3_PR-BS</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.orderedProductTab.orderedProductsGridLayout.orderedProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ3_PR</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_PR-DS-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.gridLayoutOrderedQuantity.orderedQuantity_input</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_orderedProductTab_orderedProductsGridLayout_orderedProducts_grid.2.2</td>
+	<td>PZ3_PR-DS-1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -3154,7 +2284,7 @@
 <tr>
 	<td>type</td>
 	<td>gs_lookupCode</td>
-	<td>PZ</td>
+	<td>PZ3_PR</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -3168,7 +2298,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-P']</td>
+	<td>//span[text()='PZ3_PR-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -3184,12 +2314,12 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
-	<td>4</td>
+	<td>150</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
-	<td>1</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -3209,7 +2339,107 @@
 <tr>
 	<td>waitForTable</td>
 	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.1.2</td>
-	<td>PZ_PR-P</td>
+	<td>PZ3_PR-BS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.deliveredProductTab.deliveredProductsGridLayout.deliveredProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ3_PR</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_PR-DS-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.deliveredQuantityGridLayout.deliveredQuantity_input</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.deliveredProductDetails.gridLayout.quantityBorderLayout.quantityGridLayout.damagedQuantityGridLayout.damagedQuantity_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=window_deliveredProductTab_deliveredProductsGridLayout_deliveredProducts_grid.2.2</td>
+	<td>PZ3_PR-DS-1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -3228,12 +2458,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_MAGAZYN1']</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
 	<td></td>
 </tr>
 <tr>
@@ -3249,6 +2479,16 @@
 <tr>
 	<td>storeConfirmation</td>
 	<td>(Potwierdzić dostawę?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
