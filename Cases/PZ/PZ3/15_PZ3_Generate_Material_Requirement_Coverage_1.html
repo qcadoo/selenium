@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/" />
+<title>15_PZ3_Generate_Material_Requirement_Coverage_1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">15_PZ3_Generate_Material_Requirement_Coverage_1</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_requirements &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_requirements_generateMaterialRequirementCoverage &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.actualDate_input</td>
+	<td>2012-03-03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.actualDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.coverageToDate_input</td>
+	<td>2012-03-10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.coverageToDate_timeInput</td>
+	<td>18:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.locationBorderLayout.coverageLocations_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.locationBorderLayout.coverageLocations.innerForm_1.productLayout.location_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.locationBorderLayout.coverageLocations.innerForm_1.productLayout.location_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ3_MAGAZYN']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.number_input</td>
+	<td>PZ3-1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.onlyProductsInCoverageBorderLayout.onlyProductsInCoverageGridLayout.productExtracted_input</td>
+	<td>label=wszystkie</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.onlyProductsInCoverageBorderLayout.onlyProductsInCoverageGridLayout.coverageType_input</td>
+	<td>label=wszystkie</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.materialRequirementCoverageForm.mainTabGridLayout.includedInCoverageBorderLayout.includedInCoverageGridLayout.includeDraftDeliveries_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Generuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.1</td>
+	<td>PZ3_PR-DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.2</td>
+	<td>Pokrycie Zapotrzebowania Produkt DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.3</td>
+	<td>brak</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.4</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.5</td>
+	<td>400</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.6</td>
+	<td>270</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.7</td>
+	<td>-130</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.9</td>
+	<td>80</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.10</td>
+	<td>190</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.1.13</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.1</td>
+	<td>PZ3_PR-DS-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.2</td>
+	<td>Pokrycie Zapotrzebowania Produkt DS-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.3</td>
+	<td>opóźnienie</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.4</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.5</td>
+	<td>0,04</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.6</td>
+	<td>2,025</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.7</td>
+	<td>1,985</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.9</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.10</td>
+	<td>2,025</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.2.13</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.1</td>
+	<td>PZ3_PR-BS</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.2</td>
+	<td>Pokrycie Zapotrzebowania Produkt BS</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.3</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.5</td>
+	<td>680</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.6</td>
+	<td>880</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.7</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.9</td>
+	<td>450</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.10</td>
+	<td>430</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_coverageProductsTab_coverageProducts_grid.3.11</td>
+	<td>tak</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedOrders_grid.1.1</td>
+	<td>PZ3_ZL-4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedOrders_grid.2.1</td>
+	<td>PZ3_ZL-3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedOrders_grid.3.1</td>
+	<td>PZ3_ZL-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedOrders_grid.4.1</td>
+	<td>PZ3_ZL-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedDeliveries_grid.1.1</td>
+	<td>PZ3_D4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedDeliveries_grid.2.1</td>
+	<td>PZ3_D3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedDeliveries_grid.3.1</td>
+	<td>PZ3_D2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndDeliveriesTab_ordersAndDeliveriesTabGridLayout_includedDeliveries_grid.4.1</td>
+	<td>PZ3_D1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='window_coverageProductsTab_coverageProducts_grid']//*[text()=&quot;PZ3_PR-DS-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.1</td>
+	<td>2012-03-03 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.2</td>
+	<td>Stan magazynu</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.7</td>
+	<td>80</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.1</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.2</td>
+	<td>Wejście zlec.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.3</td>
+	<td>PZ3_ZL-3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.5</td>
+	<td>-100=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.7</td>
+	<td>-20</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.1</td>
+	<td>2012-03-03 07:00:02</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.3</td>
+	<td>PZ3_D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.5</td>
+	<td>+150=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.7</td>
+	<td>130</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.1</td>
+	<td>2012-03-03 08:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.3</td>
+	<td>PZ3_ZL-4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.5</td>
+	<td>-100=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.7</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.1</td>
+	<td>2012-03-03 09:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.3</td>
+	<td>PZ3_ZL-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.5</td>
+	<td>-100=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.7</td>
+	<td>-70</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.1</td>
+	<td>2012-03-04 11:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.3</td>
+	<td>PZ3_D3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.5</td>
+	<td>+40=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.7</td>
+	<td>-30</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.1</td>
+	<td>2012-03-04 15:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.3</td>
+	<td>PZ3_ZL-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.5</td>
+	<td>-100=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.7</td>
+	<td>-130</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='window_coverageProductsTab_coverageProducts_grid']//*[text()=&quot;PZ3_PR-DS-2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.1</td>
+	<td>2012-03-03 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.2</td>
+	<td>Stan magazynu</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.7</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.1</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.2</td>
+	<td>Wejście zlec.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.3</td>
+	<td>PZ3_ZL-3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.5</td>
+	<td>-0,01=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.7</td>
+	<td>-0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.1</td>
+	<td>2012-03-03 07:00:02</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.3</td>
+	<td>PZ3_D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.5</td>
+	<td>+0,02=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.7</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.1</td>
+	<td>2012-03-03 08:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.3</td>
+	<td>PZ3_ZL-4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.5</td>
+	<td>-0,01=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.7</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.1</td>
+	<td>2012-03-03 09:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.3</td>
+	<td>PZ3_ZL-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.5</td>
+	<td>-0,01=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.7</td>
+	<td>-0,01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.1</td>
+	<td>2012-03-04 11:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.3</td>
+	<td>PZ3_D3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.5</td>
+	<td>+0,005=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.7</td>
+	<td>-0,005</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.1</td>
+	<td>2012-03-04 15:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.3</td>
+	<td>PZ3_ZL-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.4</td>
+	<td>PZ3_OP-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.5</td>
+	<td>-0,01=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.6</td>
+	<td>braki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.7.7</td>
+	<td>-0,015</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.1</td>
+	<td>2012-03-05 10:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.3</td>
+	<td>PZ3_D4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.5</td>
+	<td>+2=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.8.7</td>
+	<td>1,985</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='window_coverageProductsTab_coverageProducts_grid']//*[text()=&quot;PZ3_PR-BS&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.1</td>
+	<td>2012-03-03 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.2</td>
+	<td>Stan magazynu</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.1.7</td>
+	<td>450</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.1</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.3</td>
+	<td>PZ3_ZL-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.4</td>
+	<td>PZ3_OP-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.5</td>
+	<td>-270=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.2.7</td>
+	<td>180</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.1</td>
+	<td>2012-03-03 07:00:01</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.2</td>
+	<td>Wejście zlec.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.3</td>
+	<td>PZ3_ZL-3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.5</td>
+	<td>-140=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.3.7</td>
+	<td>40</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.1</td>
+	<td>2012-03-03 07:00:02</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.3</td>
+	<td>PZ3_D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.5</td>
+	<td>+300=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.4.7</td>
+	<td>340</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.1</td>
+	<td>2012-03-03 07:30:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.2</td>
+	<td>Dostawa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.3</td>
+	<td>PZ3_D2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.5</td>
+	<td>+130=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.7</td>
+	<td>470</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.5.8</td>
+	<td>PZ3_OP-PW-BS</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.1</td>
+	<td>2012-03-03 08:00:00</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.2</td>
+	<td>Wejście oper.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.3</td>
+	<td>PZ3_ZL-4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.4</td>
+	<td>PZ3_OP-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.5</td>
+	<td>-270=</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.6</td>
+	<td>pokryte</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_coverageProductForm_coverageProductLoggings_grid.6.7</td>
+	<td>200</td>
+</tr>
+</tbody></table>
+</body>
+</html>
