@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
-<title>6_KK_Add_Shift</title>
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>17_KK_Add_Shift_2A</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">6_KK_Add_Shift</td></tr>
+<tr><td rowspan="1" colspan="3">17_KK_Add_Shift_2A</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -37,29 +37,49 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='checkbox'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//td/input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>css=label.ribbonLabel</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.shift.gridLayout.mondayWorking_input</td>
-	<td>on</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.shift.gridLayout.name_input</td>
-	<td>2 Zmiana</td>
-</tr>
-<tr>
-	<td>check</td>
-	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>check</td>
-	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
-	<td></td>
+	<td>Zmiana 2A</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -83,12 +103,27 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
 	<td>00:00-08:00, 08:00-16:00 ,16:00-00:00</td>
 </tr>
 <tr>
+	<td>check</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
 	<td>00:00-08:00, 08:00-16:00 ,16:00-00:00</td>
 </tr>
 <tr>
@@ -98,7 +133,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>

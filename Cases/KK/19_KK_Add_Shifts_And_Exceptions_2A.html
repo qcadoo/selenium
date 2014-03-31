@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>19_KK_Add_Shifts_And_Exceptions_2A</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">19_KK_Add_Shifts_And_Exceptions_2A</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>150</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_basic_shifts &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='checkbox'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//td/input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=label.ribbonLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>Zmiana 1</td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>07:00-15:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.tuesdayHours_input</td>
+	<td>07:00-15:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.wensdayHours_input</td>
+	<td>07:00-15:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.thursdayHours_input</td>
+	<td>07:00-15:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>07:00-15:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.shift.gridLayout.timetableExceptions_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.name_input</td>
+	<td>Wyjątek 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_input</td>
+	<td>2012-01-03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_timeInput</td>
+	<td>06:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_input</td>
+	<td>2012-01-03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_timeInput</td>
+	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.type_input</td>
+	<td>label=praca</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.name_input</td>
+	<td>Wyjątek 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_input</td>
+	<td>2012-01-04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_timeInput</td>
+	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_input</td>
+	<td>2012-01-05</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_timeInput</td>
+	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.type_input</td>
+	<td>label=wolne</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>Zmiana 2</td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=window.mainTab.shift.gridLayout.thursdayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>15:00-22:30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.tuesdayHours_input</td>
+	<td>15:00-22:30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.wensdayHours_input</td>
+	<td>17:00-19:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.shift.gridLayout.timetableExceptions_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.name_input</td>
+	<td>Wyjątek 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_input</td>
+	<td>2012-01-04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.fromDate_timeInput</td>
+	<td>17:30:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_input</td>
+	<td>2012-01-04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.toDate_timeInput</td>
+	<td>18:00:00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.shiftTimetableException.gridLayout.type_input</td>
+	<td>label=wolne</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>

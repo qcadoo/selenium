@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
-<title>8_KK_Add_Cost_Calculation_1B</title>
+<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<title>10_KK_Add_Cost_Calculation_1B</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">8_KK_Add_Cost_Calculation_1B</td></tr>
+<tr><td rowspan="1" colspan="3">10_KK_Add_Cost_Calculation_1B</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -23,12 +23,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=#firstLevelButton_calculations &gt; a &gt; span</td>
+	<td>css=#firstLevelButton_orders &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=#secondLevelButton_calculations_costCalculation &gt; a &gt; span</td>
+	<td>css=#secondLevelButton_orders_productionOrders &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -37,14 +37,24 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
+	<td>clickAndWait</td>
+	<td>//span[text()='KK_ZL-1']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Koszty']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -130,6 +140,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
