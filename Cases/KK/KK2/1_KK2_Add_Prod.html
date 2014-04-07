@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<title>1_KK2_Add_Prod</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_KK2_Add_Prod</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_basic_products &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-A</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=finalny produkt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt A</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>39</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-B</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt B</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-BO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=odpad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt BO</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-C</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt C</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>19</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-D</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>1.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>1.9</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-E</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=półprodukt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt E</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-ES</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt ES</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>2.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>2.7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>2.6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-DS-1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt DS-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>0.1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>0.19</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>KK2_PR-DS-2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_input</td>
+	<td>label=surowiec</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów 2 Produkt DS-2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>0.1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>${a}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
