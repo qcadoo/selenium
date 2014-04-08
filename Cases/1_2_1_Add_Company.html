@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html#" />
+<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
 <title>1_2_1_Add_Company</title>
 </head>
 <body>
@@ -27,14 +27,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_basic_companies &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -42,9 +42,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -62,13 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Afganistan')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,28 +77,18 @@
 	<td>PL</td>
 </tr>
 <tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
 	<td>keyUp</td>
 	<td>id=gs_lookupCode</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Polska')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PL&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='Polska']</td>
 	<td></td>
 </tr>
 <tr>
@@ -158,17 +148,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=.//*[@id='window.mainTab.company.mainTabGridLayout.country_openLookupButton']</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.country_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Afganistan')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -177,28 +167,18 @@
 	<td>PL</td>
 </tr>
 <tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
 	<td>keyUp</td>
 	<td>id=gs_lookupCode</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Polska')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;PL&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[text()='Polska']</td>
 	<td></td>
 </tr>
 <tr>
@@ -207,13 +187,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=li.btnOne.enabled &gt; a &gt; span &gt; div.iconElement.hasIcon</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 </tbody></table>
