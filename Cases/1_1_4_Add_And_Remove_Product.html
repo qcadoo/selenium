@@ -27,24 +27,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_basic_products &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>Produkt usuwany</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -72,14 +77,14 @@
 	<td>Dodawanie produktu do usunięcia</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -87,38 +92,38 @@
 	<td>Produkt usuwany</td>
 </tr>
 <tr>
-	<td>keyDown</td>
-	<td>gs_name</td>
-	<td>\13</td>
-</tr>
-<tr>
 	<td>keyUp</td>
 	<td>gs_name</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>800</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[1]/input</td>
-	<td></td>
+	<td>css=td[title=&quot;Produkt usuwany&quot;]</td>
+	<td>Produkt usuwany</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/ul/li[2]/a/span/div[2]</td>
+	<td>//span[.='Usuń']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>storeConfirmation</td>
 	<td>(Czy na pewno chcesz usunąć rekord?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=td[title=&quot;Produkt usuwany&quot;]</td>
 	<td></td>
 </tr>
 </tbody></table>
