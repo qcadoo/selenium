@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -49,12 +49,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.name_input</td>
-	<td>javascript{&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.85 }).join(&quot;&quot;)}</td>
+	<td>javascript{&quot;PHU &quot; + &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.85 }).join(&quot;&quot;)}</td>
 </tr>
 <tr>
 	<td>storeValue</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.name_input</td>
-	<td>X</td>
+	<td>firma</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.company.mainTabGridLayout.number_input</td>
+	<td>${firma}</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -109,12 +114,12 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.email_input</td>
-	<td>${X}@gmail.com</td>
+	<td>${firma}@gmail.com</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.company.mainTabGridLayout.website_input</td>
-	<td>${X}.com.pl</td>
+	<td>${firma}.com.pl</td>
 </tr>
 <tr>
 	<td>type</td>
