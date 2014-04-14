@@ -27,7 +27,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_orders_productionOrders &gt; a &gt; span</td>
 	<td></td>
 </tr>
@@ -37,24 +37,24 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//span[text()='ZM_ZL-2']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.order.gridLayout.plannedQuantity_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Ilości wyprodukowane/zużyte']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>window_mainTab_basicProductionCounting_basicProductionCountings_grid.1.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -65,6 +65,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -107,14 +112,14 @@
 	<td>270</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Szczegółowe zapotrzebowanie']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>css=#window_mainTab_basicProductionCounting_productionCountingQuantities_grid.1.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -402,6 +407,11 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='window.mainTab.basicProductionCounting.productionCountingQuantities_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
@@ -432,8 +442,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>id=window_grid_grid.1.1</td>
+	<td>waitForVisible</td>
+	<td>//span[text()='ZM_OP-B']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1040,6 +1050,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyTable</td>

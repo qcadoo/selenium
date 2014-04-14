@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,28 +32,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>id=window.mainTab.technology.gridsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,14 +57,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Produkt ')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>000001</td>
+	<td>Nowy produkt wyjściowy</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -77,23 +72,18 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Nowy produkt wyjściowy']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[.='Nowy produkt wyjściowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -104,22 +94,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
-	<td>000001-001</td>
+	<td>Tech-błąd</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.name_input</td>
-	<td>Tech1</td>
+	<td>Technologia bez drzewka</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.description_input</td>
-	<td>Technologia 1</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>Technologia bez drzewka, więc przy akceptacji powinien pojawić się błąd walidacji.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -132,33 +117,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[.='GrTech1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='GrTech1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,28 +132,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Minimalna ilość</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>window.minimalAffordableQuantity.gridLayout.minimalQuantity_input</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//a[.='Akceptuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Zaakceptować technologię?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[contains(@class,'ui-icon ui-icon-error')]</td>
 	<td></td>
 </tr>
 </tbody></table>

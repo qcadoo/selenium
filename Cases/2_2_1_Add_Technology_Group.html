@@ -32,33 +32,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
+	<td>type</td>
+	<td>id=window.mainTab.technologyGroup.technologyGroupGridLayout.number_input</td>
+	<td>GrTech1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.technologyGroup.technologyGroupGridLayout.name_input</td>
-	<td>GrTech1</td>
+	<td>Grupa technologii 1</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='GrTech1']</td>
 	<td></td>
 </tr>
 </tbody></table>

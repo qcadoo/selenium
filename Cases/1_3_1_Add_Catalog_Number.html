@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>AddCatalogNumber</title>
+<title>1_3_1_Add_Catalog_Number</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">1_3_1_Add_Catalog_Number</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -32,19 +32,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -52,24 +52,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>selectFrame</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Produkt ')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
+	<td>Nowy produkt wyjściowy</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -77,23 +72,13 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[text()='Nowy produkt wyjściowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -107,48 +92,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000002</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForVisible</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000002&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -159,11 +114,21 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productCatalogNumbersDetails.gridLayout.catalogNumber_input</td>
-	<td>1</td>
+	<td>Numer katalogowy 1</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Numer katalogowy 1']</td>
 	<td></td>
 </tr>
 </tbody></table>

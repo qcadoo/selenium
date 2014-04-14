@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html#" />
-<title>DodawanieProduktuDoRodziny</title>
+<title>1_1_3_AddProductWithFamily</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">TEST 2.1</td></tr>
+<tr><td rowspan="1" colspan="3">1_1_3_AddProductWithFamily</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -122,14 +122,34 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Produkt dodawany do rodziny</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Produkt dodawany do rodziny']</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl2.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
 <title>1_2_1_Add_Company</title>
 </head>
 <body>
@@ -192,8 +192,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>${firma}</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 </tbody></table>

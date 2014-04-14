@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>New Test</title>
+<title>2_3_1_Add_Production_Line</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">2_3_1_Add_Production_Line</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -32,34 +32,34 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeValue</td>
-	<td>window.mainTab.productionLine.mainTabGridLayout.number_input</td>
-	<td>X</td>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>LP1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
-	<td>LP${X}</td>
+	<td>Linia Produkcyjna 1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionLine.mainTabGridLayout.description_input</td>
-	<td>Linia Produkcyjna ${X}</td>
+	<td>Linia Produkcyjna 1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -67,48 +67,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>Dz000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[.='Dz Prod']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;Dz000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='Dz Prod']</td>
 	<td></td>
 </tr>
 <tr>
@@ -117,13 +87,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='LP1']</td>
 	<td></td>
 </tr>
 </tbody></table>

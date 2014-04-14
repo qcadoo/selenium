@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html#" />
 <title>1_8_1_Add_Employee</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,19 +32,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.number_input</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -72,33 +77,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -109,7 +99,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.staff.gridLayout.post_input</td>
-	<td>skoczek</td>
+	<td>Siekacz</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -117,28 +107,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='1 Zmiana']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//span[.='1 Zmiana']</td>
 	<td></td>
 </tr>
 <tr>
@@ -152,28 +132,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Dz Prod']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//span[.='Dz Prod']</td>
 	<td></td>
 </tr>
 <tr>
@@ -182,14 +152,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Koszt godziny pracy</td>
+	<td>check</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.determinedIndividual_input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.costOfHourlyWork.gridsLayout.determinedIndividual_input</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -202,28 +177,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[9]/div/iframe</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='GrPł1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//span[.='GrPł1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -232,8 +197,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Adam']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Małysz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Siekacz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Dział produkcji']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Dz Prod']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='1 Zmiana']</td>
 	<td></td>
 </tr>
 </tbody></table>

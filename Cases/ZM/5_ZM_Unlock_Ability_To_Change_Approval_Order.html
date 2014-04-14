@@ -27,7 +27,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_administration_systemParameters &gt; a &gt; span</td>
 	<td></td>
 </tr>
@@ -37,14 +37,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Zlecenia']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>id=window_windowHeader</td>
-	<td>Parametry zleceń</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>uncheck</td>

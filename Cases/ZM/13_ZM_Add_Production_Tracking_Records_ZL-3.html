@@ -78,6 +78,16 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_openLookupButton</td>
 	<td></td>
 </tr>
@@ -103,7 +113,7 @@
 </tr>
 <tr>
 	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_input</td>
+	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
 	<td></td>
 </tr>
 <tr>
@@ -293,17 +303,12 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input@readonly</td>
-	<td>readonly</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForPageToLoad</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -312,19 +317,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -338,7 +338,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//div[@id='window.grid_gridHeader']/div/div/a/span/div[2]</td>
+	<td>//span[text()='ZM_ZL-3']</td>
 	<td></td>
 </tr>
 <tr>
@@ -352,9 +352,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.order_input</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -382,9 +392,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -392,9 +402,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -513,8 +523,8 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input@readonly</td>
-	<td>readonly</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -527,19 +537,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
-	<td>(0)</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -553,7 +558,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//div[@id='window.grid_gridHeader']/div/div/a/span/div[2]</td>
+	<td>//span[text()='ZM_ZL-3']</td>
 	<td></td>
 </tr>
 <tr>
@@ -567,9 +572,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.order_input</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -597,9 +612,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -607,9 +622,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -728,8 +743,8 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input@readonly</td>
-	<td>readonly</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 </tbody></table>
 </body>

@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,38 +32,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.operationGroup.mainTabGridLayout.number_input</td>
-	<td>000001</td>
+	<td>GrOp1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.operationGroup.mainTabGridLayout.name_input</td>
-	<td>GrOp1</td>
+	<td>Grupa operacji 1</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='GrOp1']</td>
 	<td></td>
 </tr>
 </tbody></table>

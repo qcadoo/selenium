@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,19 +32,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -52,29 +52,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Produkt ')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
+	<td>Nowy produkt wyjściowy</td>
 </tr>
 <tr>
 	<td>keyUp</td>
@@ -82,18 +72,18 @@
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Nowy produkt wyjściowy']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='Nowy produkt wyjściowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,29 +92,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
-	<td>000001-002</td>
+	<td>Tech_ok</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.name_input</td>
-	<td>Tech2</td>
+	<td>Technologia z drzewkiem</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.technology.gridsLayout.description_input</td>
-	<td>Technologia 2</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>Prosta technologia składająca się z jednej operacji.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -132,43 +112,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[.='GrTech1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='GrTech1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -177,23 +132,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Drzewo</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -202,63 +157,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForNotValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.operation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>id=window.mainTab.form.gridLayout.operation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[8]/div/iframe</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='Operacja dodana do grupy']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
+	<td>gs_name</td>
+	<td>Operacja dodana do grupy</td>
 </tr>
 <tr>
 	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
+	<td>gs_name</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[text()='Operacja dodana do grupy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -267,39 +202,24 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
-	<td>Nowa Operacja Główna</td>
+	<td>Operacja w technologii</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycle_input</td>
-	<td>100</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Drzewo</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -307,14 +227,104 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.gridLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[9]/div/iframe</td>
+	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Produkt ')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>Nowy produkt wyjściowy</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='Nowy produkt wyjściowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.gridLayout.unit_input</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.treeTab.gridsLayout.inProducts_gridHeader']/div/div[3]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li/@class</td>
+	<td>btnOne enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -327,58 +337,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Produkt ')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
+	<td>id=gs_name</td>
+	<td>Nowy produkt wejściowy</td>
 </tr>
 <tr>
 	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
+	<td>id=gs_name</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>//span[text()='Nowy produkt wejściowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -388,22 +373,17 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[9]/div/iframe</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
-	<td>100</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -412,134 +392,39 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/table/tbody/tr[5]/td/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[12]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.gridLayout.product_openLookupButton</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>gs_lookupCode</td>
-	<td>000002</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000002&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[11]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.form.gridLayout.quantity_input</td>
-	<td>200</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.goodFoodTab.goodFoodGridLayout.formula_input</td>
-	<td>Receptura</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[4]/div/div/div[2]/ul/li/a/span/div[2]</td>
+	<td>//a[.='Akceptuj']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>storeConfirmation</td>
 	<td>(Zaakceptować technologię?)</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[.='Wycofaj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Technologia z drzewkiem - Tech_ok - Zaakceptowany</td>
 </tr>
 </tbody></table>
 </body>

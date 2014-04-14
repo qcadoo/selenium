@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,34 +32,34 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstation.gridLayout.number_input</td>
-	<td>000001</td>
+	<td>FIS_XXL</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
-	<td>Nowa stacja robocza</td>
+	<td>Siekiera Fiskars duża</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstation.gridLayout.description_input</td>
-	<td>Nowa stacja robocza</td>
+	<td>Siekiera Fiskars duża, bdb na kibiców przeciwnej drużyny, można ćwiartować &quot;in situ&quot; nawet w najgorętszej sytuacji.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -67,23 +67,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='FIS']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='FIS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,8 +87,38 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span/label</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Siekiera Fiskars duża</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Siekiera Fiskars duża']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Siekiery Fiskars']</td>
 	<td></td>
 </tr>
 </tbody></table>

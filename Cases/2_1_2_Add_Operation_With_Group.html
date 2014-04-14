@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,99 +32,34 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.iconElement.hasIcon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>storeValue</td>
-	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td>X</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
-	<td>OP${X}</td>
+	<td>Operacja dodana do grupy</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.comment_input</td>
-	<td>Operacja Testowa ${X}</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.operation.mainTabGridLayout.workstationType_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>xpath=/html/body/div[6]/div/iframe</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>1</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=td[title=&quot;1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
+	<td>Operacja do grupy operacji 1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -132,48 +67,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=gs_lookupCode</td>
-	<td>000001</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
-	<td>\13</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>waitForVisible</td>
+	<td>//span[.='GrOp1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;000001&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[1]/div/div/div[2]/div[1]/ul/li/a/span</td>
+	<td>//span[.='GrOp1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -182,9 +87,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -197,13 +102,38 @@
 	<td>label=szt</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Operacja dodana do grupy</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Operacja dodana do grupy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='GrOp1']</td>
 	<td></td>
 </tr>
 </tbody></table>

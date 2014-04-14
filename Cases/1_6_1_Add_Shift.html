@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,19 +32,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.iconElement.hasIcon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -52,19 +52,19 @@
 	<td>1 Zmiana</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>check</td>
 	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>check</td>
 	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>200</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -107,34 +107,29 @@
 	<td>${X}</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[3]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/div[1]/div/div[3]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>//div[@id='window.mainTab.shift.gridLayout.timetableExceptions_gridHeader']/div/div[3]/a/span/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>xpath=/html/body/div[7]/div/iframe</td>
+	<td>index=1</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -168,12 +163,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>//span[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -182,8 +172,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=.//*[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Wyjątek 1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='1 Zmiana']</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_4_1_Add_Wage_Group</title>
+<title>1_4_2_Add_Wage_Group</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_4_1_Add_Wage_Group</td></tr>
+<tr><td rowspan="1" colspan="3">1_4_2_Add_Wage_Group</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,29 +32,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.wageGroupsDetails.gridLayout.number_input</td>
-	<td>000001</td>
+	<td>GrPł1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.wageGroupsDetails.gridLayout.name_input</td>
-	<td>Grupa placowa 000001</td>
+	<td>Grupa płacowa 1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -67,8 +67,33 @@
 	<td>label=Nadrzędna</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div.ribbonMenu.lastRibbonMenu &gt; div.ribbonMenu_left &gt; div.ribbonMenu_right &gt; div.ribbon_content &gt; div.ribbonBigElement.enabled &gt; ul.ribbonListElement &gt; li &gt; a &gt; span &gt; label.ribbonLabel</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Grupa płacowa 1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Grupa płacowa 1']</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -3,17 +3,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html#" />
-<title>AddAndRemoveProduct</title>
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
+<title>1_1_5_Add_And_Rename_Product</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">1_1_5_Add_And_Rename_Product</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>150</td>
+	<td>200</td>
 	<td></td>
 </tr>
 <tr>
@@ -27,24 +27,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_basic_products &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>Ten numer zostanie zmieniony</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -62,6 +67,11 @@
 	<td>javascript{Math.floor(Math.random()*111111111111111)}</td>
 </tr>
 <tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.product.gridLayout.ean_input</td>
+	<td>EANprzed</td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>id=window.mainTab.product.gridLayout.category_input</td>
 	<td>label=1</td>
@@ -72,14 +82,14 @@
 	<td>Dodawanie produktu ze zmienianą nazwą</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/ul[1]/li[1]/a/span/div[2]</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -87,24 +97,29 @@
 	<td>Ta nazwa zostanie zmieniona</td>
 </tr>
 <tr>
-	<td>keyDown</td>
-	<td>gs_name</td>
-	<td>\13</td>
-</tr>
-<tr>
 	<td>keyUp</td>
 	<td>gs_name</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div[2]/div[3]/div[3]/div/table/tbody/tr[2]/td[3]/span</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[text()='Ta nazwa zostanie zmieniona']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>Numer faktycznie został zmieniony</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -118,12 +133,47 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.product.gridLayout.description_input</td>
-	<td>Opis też się zmienił. Typ z odpadu na produkt finalny.</td>
+	<td>id=window.mainTab.product.gridLayout.ean_input</td>
+	<td>javascript{Math.floor(Math.random()*111111111111111)}</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=/html/body/div[1]/div/div[1]/div/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>storeValue</td>
+	<td>id=window.mainTab.product.gridLayout.ean_input</td>
+	<td>EANpo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.description_input</td>
+	<td>Opis też się zmienił. A do tego typ z odpadu na produkt finalny, oraz EAN wygenerowany od nowa. Wcześniej był ${EANprzed}, a teraz jest ${EANpo}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Nazwa faktycznie została zmieniona</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Nazwa faktycznie została zmieniona']</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -32,38 +32,63 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1500</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstationType.gridLayout.number_input</td>
-	<td>1</td>
+	<td>FIS</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstationType.gridLayout.name_input</td>
-	<td>TypStRob1</td>
+	<td>Siekiery Fiskars</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.workstationType.gridLayout.description_input</td>
-	<td>Typ stacji roboczej 1</td>
+	<td>Do kupienia w OBI, na stoisku z mazcetami, podążać za karkami.</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/ul/li/a/span</td>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_name</td>
+	<td>Siekiery Fiskars</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>gs_name</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='Siekiery Fiskars']</td>
 	<td></td>
 </tr>
 </tbody></table>
