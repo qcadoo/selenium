@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
 <title>2_KK_Add_Oper</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 <!--https://qcadoo.atlassian.net/wiki/display/QCDMESDOC/Calculations+for+discrete+technology-->
 <tr>
 	<td>setSpeed</td>
-	<td>150</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -28,7 +28,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>css=#secondLevelButton_technology_operations &gt; a &gt; span</td>
 	<td></td>
 </tr>
@@ -43,9 +43,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.norm.gridsLayout.tpz_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -56,11 +56,6 @@
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
 	<td>Kalkulacja Kosztów Operacja A</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -94,18 +89,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Główna</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -116,11 +106,6 @@
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
 	<td>Kalkulacja Kosztów Operacja B</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -164,18 +149,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Główna</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -186,11 +166,6 @@
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
 	<td>Kalkulacja Kosztów Operacja C</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -259,18 +234,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Główna</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -281,11 +251,6 @@
 	<td>type</td>
 	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
 	<td>Kalkulacja Kosztów Operacja D</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Normy czasowe</td>
-	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -359,13 +324,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel:contains('Zapisz i nowy')</td>
+	<td>//a[.='Zapisz i nowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 </tbody></table>
 </body>
