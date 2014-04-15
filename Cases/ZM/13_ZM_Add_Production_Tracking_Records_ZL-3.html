@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
 <title>13_ZM_Add_Production_Tracking_Records_ZL-3</title>
 </head>
 <body>
@@ -78,16 +78,6 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_openLookupButton</td>
 	<td></td>
 </tr>
@@ -112,9 +102,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -162,6 +152,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;12&quot;]</td>
+	<td>12</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-DS-2&quot;]</td>
 	<td></td>
@@ -190,6 +185,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;0,003&quot;]</td>
+	<td>0,003</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -222,6 +222,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;2&quot;]</td>
+	<td>2</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
 	<td></td>
@@ -250,6 +255,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;4&quot;]</td>
+	<td>4</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -358,16 +368,6 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.technologyOperationComponent_openLookupButton</td>
 	<td></td>
 </tr>
@@ -442,6 +442,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;0,6&quot;]</td>
+	<td>0,6</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-B&quot;]</td>
 	<td></td>
@@ -470,6 +475,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;10&quot;]</td>
+	<td>10</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -527,7 +537,7 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
@@ -569,16 +579,6 @@
 <tr>
 	<td>selectFrame</td>
 	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
@@ -662,6 +662,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;13&quot;]</td>
+	<td>13</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-Z&quot;]</td>
 	<td></td>
@@ -690,6 +695,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;0,5&quot;]</td>
+	<td>0,5</td>
 </tr>
 <tr>
 	<td>click</td>
