@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
 <title>11_PZ_Add_Deliveries</title>
 </head>
 <body>
@@ -12,13 +12,13 @@
 <tr><td rowspan="1" colspan="3">11_PZ_Add_Deliveries</td></tr>
 </thead><tbody>
 <tr>
-	<td>setSpeed</td>
-	<td>150</td>
+	<td>open</td>
+	<td>/main.html</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/main.html</td>
+	<td>setSpeed</td>
+	<td>150</td>
 	<td></td>
 </tr>
 <tr>
@@ -37,14 +37,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=label.ribbonLabel</td>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>window.mainTab.deliveriesDetails.gridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>storeValue</td>
@@ -68,12 +68,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -578,12 +578,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -898,12 +898,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -945,11 +945,6 @@
 	<td>selectFrame</td>
 	<td>index=2</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
 </tr>
 <tr>
 	<td>waitForNotTable</td>
@@ -1205,6 +1200,51 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.techSubcontr.gridLayout.operation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ_OP-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1513,6 +1553,56 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>id=window.techSubcontr.gridLayout.operation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ_OP-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//label[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
@@ -1608,12 +1698,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1928,12 +2018,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2248,12 +2338,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2763,12 +2853,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(text(),'Limited')]</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2883,6 +2973,56 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>id=window.techSubcontr.gridLayout.operation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ_OP-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//label[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
@@ -2985,6 +3125,56 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.techSubcontr.gridLayout.operation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'OP-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>PZ_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='PZ_OP-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>

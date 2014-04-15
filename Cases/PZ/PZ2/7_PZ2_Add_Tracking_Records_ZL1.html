@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bafl1.test-buka.qcadoo.org/main.html" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
 <title>7_PZ2_Add_Tracking_Records_ZL1</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 <!--Na buce 200, chyba że ma dobry dzień to może 150 nie uwali-->
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -39,7 +39,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -113,9 +113,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -124,6 +124,11 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S1&quot;]</td>
 	<td></td>
 </tr>
@@ -153,6 +158,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;0,1&quot;]</td>
+	<td>0,1</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S2&quot;]</td>
 	<td></td>
@@ -164,8 +174,8 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -181,6 +191,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;3&quot;]</td>
+	<td>3</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -238,13 +253,8 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForPageToLoad</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -254,7 +264,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -338,6 +348,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForVisible</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-A&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-A&quot;]</td>
 	<td></td>
@@ -366,6 +381,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;5&quot;]</td>
+	<td>5</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -398,6 +418,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;11&quot;]</td>
+	<td>11</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;PZ2_PR-B&quot;]</td>
 	<td></td>
@@ -426,6 +451,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;8&quot;]</td>
+	<td>8</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -483,7 +513,7 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
@@ -494,7 +524,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -578,6 +608,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForVisible</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S3&quot;]</td>
 	<td></td>
@@ -606,6 +641,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;20&quot;]</td>
+	<td>20</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -663,7 +703,7 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
@@ -674,7 +714,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -758,6 +798,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForVisible</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S1&quot;]</td>
 	<td></td>
@@ -788,6 +833,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;32&quot;]</td>
+	<td>32</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;PZ2_PR-D&quot;]</td>
 	<td></td>
@@ -816,6 +866,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;12&quot;]</td>
+	<td>12</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -873,7 +928,7 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
@@ -884,7 +939,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=label.ribbonLabel:contains('nowy')</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -968,6 +1023,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForVisible</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-B&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-B&quot;]</td>
 	<td></td>
@@ -996,6 +1056,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;15&quot;]</td>
+	<td>15</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1028,6 +1093,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;7&quot;]</td>
+	<td>7</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;PZ2_PR-S2&quot;]</td>
 	<td></td>
@@ -1056,6 +1126,11 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;25&quot;]</td>
+	<td>25</td>
 </tr>
 <tr>
 	<td>click</td>
