@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//span[text()='Zmiana 1']</td>
+	<td>//label[.='Dodajnowy']</td>
 	<td></td>
 </tr>
 <tr>
@@ -47,24 +47,9 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>check</td>
-	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>check</td>
-	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>Zmiana 1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -88,12 +73,27 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
 	<td>00:00-08:00, 08:00-16:00 ,16:00-00:00</td>
 </tr>
 <tr>
+	<td>check</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotAttribute</td>
+	<td>//div[@id='window.mainTab.shift.gridLayout.sundayHours']@class</td>
+	<td>component required disabled</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
 	<td>00:00-08:00, 08:00-16:00 ,16:00-00:00</td>
 </tr>
 <tr>
