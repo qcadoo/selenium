@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bafl.test-buka.qcadoo.org/main.html#" />
+<title>1_WMS_Add_Warehouses</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_WMS_Add_Warehouses</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_materialFlow &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#secondLevelButton_materialFlow_locations &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>SUR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.name_input</td>
+	<td>Magazyn surowców</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=magazyn z zasobami</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.algorithmTab.algorithmTabGridLayout.algorithm_input</td>
+	<td>label=FIFO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>PROD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.name_input</td>
+	<td>Magazyn produkcyjny</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=magazyn z zasobami</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.algorithmTab.algorithmTabGridLayout.algorithm_input</td>
+	<td>label=FIFO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>GOT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.name_input</td>
+	<td>Magazyn produktów gotowych</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.type_input</td>
+	<td>label=magazyn z zasobami</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.algorithmTab.algorithmTabGridLayout.algorithm_input</td>
+	<td>label=FIFO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
