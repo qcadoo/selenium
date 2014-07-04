@@ -109,6 +109,81 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>link=Przepływy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.flowLayout.rangeLayout.range_input</td>
+	<td>label=jeden dział</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.flowTab.flowLayout.rangeLayout.division_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'Dz Prod')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'Dz Prod')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.isDivisionLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
+	<td>SUR - Magazyn surowców</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.isDivisionOutputLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
+	<td>PROD - Magazyn produkcyjny</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.isDivisionInputLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
+	<td>GOT - Magazyn produktów gotowych</td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
@@ -139,7 +214,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -173,14 +248,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>window.mainTab.form.gridLayout.comment_input</td>
 	<td>Pokrycie Zapotrzebowania Operacja A</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -199,7 +274,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -219,7 +294,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -254,7 +329,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -289,7 +364,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -309,7 +384,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -344,7 +419,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -374,7 +449,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -384,7 +459,7 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
+	<td>id=gs_lookupCode</td>
 	<td>PZ_PR</td>
 </tr>
 <tr>
@@ -409,7 +484,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -449,13 +524,8 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForFrameToLoad</td>
-	<td>index=2</td>
-	<td>10000</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -534,7 +604,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -554,7 +624,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -589,7 +659,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -624,7 +694,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -664,7 +734,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -699,7 +769,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -719,7 +789,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -754,7 +824,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -809,13 +879,8 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForFrameToLoad</td>
-	<td>index=2</td>
-	<td>10000</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -884,7 +949,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -904,7 +969,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -939,7 +1004,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -974,7 +1039,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -994,7 +1059,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1034,7 +1099,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1074,13 +1139,8 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForFrameToLoad</td>
-	<td>index=2</td>
-	<td>10000</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -1149,7 +1209,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1169,7 +1229,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1204,7 +1264,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1239,7 +1299,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1259,7 +1319,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1294,7 +1354,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1329,7 +1389,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1364,7 +1424,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
