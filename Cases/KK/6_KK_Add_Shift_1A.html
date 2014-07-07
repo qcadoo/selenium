@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>100</td>
+	<td>10</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,19 +77,19 @@
 	<td>00:00-08:00, 08:00-16:00 ,16:00-00:00</td>
 </tr>
 <tr>
-	<td>check</td>
+	<td>click</td>
 	<td>id=window.mainTab.shift.gridLayout.saturdayWorking_input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>check</td>
+	<td>click</td>
 	<td>id=window.mainTab.shift.gridLayout.sundayWorking_input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotAttribute</td>
-	<td>//div[@id='window.mainTab.shift.gridLayout.sundayHours']@class</td>
-	<td>component required disabled</td>
+	<td>waitForCondition</td>
+	<td>!selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.mainTab.shift.gridLayout.sundayHours_input').hasAttribute('readonly');</td>
+	<td>2000</td>
 </tr>
 <tr>
 	<td>type</td>
