@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
-<title>9_ZM_Add_Production_Tracking_Records</title>
+<title>12_ZM_Add_Production_Tracking_Record</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">9_ZM_Add_Production_Tracking_Records</td></tr>
+<tr><td rowspan="1" colspan="3">12_ZM_Add_Production_Tracking_Record</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>150</td>
+	<td>120</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,9 +102,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-Y</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -137,9 +137,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-DS-2</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -172,9 +172,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-DS-1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -207,9 +207,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-D</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -242,9 +242,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-C</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -277,9 +277,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-B</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -312,9 +312,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-Z</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -347,9 +347,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-D</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -382,9 +382,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-C</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -417,9 +417,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>ZM_PR-A</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -444,7 +444,7 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>ZM_ZL-2</td>
+	<td>REG_1_ZM_ZL-2</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -455,6 +455,11 @@
 	<td>storeConfirmation</td>
 	<td>(Zaakceptować zlecenie?)</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu zakończyła się pomyślnie.</td>
 </tr>
 </tbody></table>
 </body>

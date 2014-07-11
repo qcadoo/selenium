@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
-<title>7_ZM_Add_Order_ZL2</title>
+<title>18_ZM_Add_Order_ZL3</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">7_ZM_Add_Order_ZL2</td></tr>
+<tr><td rowspan="1" colspan="3">18_ZM_Add_Order_ZL3</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>150</td>
+	<td>120</td>
 	<td></td>
 </tr>
 <tr>
@@ -42,9 +42,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotValue</td>
+	<td>window.mainTab.order.gridLayout.number_input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -113,18 +113,13 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
+	<td>id=gs_lookupCode</td>
 	<td>ZM_</td>
 </tr>
 <tr>
 	<td>keyUp</td>
 	<td>id=gs_lookupCode</td>
 	<td>\13</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -137,9 +132,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.order.gridLayout.unit_input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -167,9 +162,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotValue</td>
+	<td>id=window.mainTab.order.gridLayout.productionLine_input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -197,14 +192,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
 	<td>select</td>
 	<td>id=window.productionCounting.gridLayout.typeOfProductionRecording_input</td>
-	<td>label=zbiorczy</td>
+	<td>label=dla każdej operacji</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -214,17 +204,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.number_input</td>
-	<td>ZM_ZL-2</td>
+	<td>ZM_ZL-3</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.description_input</td>
-	<td>Zapotrzebowanie Materiałowe ZL-2</td>
+	<td>Zapotrzebowanie Materiałowe ZL-3</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.name_input</td>
-	<td>Zapotrzebowanie Materiałowe ZL-2</td>
+	<td>Zapotrzebowanie Materiałowe ZL-3</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -264,21 +254,6 @@
 <tr>
 	<td>waitForElementPresent</td>
 	<td>//a[.='Zakończ']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Przerwij']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>(Przerwać zlecenie?)</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//a[.='Wznów']</td>
 	<td></td>
 </tr>
 </tbody></table>
