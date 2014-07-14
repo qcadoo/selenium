@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
+<title>4_WMS_Add_Oper</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">4_WMS_Add_Oper</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_technology &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_technology_operations &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
+	<td>javascript{var chars = &quot;!@#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.&lt;,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =&quot;OP-&quot;+''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
+	<td>WMS_OP_A</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
+	<td>${WMS_OP_A}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.comment_input</td>
+	<td>javascript{var chars = &quot;!@#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.&lt;,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 50; var randomstring = ''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutPiecework.gridLayout.pieceworkCost_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutPiecework.gridLayout.numberOfOperations_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutHourly.gridLayout.laborHourlyCost_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutHourly.gridLayout.machineHourlyCost_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycle_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.tj_input</td>
+	<td>exact:01:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.timeNextOperation_input</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutUtilizationRatioInTime.gridUtilizationRatioInTime.machineUtilization_input</td>
+	<td>1.0</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutUtilizationRatioInTime.gridUtilizationRatioInTime.laborUtilization_input</td>
+	<td>1.0</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutDivisibleCostNorms.gridLayout.areProductQuantitiesDivisible_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
+	<td>javascript{var chars = &quot;!@#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.&lt;,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =&quot;OP-&quot;+''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.number_input</td>
+	<td>WMS_OP_B</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.name_input</td>
+	<td>${WMS_OP_B}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.operation.mainTabGridLayout.comment_input</td>
+	<td>javascript{var chars = &quot;!@#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.&lt;,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 50; var randomstring = ''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutPiecework.gridLayout.pieceworkCost_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutPiecework.gridLayout.numberOfOperations_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutHourly.gridLayout.laborHourlyCost_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.outerGridLayout.borderLayoutHourly.gridLayout.machineHourlyCost_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.tpz_input</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.productionInOneCycle_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.norm.gridsLayout.borderLayoutCycleTime.gridLayoutOther.tj_input</td>
+	<td>exact:01:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.timeNextOperation_input</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutUtilizationRatioInTime.gridUtilizationRatioInTime.machineUtilization_input</td>
+	<td>1.0</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutUtilizationRatioInTime.gridUtilizationRatioInTime.laborUtilization_input</td>
+	<td>1.0</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.norm.gridsLayout.borderLayoutDivisibleCostNorms.gridLayout.areProductQuantitiesDivisible_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
