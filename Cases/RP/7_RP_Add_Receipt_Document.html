@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>7_RP_Add_Receipt_Document</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">7_RP_Add_Receipt_Document</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://daily-build.qcadoo.org/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_materialFlow &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_materialFlow_documents &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.generalTab.form.gridLayout.number_input</td>
+	<td>2RP-PZ_1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.generalTab.form.gridLayout.type_input</td>
+	<td>label=Przyjęcie zewnętrzne</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>!selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.generalTab.form.gridLayout.locationTo_input').hasAttribute('readonly');</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.generalTab.form.gridLayout.locationTo_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'SUR')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_SUR']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pozycje</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>RP_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='RP_PR-A']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_PR-A']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_1_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>RP_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='RP_PR-B']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_PR-B']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_2_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>RP_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='RP_PR-E']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_PR-E']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_3_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>RP_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='RP_PR-C']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_PR-C']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.quantity_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_4_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>gs_lookupCode</td>
+	<td>RP_</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[text()='RP_PR-D']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='RP_PR-D']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.quantity_input</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.number_text</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.number_text</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_input</td>
+	<td>RP_PR-A - Rozliczenie Produkcji Produkt A</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.unit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.number_text</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_input</td>
+	<td>RP_PR-B - Rozliczenie Produkcji Produkt B</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.unit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.number_text</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_input</td>
+	<td>RP_PR-E - Rozliczenie Produkcji Produkt E</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.unit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.number_text</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.product_input</td>
+	<td>RP_PR-C - Rozliczenie Produkcji Produkt C</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.quantity_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_4.productLayout.unit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.number_text</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.product_input</td>
+	<td>RP_PR-D - Rozliczenie Produkcji Produkt D</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.quantity_input</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_5.productLayout.unit_text</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Akceptuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
