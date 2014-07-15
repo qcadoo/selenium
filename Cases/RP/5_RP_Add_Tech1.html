@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
-<title>3_RP_Add_Tech1</title>
+<title>5_RP_Add_Tech1</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">3_RP_Add_Tech1</td></tr>
+<tr><td rowspan="1" colspan="3">5_RP_Add_Tech1</td></tr>
 </thead><tbody>
 <!--https://qcadoo.atlassian.net/wiki/display/QCDMESDOC/Production+balance+connected+with+cost+calculation+scenario-->
 <tr>
@@ -109,6 +109,81 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>link=Przepływy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.flowLayout.rangeLayout.range_input</td>
+	<td>label=jeden dział</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.flowTab.flowLayout.rangeLayout.division_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'RP_Div')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'RP_Div')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.isDivisionLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
+	<td>RP_SUR - RP_Magazyn surowców</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.isDivisionOutputLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
+	<td>RP_PROD - RP_Magazyn produkcyjny</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.isDivisionInputLocation_input@checked</td>
+	<td>checked</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
+	<td>RP_GOT - RP_Magazyn produktów gotowych</td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
@@ -139,7 +214,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -199,7 +274,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -219,7 +294,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -254,7 +329,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -289,7 +364,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -309,7 +384,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -344,7 +419,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -374,7 +449,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -409,7 +484,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -449,7 +524,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -524,7 +599,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -549,7 +624,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -584,7 +659,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -619,7 +694,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -659,7 +734,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -689,7 +764,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -714,7 +789,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -749,7 +824,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -804,7 +879,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -874,7 +949,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -894,7 +969,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -929,7 +1004,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -964,7 +1039,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -984,7 +1059,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1024,7 +1099,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1064,7 +1139,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -1134,7 +1209,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1154,7 +1229,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1189,7 +1264,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1224,7 +1299,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1244,7 +1319,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1279,7 +1354,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1314,7 +1389,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1349,7 +1424,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1404,7 +1479,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=3</td>
 	<td></td>
 </tr>
 <tr>
@@ -1474,7 +1549,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1494,7 +1569,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1529,7 +1604,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=4</td>
 	<td></td>
 </tr>
 <tr>
@@ -1564,7 +1639,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -1584,7 +1659,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -1619,7 +1694,7 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=5</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
