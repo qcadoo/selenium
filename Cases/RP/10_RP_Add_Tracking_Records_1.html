@@ -4,17 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://test-buka.qcadoo.org/main.html" />
-<title>6_RP_Add_Tracking_Records_2</title>
+<title>10_RP_Add_Tracking_Records_1</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">6_RP_Add_Tracking_Records_2</td></tr>
+<tr><td rowspan="1" colspan="3">10_RP_Add_Tracking_Records_1</td></tr>
 </thead><tbody>
-<!--Na buce 200, chyba że ma dobry dzień to może 150 nie uwali-->
 <tr>
 	<td>setSpeed</td>
-	<td>200</td>
+	<td>100</td>
 	<td></td>
 </tr>
 <tr>
@@ -119,8 +118,38 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Produkty we./wyj.</td>
+	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;RP_PR-C&quot;]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-C</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>3,4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td[title=&quot;3,4&quot;]</td>
+	<td>3,4</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -133,14 +162,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-B</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>18</td>
+	<td>4</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -154,8 +183,8 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;18&quot;]</td>
-	<td>18</td>
+	<td>css=td[title=&quot;4&quot;]</td>
+	<td>4</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -168,14 +197,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-A</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>12</td>
+	<td>21</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -189,23 +218,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;12&quot;]</td>
-	<td>12</td>
+	<td>css=td[title=&quot;21&quot;]</td>
+	<td>21</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.laborTime_input</td>
-	<td>00002:06:00</td>
+	<td>00001:05:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.machineTime_input</td>
-	<td>00002:06:00</td>
+	<td>00001:05:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>REG_2_RP_ZL-1_OP-A</td>
+	<td>REG_1_RP_ZL-1_OP-A</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -229,7 +258,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=td[title=&quot;REG_2_RP_ZL-1_OP-A&quot;]</td>
+	<td>css=td[title=&quot;REG_1_RP_ZL-1_OP-A&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -311,11 +340,6 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Produkty we./wyj.</td>
-	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -328,14 +352,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-E</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>27</td>
+	<td>55</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -346,11 +370,6 @@
 	<td>selectFrame</td>
 	<td>relative=up</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=td[title=&quot;27&quot;]</td>
-	<td>27</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -363,14 +382,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-B</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>26</td>
+	<td>5</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -384,8 +403,8 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;26&quot;]</td>
-	<td>26</td>
+	<td>css=td[title=&quot;5&quot;]</td>
+	<td>5</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -398,14 +417,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-BO</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>24</td>
+	<td>66</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -419,23 +438,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;24&quot;]</td>
-	<td>24</td>
+	<td>css=td[title=&quot;66&quot;]</td>
+	<td>66</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.laborTime_input</td>
-	<td>00003:20:00</td>
+	<td>00001:15:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.machineTime_input</td>
-	<td>00015:30:00</td>
+	<td>00020:00:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>REG_2_RP_ZL-1_OP-B</td>
+	<td>REG_1_RP_ZL-1_OP-B</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -459,7 +478,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=td[title=&quot;REG_2_RP_ZL-1_OP-B&quot;]</td>
+	<td>css=td[title=&quot;REG_1_RP_ZL-1_OP-B&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -544,11 +563,6 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Produkty we./wyj.</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;RP_PR-ES&quot;]</td>
 	<td></td>
 </tr>
@@ -558,14 +572,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-ES</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>33</td>
+	<td>68</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -579,8 +593,8 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;33&quot;]</td>
-	<td>33</td>
+	<td>css=td[title=&quot;68&quot;]</td>
+	<td>68</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -593,14 +607,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-E</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>95,5</td>
+	<td>93,4</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -614,23 +628,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;95,5&quot;]</td>
-	<td>95,5</td>
+	<td>css=td[title=&quot;93,4&quot;]</td>
+	<td>93,4</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.laborTime_input</td>
-	<td>00000:20:00</td>
+	<td>00000:23:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.machineTime_input</td>
-	<td>00001:30:00</td>
+	<td>00000:43:30</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>REG_2_RP_ZL-1_OP-E</td>
+	<td>REG_1_RP_ZL-1_OP-E</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -654,7 +668,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=td[title=&quot;REG_2_RP_ZL-1_OP-E&quot;]</td>
+	<td>css=td[title=&quot;REG_1_RP_ZL-1_OP-E&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -748,14 +762,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-D</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>2,5</td>
+	<td>8</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -769,8 +783,8 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;2,5&quot;]</td>
-	<td>2,5</td>
+	<td>css=td[title=&quot;8&quot;]</td>
+	<td>8</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -783,14 +797,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-C</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>0,7</td>
+	<td>2,3</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -804,23 +818,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;0,7&quot;]</td>
-	<td>0,7</td>
+	<td>css=td[title=&quot;2,3&quot;]</td>
+	<td>2,3</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.laborTime_input</td>
-	<td>00000:02:00</td>
+	<td>00000:01:15</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.machineTime_input</td>
-	<td>00000:00:00</td>
+	<td>00000:00:15</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>REG_2_RP_ZL-1_OP-C</td>
+	<td>REG_1_RP_ZL-1_OP-C</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -844,7 +858,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>css=td[title=&quot;REG_2_RP_ZL-1_OP-C&quot;]</td>
+	<td>css=td[title=&quot;REG_1_RP_ZL-1_OP-C&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -938,14 +952,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.number_input</td>
+	<td>RP_PR-DS-1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>20</td>
+	<td>200</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -959,93 +973,23 @@
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>css=td[title=&quot;20&quot;]</td>
-	<td>20</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;RP_PR-DS-2&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>id=window.mainTab.form.grid.number_input@readonly</td>
-	<td>readonly</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
-	<td>0,005</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=td[title=&quot;0,005&quot;]</td>
-	<td>0,005</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;RP_PR-D&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>window.mainTab.form.grid.plannedQuantity_input@readonly</td>
-	<td>readonly</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>7</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=td[title=&quot;7&quot;]</td>
-	<td>7</td>
+	<td>css=td[title=&quot;200&quot;]</td>
+	<td>200</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.laborTime_input</td>
-	<td>00000:16:00</td>
+	<td>00000:05:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.timeTab.timeGridLayout.machineTime_input</td>
-	<td>00001:35:00</td>
+	<td>00001:45:00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionTrackingDetails.mainGridLayout.number_input</td>
-	<td>REG_2_RP_ZL-1_OP-D</td>
+	<td>REG_1_RP_ZL-1_OP-D</td>
 </tr>
 <tr>
 	<td>click</td>
