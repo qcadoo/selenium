@@ -22,13 +22,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>verifyTitle</td>
+	<td>QCD MES</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=#firstLevelButton_materialFlow &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=#secondLevelButton_materialFlow_transfers &gt; a &gt; span</td>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_materialFlow_documents &gt; a &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -48,17 +53,22 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.form.grid.number_input</td>
-	<td>PZ2_Przesunięcie 1</td>
+	<td>id=window.generalTab.form.gridLayout.number_input</td>
+	<td>PZ2_PZ1</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.mainTab.form.grid.type_input</td>
-	<td>label=Produkcja</td>
+	<td>id=window.generalTab.form.gridLayout.type_input</td>
+	<td>label=Przyjęcie zewnętrzne</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>!selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.generalTab.form.gridLayout.locationTo_input').hasAttribute('readonly');</td>
+	<td>5000</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
+	<td>window.generalTab.form.gridLayout.locationTo_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -73,12 +83,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
+	<td>//span[contains(text(),'SUR')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
+	<td>//span[text()='PZ2_SUR']</td>
 	<td></td>
 </tr>
 <tr>
@@ -88,18 +98,38 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>window.mainTab.form.grid.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pozycje</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -132,38 +162,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
 	<td>50</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i nowy']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.form.grid.number_input</td>
-	<td>PZ2_Przesunięcie 2</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.form.grid.type_input</td>
-	<td>label=Produkcja</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
+	<td>id=window.positionsListTab.positions_line_1_addButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,34 +182,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>index=3</td>
 	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.form.grid.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -232,38 +222,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
 	<td>25</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i nowy']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.form.grid.number_input</td>
-	<td>PZ2_Przesunięcie 3</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.mainTab.form.grid.type_input</td>
-	<td>label=Produkcja</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.mainTab.form.grid.locationTo_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
+	<td>id=window.positionsListTab.positions_line_2_addButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -272,34 +242,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>//span[text()='Pokrycie Zapotrzebowania 2 Magazyn']</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>index=4</td>
 	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.form.grid.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -332,19 +282,79 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.mainTab.form.grid.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
 	<td>220</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i nowy']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Akceptuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.number_text</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_input</td>
+	<td>PZ2_PR-S1 - Pokrycie Zapotrzebowania 2 Produkt S1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.number_text</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_input</td>
+	<td>PZ2_PR-S2 - Pokrycie Zapotrzebowania 2 Produkt S2</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.number_text</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_input</td>
+	<td>PZ2_PR-S3 - Pokrycie Zapotrzebowania 2 Produkt S3</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
+	<td>220</td>
 </tr>
 </tbody></table>
 </body>
