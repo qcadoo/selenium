@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>1_5_3_Assert_Workstation_Not_Saved</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_5_3_Assert_Workstation_Not_Saved</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_basic_workstations &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_workstationType</td>
+	<td>Typ stacji</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Stacje robocze</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowa stacja robocza:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_labelDiv</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.description_labelDiv</td>
+	<td>Opis</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_labelDiv</td>
+	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_input</td>
+	<td>Workstation not saved test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
+	<td>Workstation not saved test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='FIS']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='FIS']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
