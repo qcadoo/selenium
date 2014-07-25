@@ -117,6 +117,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//label[.='Zapisz']</td>
 	<td></td>
@@ -173,17 +183,12 @@
 </tr>
 <tr>
 	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td>id=window.mainTab.division.gridLayout.number_error_icon</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td>id=window.mainTab.division.gridLayout.name_error_icon</td>
 	<td></td>
 </tr>
 <tr>
@@ -198,8 +203,23 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
-	<td>Workstation not saved test</td>
+	<td>id=window.mainTab.division.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.division.gridLayout.name_input</td>
+	<td>Division not saved test</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -217,18 +237,13 @@
 	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
 </tr>
 <tr>
-	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
-	<td></td>
-</tr>
-<tr>
 	<td>verifyVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
+	<td>id=window.mainTab.division.gridLayout.number_error_icon</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td>id=window.mainTab.division.gridLayout.name_error_icon</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,64 +257,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=window.mainTab.workstation.gridLayout.workstationType_openLookupButton</td>
-	<td></td>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='FIS']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='FIS']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.ui-pnotify-text</td>
-	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
-</tr>
-<tr>
-	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
-	<td></td>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>headerActionButton</td>
 </tr>
 </tbody></table>
 </body>
