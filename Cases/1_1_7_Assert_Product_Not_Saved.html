@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>1_1_7_Assert_Product_Not_Saved</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_1_7_Assert_Product_Not_Saved</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_basic_products &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>exact:Produkty:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_globalTypeOfMaterial</td>
+	<td>Globalny typ materiału</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_parent</td>
+	<td>Rodzina produktów</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_ean</td>
+	<td>Kod EAN</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowy produkt:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Główna</td>
+	<td>Główna</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Rodzina</td>
+	<td>Rodzina</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Historia</td>
+	<td>Historia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Substytuty</td>
+	<td>Substytuty</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Integracja</td>
+	<td>Integracja</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Przeliczenia jednostki</td>
+	<td>Przeliczenia jednostki</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Koszty</td>
+	<td>Koszty</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Technologie</td>
+	<td>Technologie</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.name_labelDiv</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.globalTypeOfMaterial_labelDiv</td>
+	<td>Globalny typ materiału</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.unit_labelDiv</td>
+	<td>Jednostka podstawowa</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.ean_labelDiv</td>
+	<td>Kod EAN</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.category_labelDiv</td>
+	<td>Kategoria</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.product.gridLayout.description_labelDiv</td>
+	<td>Opis</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.productFamily.gridLayout.entityType_labelDiv</td>
+	<td>Reprezentuje</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.productFamily.gridLayout.parent_labelDiv</td>
+	<td>Należy do rodziny</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.auditTab.gridLayout.auditBorderLayout.gridLayout.createDate_labelDiv</td>
+	<td>Data utworzenia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.auditTab.gridLayout.auditBorderLayout.gridLayout.createUser_labelDiv</td>
+	<td>Utworzony przez</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.auditTab.gridLayout.auditBorderLayout.gridLayout.updateDate_labelDiv</td>
+	<td>Data aktualizacji</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.auditTab.gridLayout.auditBorderLayout.gridLayout.updateUser_labelDiv</td>
+	<td>Zaktualizowany przez</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.integrationTab.gridLayout.externalNumber_labelDiv</td>
+	<td>ID w systemie zewnętrznym</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_labelDiv</td>
+	<td>Podane koszty/ceny dotyczą ilości</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_labelDiv</td>
+	<td>Koszt nominalny</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.purchasePriceBorderLayout_layoutComponents']/span/span[2]</td>
+	<td>Cena zakupu</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_labelDiv</td>
+	<td>Ostatniego</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_labelDiv</td>
+	<td>Średnia ważona</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.offerPriceBorderLayout_layoutComponents']/span/span[2]</td>
+	<td>Cena z ofert</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.offerPriceBorderLayout.offerPriceGridLayout.lastOfferCost_labelDiv</td>
+	<td>Ostatniej</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.offerPriceBorderLayout.offerPriceGridLayout.averageOfferCost_labelDiv</td>
+	<td>Średnia ważona</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.technologyTab.technologyGridLayout.technologyGroup_labelDiv</td>
+	<td>Powiązana grupa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.unit_input</td>
+	<td>label=- wybierz -</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.number_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.name_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>Product saved test</td>
+</tr>
+</tbody></table>
+</body>
+</html>
