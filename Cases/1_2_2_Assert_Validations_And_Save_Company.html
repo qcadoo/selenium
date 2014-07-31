@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>1_2_2_Assert_Validations_And_Save_Company</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_2_2_Assert_Validations_And_Save_Company</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_basic_companies &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_city</td>
+	<td>Miasto</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_state</td>
+	<td>Województwo</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_country</td>
+	<td>Kraj</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_tax</td>
+	<td>NIP</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Firmy</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window_windowHeader</td>
+	<td>Dane firmy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Główna</td>
+	<td>Główna</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_labelDiv</td>
+	<td>Firma</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.taxCountryCode_labelDiv</td>
+	<td>NIP</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.phone_labelDiv</td>
+	<td>Telefon</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.email_labelDiv</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.website_labelDiv</td>
+	<td>Adres WWW</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.street_labelDiv</td>
+	<td>Ulica</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.house_labelDiv</td>
+	<td>Numer domu</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.flat_labelDiv</td>
+	<td>Numer mieszkania</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.zipCode_labelDiv</td>
+	<td>Kod pocztowy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.city_labelDiv</td>
+	<td>Miasto</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.state_labelDiv</td>
+	<td>Województwo</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.country_labelDiv</td>
+	<td>Kraj</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Integracja</td>
+	<td>Integracja</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.integrationTab.gridLayout.externalNumber_labelDiv</td>
+	<td>ID w systemie zewnętrznym</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//a[contains(text(),'Dostawy')]</td>
+	<td>Dostawy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_labelDiv</td>
+	<td>Bufor dla terminu dostaw (dni)</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.deliveriesTab.company.deliveriesTabGridLayout.buffer_description_message']/p</td>
+	<td>Określa ile minimalnie dni powinno być między terminem dostawy od tej firmy, a faktycznym zapotrzebowaniem na produkty z owej dostawy</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.paymentForm_labelDiv</td>
+	<td>Forma płatności</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Sprzedaje</td>
+	<td>Sprzedaje</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Produkty z rodziny</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.sellsTab.sellsTabGridLayout.products_gridHeader']/div/span</td>
+	<td>Konkretne produkty</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Wykonuje</td>
+	<td>Wykonuje</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.performsTab.performsGridLayout.operationGroups_gridHeader']/div/span</td>
+	<td>Operacje z grupy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.performsTab.performsGridLayout.operations_gridHeader']/div/span</td>
+	<td>Pojedyncze operacje</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.number_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.name_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_input</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.name_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_input</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.number_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_input</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_input</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_messages']/div/p</td>
+	<td>NIP nie jest poprawny!</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_input</td>
+	<td>123-456-32-10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_messages']/div/p</td>
+	<td>NIP nie jest poprawny!</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_input</td>
+	<td>123-456-32-18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_input</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.company.mainTabGridLayout.taxGridLayout.tax_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.errorTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.deliveriesTab.company.deliveriesTabGridLayout.buffer_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.deliveriesTab.company.deliveriesTabGridLayout.buffer_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
