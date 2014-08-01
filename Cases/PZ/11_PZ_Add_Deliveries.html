@@ -73,7 +73,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//td[@title='${firma}']/span[.='${firma}']</td>
+	<td>//span[.='${firma}']</td>
 	<td></td>
 </tr>
 <tr>
@@ -125,6 +125,11 @@
 	<td>selectFrame</td>
 	<td>index=2</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>id=window.mainTab.orderedProductDetails.gridLayout.succession_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -218,17 +223,17 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
+	<td>id=window.mainTab.orderedProductDetails.gridLayout.succession_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
 	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotText</td>
-	<td>id=window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout.pricePerUnitCurrency_text</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
+	<td>id=window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -318,13 +323,13 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
-	<td>lookupButton enabled</td>
+	<td>id=window.mainTab.deliveredProductDetails.gridLayout.succession_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.deliveredProductDetails.gridLayout.priceBorderLayout.priceGridLayout.totalPriceGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.deliveredProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -647,9 +652,9 @@
 	<td>lookupButton enabled</td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -967,9 +972,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotTable</td>
-	<td>//div[@id='window.mainTab.orderedProductDetails.gridLayout.priceBorderLayout.priceGridLayout.pricePerUnitGridLayout_layoutComponents']/table.0.1</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>window.mainTab.orderedProductDetails.gridLayout.product_openLookupButton@class</td>
+	<td>lookupButton enabled</td>
 </tr>
 <tr>
 	<td>click</td>
