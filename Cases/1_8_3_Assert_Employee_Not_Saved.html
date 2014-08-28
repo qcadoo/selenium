@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" http://daily-build.qcadoo.org/main.html" />
+<title>1_8_3_Assert_Employee_Not_Saved</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_8_3_Assert_Employee_Not_Saved</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_basic_staff &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Pracownicy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_name</td>
+	<td>Imię</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_surname</td>
+	<td>Nazwisko</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_post</td>
+	<td>Stanowisko</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_shift</td>
+	<td>Zmiana</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_division_number</td>
+	<td>Numer działu</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_division_name</td>
+	<td>Nazwa działu</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_workFor</td>
+	<td>Pracuje dla</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowa osoba:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Główna</td>
+	<td>Główna</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Koszt godziny pracy</td>
+	<td>Koszt godziny pracy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.name_labelDiv</td>
+	<td>Imię</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.surname_labelDiv</td>
+	<td>Nazwisko</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.email_labelDiv</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.phone_labelDiv</td>
+	<td>Telefon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.workFor_labelDiv</td>
+	<td>Pracuje dla</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.post_labelDiv</td>
+	<td>Stanowisko</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.borderLayoutLabelContent</td>
+	<td>W naszej firmie</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.shift_labelDiv</td>
+	<td>Zmiana</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.shift_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.shift_description_message']/p</td>
+	<td>Główna zmiana na której pracuje ten pracownik</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.shift_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.division_labelDiv</td>
+	<td>Dział</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.division_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.division_description_message']/p</td>
+	<td>Główny dział do którego jest przypisany ten pracownik</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.division_description_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.determinedIndividual_labelDiv</td>
+	<td>Ustalony indywidualnie</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_labelDiv</td>
+	<td>Indywidualny koszt godziny pracy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_labelDiv</td>
+	<td>Grupa płacowa</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_labelDiv</td>
+	<td>Koszt godziny pracy z grupy płacowej</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_labelDiv</td>
+	<td>Grupa nadrzędna</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCostCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroupsCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(.,'GrPł1')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Grupy płacowe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'GrPł1')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td>GrPł1</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_input</td>
+	<td>10.00000</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroupsCURRENCY_input</td>
+	<td>PLN</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_input</td>
+	<td>Nadrzędna</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCostCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroupsCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.determinedIndividual_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertNotAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCostCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroupsCURRENCY_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input</td>
+	<td>Not number</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Koszt godziny pracy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Główna</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.staff.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.staff.gridLayout.name_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.staff.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.staff.gridLayout.surname_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.staff.gridLayout.surname_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.staff.gridLayout.surname_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//a[contains(.,'Główna')]@class</td>
+	<td>errorTab activeTab</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//a[contains(.,'Koszt godziny pracy')]@class</td>
+	<td>errorTab</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Koszt godziny pracy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Główna</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//a[contains(.,'Główna')]@class</td>
+	<td>errorTab activeTab</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//a[contains(.,'Koszt godziny pracy')]@class</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.number_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.staff.gridLayout.number_input</td>
+	<td>Empl</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.name_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.surname_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.email_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.phone_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.staff.gridLayout.post_input</td>
+	<td>javascript{var chars = &quot;!#$%^&amp;*()_+=-{}][:;\&quot;\|\?/&gt;.,0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;; var string_length = 10; var randomstring =''; for (var i=0; i&lt;string_length; i++) { var rnum = Math.floor(Math.random() * chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>TAK!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//span[.='${Empl}']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
