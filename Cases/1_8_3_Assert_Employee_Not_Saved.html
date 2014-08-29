@@ -372,11 +372,6 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Koszt godziny pracy</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertVisible</td>
 	<td>css=div.ui-pnotify-text</td>
 	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
@@ -384,6 +379,11 @@
 <tr>
 	<td>click</td>
 	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Koszt godziny pracy</td>
 	<td></td>
 </tr>
 <tr>
@@ -452,9 +452,59 @@
 	<td>errorTab</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>link=Koszt godziny pracy</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input</td>
 	<td>20</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td>focus</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td>\8</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroups_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.gridLayoutWageGroups.laborCostFromWageGroupsCURRENCY_input</td>
+	<td>PLN</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.costOfHourlyWork.gridsLayout.superiorWageGroups_input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -474,11 +524,6 @@
 <tr>
 	<td>click</td>
 	<td>css=span.ui-icon.ui-icon-circle-close</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Koszt godziny pracy</td>
 	<td></td>
 </tr>
 <tr>
