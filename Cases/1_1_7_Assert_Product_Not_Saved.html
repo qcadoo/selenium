@@ -67,6 +67,26 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyEval</td>
+	<td>window.getComputedStyle(selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.mainTab.product.gridLayout.number_labelDiv'),null).getPropertyValue('font-weight');</td>
+	<td>700</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>window.getComputedStyle(selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.mainTab.product.gridLayout.name_labelDiv'),null).getPropertyValue('font-weight');</td>
+	<td>700</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>window.getComputedStyle(selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.mainTab.product.gridLayout.unit_labelDiv'),null).getPropertyValue('font-weight');</td>
+	<td>700</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>window.getComputedStyle(selenium.browserbot.getUserWindow().document.getElementById('mainPageIframe').contentWindow.document.getElementById('window.productFamily.gridLayout.entityType_labelDiv'),null).getPropertyValue('font-weight');</td>
+	<td>700</td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>id=window_windowHeader</td>
 	<td>Nowy produkt:</td>
@@ -117,6 +137,11 @@
 	<td>Numer</td>
 </tr>
 <tr>
+	<td>assertValue</td>
+	<td>id=window.mainTab.product.gridLayout.number_input</td>
+	<td>000001</td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>id=window.mainTab.product.gridLayout.name_labelDiv</td>
 	<td>Nazwa</td>
@@ -150,6 +175,16 @@
 	<td>assertText</td>
 	<td>id=window.productFamily.gridLayout.entityType_labelDiv</td>
 	<td>Reprezentuje</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>konkretny produktrodzinę produktów</td>
+</tr>
+<tr>
+	<td>assertSelected</td>
+	<td>id=window.productFamily.gridLayout.entityType_input</td>
+	<td>konkretny produkt</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -252,6 +287,11 @@
 	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyVisible</td>
 	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
 	<td></td>
@@ -259,6 +299,11 @@
 <tr>
 	<td>mouseOver</td>
 	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.number_error_messages']/div/p</td>
 	<td></td>
 </tr>
 <tr>
@@ -282,13 +327,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.name_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
 	<td>//div[@id='window.mainTab.product.gridLayout.name_error_messages']/div/p</td>
 	<td>To pole jest wymagane. Wprowadź wartość.</td>
 </tr>
 <tr>
 	<td>mouseOut</td>
 	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.unit_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.product.gridLayout.unit_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.unit_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.mainTab.product.gridLayout.unit_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.mainTab.product.gridLayout.unit_error_icon</td>
 	<td></td>
 </tr>
 <tr>
@@ -300,6 +375,426 @@
 	<td>type</td>
 	<td>id=window.mainTab.product.gridLayout.number_input</td>
 	<td>Product saved test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.unit_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.product.gridLayout.name_input</td>
+	<td>Product name</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.product.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=window.mainTab.product.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.product.gridLayout.unit_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.mainTab.product.gridLayout.unit_input</td>
+	<td>label=m</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Produkt został zapisany.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window_windowHeader</td>
+	<td>exact:Produkt: Product name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_input</td>
+	<td>label=- wybierz -</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Przeliczenia jednostki</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityFrom_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.quantityTo_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_input</td>
+	<td>label=m</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_messages']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_messages']/div/p</td>
+	<td>Jednostki konwersji muszą być różne.</td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.conversionTab.conversionGridLayout.conversionBorderLayout.conversionItems.innerForm_1.conversionGridLayout.unitTo_input</td>
+	<td>label=dm</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Produkt został zapisany.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Koszty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_input</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.costTab.gridLayout.costForNumberGridLayout.costForNumber_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.costForNumberGridLayout.costForNumber_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.costTab.gridLayout.nominalCostGridLayout.nominalCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.nominalCostGridLayout.nominalCost_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.lastPurchaseCost_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='window.costTab.gridLayout.purchasePriceBorderLayout.purchasePriceGridLayout.averageCost_error_messages']/div/p</td>
+	<td>Wartość nie jest numerem.</td>
 </tr>
 </tbody></table>
 </body>
