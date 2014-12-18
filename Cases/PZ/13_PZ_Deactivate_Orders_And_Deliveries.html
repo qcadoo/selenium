@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>50</td>
+	<td>20</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,6 +29,11 @@
 <tr>
 	<td>click</td>
 	<td>css=#secondLevelButton_requirements_deliveries &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>QCD MES - Dostawy</td>
 	<td></td>
 </tr>
 <tr>
@@ -67,6 +72,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertTitle</td>
+	<td>QCD MES - Zlecenia produkcyjne</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
@@ -90,6 +100,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekty (2) zostały poprawnie dezaktywowane.</td>
 </tr>
 </tbody></table>
 </body>
