@@ -37,6 +37,41 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Stany</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=jqgh_locationNumber</td>
+	<td>Numer magazynu</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_locationName</td>
+	<td>Magazyn</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productNumber</td>
+	<td>Numer produktu</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productName</td>
+	<td>Nazwa produktów</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_quantity</td>
+	<td>Ilość</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_unit</td>
+	<td>Jednostka</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=gs_productNumber</td>
 	<td>ZM_</td>
@@ -60,6 +95,16 @@
 	<td>keyUp</td>
 	<td>id=gs_locationNumber</td>
 	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jqgh_productNumber</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
