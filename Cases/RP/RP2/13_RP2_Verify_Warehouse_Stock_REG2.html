@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>13_RP2_Verify_Warehouse_Stock_REG2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">13_RP2_Verify_Warehouse_Stock_REG2</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_materialFlow &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_materialFlow_warehouseStock &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_productNumber</td>
+	<td>RP2</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_productNumber</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.1</td>
+	<td>RP_SUR</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.2</td>
+	<td>RP_Magazyn surowców</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.3</td>
+	<td>RP2_PR-DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.4</td>
+	<td>Rozliczenie Produkcji 2 Produkt DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.5</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.6</td>
+	<td>szt</td>
+</tr>
+</tbody></table>
+</body>
+</html>
