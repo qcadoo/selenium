@@ -89,7 +89,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>id=window.locationsTab.locationsGridLayout.componentsLocation_labelDiv</td>
-	<td>Magazyn surowców</td>
+	<td>Magazyn pobrania surowców</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
@@ -99,7 +99,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>id=window.locationsTab.locationsGridLayout.componentsOutputLocation_labelDiv</td>
-	<td>Magazyn rozchodowania surowców</td>
+	<td>Magazyn rozchodowania nadmiarowych surowców</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
@@ -108,8 +108,38 @@
 </tr>
 <tr>
 	<td>verifyText</td>
+	<td>id=window.locationsTab.locationsGridLayout.productionFlow_labelDiv</td>
+	<td>Przepływ produkcji w toku</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>id=window.locationsTab.locationsGridLayout.productionFlow_input</td>
+	<td>magazyn</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.locationsTab.locationsGridLayout.productsFlowLocation_labelDiv</td>
+	<td>Magazyn produkcji w toku</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.locationsTab.locationsGridLayout.productsFlowLocation_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.locationsTab.locationsGridLayout.automaticMoveForIntermediate_labelDiv</td>
+	<td>Automatyczne przesunięcie półproduktów</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.locationsTab.locationsGridLayout.automaticMoveForIntermediate_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>verifyText</td>
 	<td>id=window.locationsTab.locationsGridLayout.productsInputLocation_labelDiv</td>
-	<td>Magazyn przyjmowania produktów</td>
+	<td>Magazyn przyjmowania wyrobów</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
@@ -118,12 +148,12 @@
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.productionLines_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.workstations_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 <tr>
@@ -213,12 +243,12 @@
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.productionLines_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.workstations_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 <tr>
@@ -258,12 +288,12 @@
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstations_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.productionLines_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 <tr>
 	<td>assertAttribute</td>
-	<td>//div[@id='window.workstations.workstationsGridLayout.workstationTypes_gridHeader']/div/div[5]@class</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.workstations_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
 </tr>
 </tbody></table>
