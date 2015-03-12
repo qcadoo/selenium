@@ -108,13 +108,8 @@
 	<td>Pokrycie Zapotrzebowania Technologia 2</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Przepływy</td>
-	<td></td>
-</tr>
-<tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.rangeLayout.range_input</td>
+	<td>id=window.rangeTab.rangeLayout.basicRangeLayout.range_input</td>
 	<td>label=jeden dział</td>
 </tr>
 <tr>
@@ -124,7 +119,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.flowTab.flowLayout.rangeLayout.division_openLookupButton</td>
+	<td>id=window.rangeTab.rangeLayout.basicRangeLayout.division_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -151,36 +146,6 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
 	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.isDivisionLocation_input@checked</td>
-	<td>checked</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td>PZ_SUR - PZ_Magazyn surowców</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.isDivisionOutputLocation_input@checked</td>
-	<td>checked</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td>PZ_PROD - PZ_Magazyn produkcyjny</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.isDivisionInputLocation_input@checked</td>
-	<td>checked</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.flowTab.flowLayout.oneDivisionFlowLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td>PZ_GOT - PZ_Magazyn produktów gotowych</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1449,6 +1414,36 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>id=window.acceptanceTab.gridLayout.constructionAndTechnologyAccepted_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.acceptanceTab.gridLayout.graphicsAccepted_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Uzupełnij magazynyw produktach']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//a[.='Akceptuj']</td>
 	<td></td>
 </tr>
@@ -1461,6 +1456,16 @@
 	<td>waitForElementPresent</td>
 	<td>//a[.='Wycofaj']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 </tbody></table>
 </body>
