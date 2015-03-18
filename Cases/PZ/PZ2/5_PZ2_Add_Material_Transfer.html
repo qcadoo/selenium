@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>100</td>
+	<td>50</td>
 	<td></td>
 </tr>
 <tr>
@@ -40,6 +40,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Dokumenty</td>
+	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -75,11 +80,6 @@
 	<td>selectFrame</td>
 	<td>index=1</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
@@ -118,12 +118,12 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_openLookupButton</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,13 +162,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.unit_text</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.quantity_input</td>
 	<td>50</td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_openLookupButton</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -222,13 +222,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.unit_text</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.quantity_input</td>
 	<td>25</td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_openLookupButton</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.product_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -282,13 +282,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.unit_text</td>
+	<td>szt</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.quantity_input</td>
 	<td>220</td>
 </tr>
 <tr>
@@ -298,7 +298,7 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
@@ -308,52 +308,52 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.number_text</td>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.numberLabel_input</td>
 	<td>1</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.product_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.product_input</td>
 	<td>PZ2_PR-S1 - Pokrycie Zapotrzebowania 2 Produkt S1</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.quantity_input</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.number_text</td>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.numberLabel_input</td>
 	<td>2</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.product_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.product_input</td>
 	<td>PZ2_PR-S2 - Pokrycie Zapotrzebowania 2 Produkt S2</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.quantity_input</td>
 	<td>25</td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.number_text</td>
+	<td>verifyValue</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.numberLabel_input</td>
 	<td>3</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.product_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.product_input</td>
 	<td>PZ2_PR-S3 - Pokrycie Zapotrzebowania 2 Produkt S3</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.productLayout.quantity_input</td>
+	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.quantity_input</td>
 	<td>220</td>
 </tr>
 </tbody></table>
