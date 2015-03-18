@@ -108,14 +108,9 @@
 	<td>Pokrycie Zapotrzebowania 2 Technologia 1</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Przepływy</td>
-	<td></td>
-</tr>
-<tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.rangeLayout.range_input</td>
-	<td>label=wiele działów</td>
+	<td>id=window.rangeTab.rangeLayout.basicRangeLayout.range_input</td>
+	<td>label=jeden dział</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -2189,7 +2184,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1.A.2. Pokrycie Zapotrzebowania 2 Operacja A']/preceding-sibling::td/span[text()='PZ2_PR-S1']</td>
+	<td>id=window.flowTab.flowLayout.componentsLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -2198,48 +2193,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
+	<td>//span[text()='PZ2_SUR']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2253,64 +2213,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
+	<td>select</td>
+	<td>id=window.flowTab.flowLayout.productionFlow_input</td>
+	<td>label=w ramach przepływu</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -2318,48 +2228,13 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1.B.1.A.1. Pokrycie Zapotrzebowania 2 Operacja D']/preceding-sibling::td/span[text()='PZ2_PR-S1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
+	<td>assertAttribute</td>
+	<td>id=window.flowTab.flowLayout.productsFlowLocation_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>id=window.flowTab.flowLayout.productsInputLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -2368,653 +2243,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1.A.2. Pokrycie Zapotrzebowania 2 Operacja A']/preceding-sibling::td/span[text()='PZ2_PR-S2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_SUR2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1. Pokrycie Zapotrzebowania 2 Operacja F']/preceding-sibling::td/span[text()='PZ2_PR-S2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_SUR2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1.B.1.B.1. Pokrycie Zapotrzebowania 2 Operacja C']/preceding-sibling::td/span[text()='PZ2_PR-S3']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']/tbody/tr/td[@title='1.A.1. Pokrycie Zapotrzebowania 2 Operacja B']/preceding-sibling::td/span[text()='PZ2_PR-S3']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ2_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']/tbody/tr/td[@title='1. Pokrycie Zapotrzebowania 2 Operacja F']/preceding-sibling::td/span[text()='PZ2_PR-F']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
+	<td>//span[text()='PZ2_GOT']</td>
 	<td></td>
 </tr>
 <tr>
@@ -3028,23 +2263,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
+	<td>click</td>
+	<td>id=window.acceptanceTab.gridLayout.constructionAndTechnologyAccepted_input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>id=window.acceptanceTab.gridLayout.graphicsAccepted_input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Uzupełnij magazynyw produktach']</td>
 	<td></td>
 </tr>
 <tr>
