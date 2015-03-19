@@ -13,11 +13,6 @@
 </thead><tbody>
 <!--https://qcadoo.atlassian.net/wiki/pages/viewpage.action?pageId=3375117#Zapotrzebowaniemateria%C5%82owejakoedytowalnastrukturadanych-danetestowe-Technologia-->
 <tr>
-	<td>setSpeed</td>
-	<td>130</td>
-	<td></td>
-</tr>
-<tr>
 	<td>open</td>
 	<td>/main.html</td>
 	<td></td>
@@ -89,7 +84,7 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
@@ -114,12 +109,12 @@
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.rangeLayout.range_input</td>
+	<td>id=window.rangeTab.rangeLayout.basicRangeLayout.range_input</td>
 	<td>label=wiele działów</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
@@ -127,16 +122,18 @@
 	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
+<!--Czekam na aktywny header ramki definiowania drzewa-->
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>//div[@id='window.treeTab.gridsLayout.technologyTree']/div/div@class</td>
+	<td>tree_header elementHeader</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Drzewo</td>
 	<td></td>
 </tr>
+<!--Początek definiowania drzewa-->
 <tr>
 	<td>clickAndWait</td>
 	<td>css=div.tree_header.elementHeader &gt; div.headerActionButton.headerButtonEnabled &gt; a &gt; span &gt; div.icon</td>
@@ -198,14 +195,20 @@
 	<td>Zapotrzebowanie Materiałowe Operacja A</td>
 </tr>
 <tr>
+	<td>setSpeed</td>
+	<td>130</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
+<!--Czekam na na aktywny przycisk dodawania produktu wyjściowego-->
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>//div[@id='window.treeTab.gridsLayout.outProducts_gridHeader']/div/div[3]@class</td>
+	<td>headerActionButton headerButtonEnabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1667,14 +1670,16 @@
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--Koniec definiowania technologii-->
 <tr>
 	<td>click</td>
 	<td>link=Przepływy</td>
 	<td></td>
 </tr>
+<!--SUR dla DS-2-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']//*[text()=&quot;ZM_PR-E&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowComponent_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt DS-2']/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1683,33 +1688,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
+	<td>window.flowTab.form.locationFlowProductsLayout.componentsLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -1724,7 +1709,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
+	<td>//span[text()='ZM_SUR']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1743,49 +1728,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1799,12 +1744,13 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--SUR dla DS-1-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']//*[text()=&quot;ZM_PR-DS-2&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowComponent_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt DS-1']/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1813,33 +1759,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
+	<td>window.flowTab.form.locationFlowProductsLayout.componentsLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -1854,7 +1780,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
+	<td>//span[text()='ZM_SUR']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1873,49 +1799,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1929,12 +1815,13 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--SUR dla D-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']//*[text()=&quot;ZM_PR-DS-1&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowComponent_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt D']/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1943,33 +1830,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
+	<td>window.flowTab.form.locationFlowProductsLayout.componentsLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -1984,7 +1851,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
+	<td>//span[text()='ZM_SUR']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2003,49 +1870,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2059,123 +1886,34 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--PP wej w ramach procesu dla B-->
 <tr>
 	<td>click</td>
-	<td>//td[contains(text(),'Operacja C')]/preceding-sibling::td/span[contains(text(),'ZM_PR-D')]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateIn_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt B']/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=6</td>
+	<td>index=8</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2189,123 +1927,34 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--PP wej w ramach procesu dla D-->
 <tr>
 	<td>click</td>
-	<td>//td[contains(text(),'Operacja E')]/preceding-sibling::td/span[contains(text(),'ZM_PR-D')]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateIn_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt D']/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=6</td>
+	<td>index=8</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2319,123 +1968,34 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--PP wej w ramach procesu dla E-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateIn_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt E']/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=6</td>
+	<td>index=8</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2449,123 +2009,34 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--PP wej w ramach procesu dla C-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowIn_grid']//*[text()=&quot;ZM_PR-B&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateIn_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt C']/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=6</td>
+	<td>index=8</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.mainTab.form.gridLayout.product_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeInComponent_input</td>
-	<td>label=pobierz z miejsca</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_labelDiv</td>
-	<td>Miejsce pobrania surowców</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=7</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'SUR')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsLocationBorderLayout.componentsLocationLayout.componentsLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=8</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PROD')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_PROD']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.componentsOutputLocationBorderLayout.componentsOutputLocationLayout.componentsOutputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2579,12 +2050,13 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--PP wyj w ramach procesu dla C-->
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-E&quot;]</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateOut_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt C']/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -2593,28 +2065,218 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<!--PP wyj w ramach procesu dla B-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateOut_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt B']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<!--PP wyj w ramach procesu dla BO-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateOut_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt BO']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<!--PP wyj w ramach procesu dla D-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateOut_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt D']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<!--PP wyj w ramach procesu dla E-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFlowIntermediateOut_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt E']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.flowTab.form.locationFlowProductsLayout.productionFlow_input</td>
+	<td>label=w ramach procesu</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<!--GOT dla A-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsFinal_grid']/tbody/tr/td[@title='Zapotrzebowanie Materiałowe Produkt A']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.flowTab.form.locationFlowProductsLayout.productsInputLocation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -2624,12 +2286,12 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=10</td>
+	<td>index=11</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
+	<td>//span[text()='ZM_GOT']</td>
 	<td></td>
 </tr>
 <tr>
@@ -2644,13 +2306,13 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=9</td>
+	<td>index=10</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -2664,427 +2326,22 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-D&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
+	<td>id=window.acceptanceTab.gridLayout.constructionAndTechnologyAccepted_input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
+	<td>id=window.acceptanceTab.gridLayout.graphicsAccepted_input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_GOT']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_GOT']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-BO&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_GOT']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-B&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_GOT']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='window_flowTab_flowLayout_productsFlowLayout_productsLayout_productsFlowOut_grid']//*[text()=&quot;ZM_PR-A&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Przepływ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.flowTab.flowLayout.flowTypeOutComponent_input</td>
-	<td>label=przyjmij na miejsce</td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_labelDiv</td>
-	<td>Miejsce przyjmowania produktów</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=10</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'GOT')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='ZM_GOT']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=9</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotValue</td>
-	<td>id=window.flowTab.flowLayout.locationFlowProductsLayout.productsInputLocationBorderLayout.productsInputLocationLayout.productsInputLocation_input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
 </tr>
 <tr>
