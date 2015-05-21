@@ -107,7 +107,22 @@
 	<td>ZM_PR-Y</td>
 </tr>
 <tr>
+	<td>select</td>
+	<td>id=window.mainTab.form.grid.givenUnit_input</td>
+	<td>label=para</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
 	<td>12</td>
 </tr>
@@ -143,6 +158,11 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>0,003</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
 	<td>0,003</td>
 </tr>
@@ -178,6 +198,11 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
 	<td>2</td>
 </tr>
@@ -196,6 +221,9 @@
 	<td>css=td[title=&quot;2&quot;]</td>
 	<td>2</td>
 </tr>
+<!--
+WYKOMENTOWANE ! Produkty ZM_PR-D i ZM_PR-B jako półprodukty, nie są widoczne w zbiorczym sposobie rejestracji!
+
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-D&quot;]</td>
@@ -231,6 +259,7 @@
 	<td>css=td[title=&quot;13&quot;]</td>
 	<td>13</td>
 </tr>
+-->
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-C&quot;]</td>
@@ -248,6 +277,11 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>4,6</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
 	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
 	<td>4,6</td>
 </tr>
@@ -266,6 +300,7 @@
 	<td>css=td[title=&quot;4,6&quot;]</td>
 	<td>4,6</td>
 </tr>
+<!-- WYKOMENTOWANE ! Produkty ZM_PR-D i ZM_PR-B jako półprodukty, nie są widoczne w zbiorczym sposobie rejestracji!
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductInComponents_grid']//*[text()=&quot;ZM_PR-B&quot;]</td>
@@ -301,6 +336,7 @@
 	<td>css=td[title=&quot;10&quot;]</td>
 	<td>10</td>
 </tr>
+-->
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-Z&quot;]</td>
@@ -318,8 +354,13 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>window.mainTab.form.grid.usedQuantity_input</td>
-	<td>0.5</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>0,5</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
+	<td>0,5</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -336,6 +377,7 @@
 	<td>css=td[title=&quot;0,5&quot;]</td>
 	<td>0,5</td>
 </tr>
+<!-- WYKOMENTOWANE ! Produkty ZM_PR-D i ZM_PR-B jako półprodukty, nie są widoczne w zbiorczym sposobie rejestracji!
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-D&quot;]</td>
@@ -406,6 +448,7 @@
 	<td>css=td[title=&quot;3&quot;]</td>
 	<td>3</td>
 </tr>
+-->
 <tr>
 	<td>click</td>
 	<td>//table[@id='window_productsTab_productsGridLayout_trackingOperationProductOutComponents_grid']//*[text()=&quot;ZM_PR-A&quot;]</td>
@@ -423,7 +466,12 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>window.mainTab.form.grid.usedQuantity_input</td>
+	<td>id=window.mainTab.form.grid.givenQuantity_input</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.mainTab.form.grid.usedQuantity_input</td>
 	<td>25</td>
 </tr>
 <tr>
