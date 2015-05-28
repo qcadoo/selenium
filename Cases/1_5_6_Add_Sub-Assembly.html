@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
+<title>1_5_6_Add_Sub-Assembly</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_5_6_Add_Sub-Assembly</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#firstLevelButton_basic &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_basic_subassemblies &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Podzespoły</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Podzespoły</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workstation</td>
+	<td>Maszyna</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workstationType</td>
+	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productionDate</td>
+	<td>Data produkcji</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lastRepairsDate</td>
+	<td>Data ostatniego remontu</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window_windowHeader</td>
+	<td>Dodaj nowy podzespół</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_labelDiv</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_labelDiv</td>
+	<td>Maszyna</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstationType_labelDiv</td>
+	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.serialNumber_labelDiv</td>
+	<td>Nr fabryczny</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.series_labelDiv</td>
+	<td>Seria</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.producer_labelDiv</td>
+	<td>Producent</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.subassembly.gridLayout.productionDate_labelDiv</td>
+	<td>Data produkcji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstationType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_input</td>
+	<td>Sub-assembly 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.serialNumber_input</td>
+	<td>SerialNumber_S-A1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.series_input</td>
+	<td>Series1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.producer_input</td>
+	<td>Producer1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.productionDate_input</td>
+	<td>javascript{new Date().toISOString().substr(0, 10)}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstationType_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='SUB-WT']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Typy stacji roboczej</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='SUB-WT']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.companiesTab.companiesGridLayout.companies_gridHeader']/div@class</td>
+	<td>grid_header elementHeader elementHeaderDisabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//div[@id='window.companiesTab.companiesGridLayout.companies_gridHeader']/div@class</td>
+	<td>grid_header elementHeader</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Firma</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_city</td>
+	<td>Miasto</td>
+</tr>
+</tbody></table>
+</body>
+</html>
