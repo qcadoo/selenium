@@ -16,3 +16,5 @@ selenium-server-standalone-2.45.0.jar
 result.log
 
 result_firefox.html
+
+result.log.lck
