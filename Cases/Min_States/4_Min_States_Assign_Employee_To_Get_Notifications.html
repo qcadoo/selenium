@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>4_Min_States_Assign_Employee_To_Get_Notifications</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">4_Min_States_Assign_Employee_To_Get_Notifications</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.administrationMenuItem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_administration_systemParameters &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powiadomienia']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>20</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window_windowHeader</td>
+	<td>Parametry powiadomienia</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Lista adresów</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_email</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_surname</td>
+	<td>Nazwisko</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Imię</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.parameterStaffNotificationsDetailsGridLayout.staffNotificationsStaffLookup_labelDiv</td>
+	<td>Pracownik</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.parameterStaffNotificationsDetailsGridLayout.email_labelDiv</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.staffNotificationsDeliveryTab.staffNotificationsDeliveryTabGridLayout.createDeliveryMinState_labelDiv</td>
+	<td>Utworzenie dostawy do stanów min.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.parameterStaffNotificationsDetailsGridLayout.staffNotificationsStaffLookup_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='bartlomiej.florczak@qcadoo.com']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.parameterStaffNotificationsDetailsGridLayout.staffNotificationsStaffLookup_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.parameterStaffNotificationsDetailsGridLayout.email_input</td>
+	<td>bartlomiej.florczak@qcadoo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.staffNotificationsDeliveryTab.staffNotificationsDeliveryTabGridLayout.createDeliveryMinState_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_emailNotificationsParameters_goodFoodParametersGridLayout_staffNotifications_grid.1.1</td>
+	<td>bartlomiej.florczak@qcadoo.com</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_emailNotificationsParameters_goodFoodParametersGridLayout_staffNotifications_grid.1.2</td>
+	<td>Ba</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_emailNotificationsParameters_goodFoodParametersGridLayout_staffNotifications_grid.1.3</td>
+	<td>Fl</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
