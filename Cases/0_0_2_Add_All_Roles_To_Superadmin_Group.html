@@ -4,47 +4,52 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>0_0_2_Add_Dictionary_View_Role_To_Admin_Group</title>
+<title>0_0_2_Add_All_Roles_To_Superadmin_Group</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">0_0_2_Add_Dictionary_View_Role_To_Admin_Group</td></tr>
+<tr><td rowspan="1" colspan="3">0_0_2_Add_All_Roles_To_Superadmin_Group</td></tr>
 </thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
 <tr>
 	<td>open</td>
 	<td>/main.html</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertTitle</td>
-	<td>QCD MES</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=div.administrationMenuItem</td>
+	<td>css=i</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertNotText</td>
-	<td>css=#secondLevelButton_administration_dictionaries &gt; a &gt; span</td>
-	<td>Słowniki</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_administration</td>
+	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=#secondLevelButton_administration_groups &gt; a &gt; span</td>
+	<td>link=Grupy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>QCD MES - Grupy</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>QCD MES - Grupy</td>
-	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
@@ -108,12 +113,22 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ROLE_DICTIONARY_VIEW']</td>
+	<td>//span[text()='ROLE_ADMIN']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ROLE_DICTIONARY_VIEW']</td>
+	<td>css=input[title='Zaznacz wszystkie rekordy na tej stronie']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
 	<td></td>
 </tr>
 <tr>
@@ -137,54 +152,9 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>verifyText</td>
 	<td>css=div.ui-pnotify-text</td>
 	<td>Obiekt został zapisany do bazy danych.</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Wyloguj</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>QCD MES :: login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>id=messageHeader</td>
-	<td>Zostałeś wylogowany z systemu</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=usernameInput</td>
-	<td>superadmin</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=passwordInput</td>
-	<td>superadmin</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=#loginButton &gt; span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>QCD MES</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.administrationMenuItem</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=#secondLevelButton_administration_dictionaries &gt; a &gt; span</td>
-	<td>Słowniki</td>
 </tr>
 </tbody></table>
 </body>
