@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>100</td>
+	<td>10</td>
 	<td></td>
 </tr>
 <tr>
@@ -45,6 +45,76 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_state</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_deadline</td>
+	<td>Termin ostateczny</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_technologyNumber</td>
+	<td>Nr tech.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productNumber</td>
+	<td>Numer produktu</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_plannedQuantity</td>
+	<td>Planowana ilość</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_unit</td>
+	<td>Jedn.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_companyName</td>
+	<td>Kontrahent</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_masterOrderDefinitionNumber</td>
+	<td>Def. zlec. nadrz.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_masterOrderNumber</td>
+	<td>Zlecenie nadrz.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workPlanDelivered</td>
+	<td>Wyd. kartę pr.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_division</td>
+	<td>Dział</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_isSubcontracted</td>
+	<td>Oper. podwykonawcy</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -115,6 +185,11 @@
 	<td>type</td>
 	<td>window.mainTab.order.gridLayout.dateTo_timeInput</td>
 	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -280,6 +355,196 @@
 	<td>waitForElementPresent</td>
 	<td>//a[.='Zakończ']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_orders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Planowanie zleceń</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Planowanie zleceń</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_state</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_dateFrom</td>
+	<td>Plan. rozpoczęcie</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_dateTo</td>
+	<td>Plan. zakończenie</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_technologyNumber</td>
+	<td>Numer tech.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productNumber</td>
+	<td>Numer prod.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_plannedQuantity</td>
+	<td>Plan. ilość</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_unit</td>
+	<td>Jedn.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_productionLine</td>
+	<td>Linia</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_masterOrderNumber</td>
+	<td>Zlecenie nadrz.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workPlanDelivered</td>
+	<td>Wyd. kartę pr.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_division</td>
+	<td>Dział</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_isSubcontracted</td>
+	<td>Podwyk</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[1]</td>
+	<td>Rozliczenie Produkcji ZL-1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[2]</td>
+	<td>Rozpoczęte</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[3]</td>
+	<td>2013-01-02 07:00:00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[4]</td>
+	<td>2020-05-18 00:00:00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[5]</td>
+	<td>RP_TECH-1 - RP_ZL-1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[6]</td>
+	<td>RP_PR-A</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[7]</td>
+	<td>52</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[8]</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[9]</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[11]</td>
+	<td>nie</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[12]</td>
+	<td>RP Division</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[13]</td>
+	<td>nie</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;RP_ZL-1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wydanokartę pracy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wydano karty pracy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@title='RP_ZL-1']/following-sibling::td[11]</td>
+	<td>tak</td>
 </tr>
 </tbody></table>
 </body>
