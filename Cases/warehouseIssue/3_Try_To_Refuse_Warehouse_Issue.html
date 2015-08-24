@@ -48,7 +48,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//span[.='124']</td>
+	<td>//span[.='123']</td>
 	<td></td>
 </tr>
 <tr>
@@ -74,12 +74,12 @@
 <tr>
 	<td>verifyValue</td>
 	<td>id=window.mainTab.warehouseIssue.gridsLayout.number_input</td>
-	<td>124(1)</td>
+	<td>123(1)</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.warehouseIssue.gridsLayout.number_input</td>
-	<td>138</td>
+	<td>116</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -137,7 +137,17 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyText</td>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu zakończyła się pomyślnie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
 	<td>css=div.ui-pnotify-text</td>
 	<td>Zmiana statusu zakończyła się pomyślnie.</td>
 </tr>
@@ -149,7 +159,7 @@
 <tr>
 	<td>assertText</td>
 	<td>id=window_windowHeader</td>
-	<td>Wydanie wewnętrzne : 138 - Odrzucone</td>
+	<td>Wydanie wewnętrzne : 116 - Odrzucone</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -163,7 +173,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//span[.='124']</td>
+	<td>//span[.='123']</td>
 	<td></td>
 </tr>
 <tr>
@@ -189,12 +199,12 @@
 <tr>
 	<td>verifyValue</td>
 	<td>id=window.mainTab.warehouseIssue.gridsLayout.number_input</td>
-	<td>124(1)</td>
+	<td>123(1)</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.warehouseIssue.gridsLayout.number_input</td>
-	<td>139</td>
+	<td>117</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -238,7 +248,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//td[@title='139']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td>//td[@title='117']/preceding-sibling::td/input[@type='checkbox']</td>
 	<td></td>
 </tr>
 <tr>
@@ -252,13 +262,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//td[@title='139']/following-sibling::td[3]</td>
+	<td>//td[@title='117']/following-sibling::td[3]</td>
 	<td>Odrzucone</td>
 </tr>
 </tbody></table>
