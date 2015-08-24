@@ -196,8 +196,91 @@
 	<td>window.positionsListTab.positions.innerForm_1.positionsLayout.givenUnit_input</td>
 	<td>szt</td>
 </tr>
-<!--TODO: weryfikacja stanów-->
-
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_materialFlow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Stany magazynów</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Stany magazynów</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_productNumber</td>
+	<td>[PZ_PR-B,PZ_PR-BS,PZ_PR-4S,PZ_PR-DS-1,PZ_PR-DS-2]</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_productNumber</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ2_SUR']/following-sibling::td[text()='PZ_PR-BS']/following-sibling::td[2]</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ2_SUR']/following-sibling::td[text()='PZ_PR-DS-1']/following-sibling::td[2]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ2_SUR']/following-sibling::td[text()='PZ_PR-DS-2']/following-sibling::td[2]</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ_SUR']/following-sibling::td[text()='PZ_PR-B']/following-sibling::td[2]</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ_SUR']/following-sibling::td[text()='PZ_PR-BS']/following-sibling::td[2]</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ_SUR']/following-sibling::td[text()='PZ_PR-4S']/following-sibling::td[2]</td>
+	<td>0,2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ_SUR']/following-sibling::td[text()='PZ_PR-DS-1']/following-sibling::td[2]</td>
+	<td>130</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[text()='PZ_SUR']/following-sibling::td[text()='PZ_PR-DS-2']/following-sibling::td[2]</td>
+	<td>0,005</td>
+</tr>
 </tbody></table>
 </body>
 </html>
