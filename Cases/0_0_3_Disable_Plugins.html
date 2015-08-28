@@ -146,6 +146,66 @@
 	<td>css=div.pluginInfoPage &gt; div</td>
 	<td>Pluginy zostały poprawnie wyłączone</td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_identifier</td>
+	<td>[nblsport]</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_identifier</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@title='Zaznacz wszystkie rekordy na tej stronie']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Włącz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Czy na pewno chcesz włączyć zaznaczone pluginy?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.dependencyIdentifier</td>
+	<td>urcCore</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='window.mainTab.gridLayout.pluginInfo']/div/div[3]/div[2]/a/span/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.pluginInfoPage &gt; div</td>
+	<td>Pluginy zostały poprawnie wyłączone</td>
+</tr>
 </tbody></table>
 </body>
 </html>
