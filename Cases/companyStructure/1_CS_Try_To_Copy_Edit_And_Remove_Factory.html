@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>4_CS_Try_To_Remove_Factory</title>
+<title>1_CS_Try_To_Copy_Edit_And_Remove_Factory</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">4_CS_Try_To_Remove_Factory</td></tr>
+<tr><td rowspan="1" colspan="3">1_CS_Try_To_Copy_Edit_And_Remove_Factory</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -58,12 +58,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//span[.='Z1']</td>
+	<td>//span[.='F1']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//td[@title='Z1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td>//td[@title='F1']/preceding-sibling::td/input[@type='checkbox']</td>
 	<td></td>
 </tr>
 <tr>
@@ -83,17 +83,112 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//span[.='Z1(1)']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//td[@title='Z1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td>//span[.='F1(1)']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//span[.='Z1(1)']</td>
+	<td>//span[.='F1(1)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>F1(2)</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Factory1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>F1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Factory2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.form.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.form.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.form.gridLayout.number_error_messages']/div/p</td>
+	<td>W systemie wprowadzono już inny rekord o tej samej wartości tego parametru.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>F2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.noRecordsBox</td>
+	<td>Brak znalezionych rekordów</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='F2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='F1(1)']</td>
 	<td></td>
 </tr>
 <tr>
@@ -118,42 +213,7 @@
 </tr>
 <tr>
 	<td>assertElementNotPresent</td>
-	<td>//span[.='Z1(1)']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//td[@title='Z2']/preceding-sibling::td/input[@type='checkbox']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='Usuń']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td>a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>assertElementNotPresent</td>
-	<td>//span[.='Z2']</td>
+	<td>//span[.='F1(1)']</td>
 	<td></td>
 </tr>
 </tbody></table>
