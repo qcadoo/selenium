@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_8_1_Add_Employee</title>
+<title>1_8_1_Add_Division</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_8_1_Add_Employee</td></tr>
+<tr><td rowspan="1" colspan="3">1_8_1_Add_Division</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>10</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -33,12 +33,12 @@
 </tr>
 <tr>
 	<td>mouseOver</td>
-	<td>id=firstLevelButton_basic</td>
+	<td>id=firstLevelButton_companyStructure</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Pracownicy</td>
+	<td>link=Działy</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,113 +58,13 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.number_input</td>
-	<td>1</td>
+	<td>id=window.mainTab.division.gridLayout.number_input</td>
+	<td>D1</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.name_input</td>
-	<td>Adam</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.surname_input</td>
-	<td>Małysz</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.email_input</td>
-	<td>qcadoo@qcadoo.com</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.phone_input</td>
-	<td>666444222</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.mainTab.staff.gridLayout.workFor_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='${firma}']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='${firma}']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.staff.gridLayout.post_input</td>
-	<td>Siekacz</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.shift_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='Test zmiany']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='Test zmiany']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.mainTab.staff.gridLayout.borderLayoutInCompany.gridLayout.division_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='Dz Test']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='Dz Test']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>check</td>
-	<td>id=window.costOfHourlyWork.gridsLayout.determinedIndividual_input</td>
-	<td></td>
+	<td>id=window.mainTab.division.gridLayout.name_input</td>
+	<td>Division 1</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -177,28 +77,28 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=window.costOfHourlyWork.gridsLayout.gridLayout.individualLaborCost_input</td>
-	<td>15</td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>id=window.costOfHourlyWork.gridsLayout.wageGroup_openLookupButton</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.productionLines']/div/div/div/div/div[5]/a/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>index=1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[.='GrPł1']</td>
+	<td>//span[.='PL1']</td>
 	<td></td>
 </tr>
 <tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Linie produkcyjne</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//span[.='GrPł1']</td>
+	<td>//span[.='PL1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -210,6 +110,61 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PL1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.workstations']/div/div/div/div/div[5]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='FIS_XXL']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Stacje robocze</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='FIS_XXL']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.1.1</td>
+	<td>PL1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_workstations_grid.1.1</td>
+	<td>FIS_XXL</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -223,32 +178,7 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//span[.='Adam']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//span[.='Małysz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//span[.='Siekacz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//span[.='Dział testowy']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//span[.='Dz Test']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//span[.='Test zmiany']</td>
+	<td>//span[.='D1']</td>
 	<td></td>
 </tr>
 </tbody></table>
