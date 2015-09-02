@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>6_CS_Try_To_Copy_Edit_And_Remove_Production_Line</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">6_CS_Try_To_Copy_Edit_And_Remove_Production_Line</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Linie produkcyjne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;Linia główna&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt nie może być usunięty, ponieważ jest użyty w innym obiekcie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PL1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=td[title=&quot;PL1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='PL1(1)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL1(2)</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.description_input</td>
+	<td>Production Line Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.productionLine.mainTabGridLayout.number_error_messages']/div/p</td>
+	<td>W systemie wprowadzono już inny rekord o tej samej wartości tego parametru.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Production Line 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PL1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=td[title=&quot;P1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;PL2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>PL6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td>Production Line 6</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.1.1</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.1.2</td>
+	<td>Linia główna</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.1.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.2.1</td>
+	<td>PL1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.2.2</td>
+	<td>Production Line 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.2.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.3.1</td>
+	<td>PL2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.3.2</td>
+	<td>Production Line 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.3.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.4.1</td>
+	<td>PL3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.4.2</td>
+	<td>Production Line 3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.4.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.5.1</td>
+	<td>PL4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.5.2</td>
+	<td>Production Line 4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.6.1</td>
+	<td>PL5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.6.2</td>
+	<td>Production Line 5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.7.1</td>
+	<td>PL6</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_productionLines_grid.7.2</td>
+	<td>Production Line 6</td>
+</tr>
+</tbody></table>
+</body>
+</html>

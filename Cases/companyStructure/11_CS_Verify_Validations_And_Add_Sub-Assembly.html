@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
-<title>1_5_6_Add_Sub-Assembly</title>
+<title>11_CS_Verify_Validations_And_Add_Sub-Assembly</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_5_6_Add_Sub-Assembly</td></tr>
+<tr><td rowspan="1" colspan="3">11_CS_Verify_Validations_And_Add_Sub-Assembly</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -179,17 +179,17 @@
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.subassembly.gridLayout.serialNumber_input</td>
-	<td>SerialNumber_S-A1</td>
+	<td>SerialNumber</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.subassembly.gridLayout.series_input</td>
-	<td>Series1</td>
+	<td>Serie</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.subassembly.gridLayout.producer_input</td>
-	<td>Producer1</td>
+	<td>Producer</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -208,7 +208,7 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[.='SUB-WT']</td>
+	<td>//span[.='WST2-Sa']</td>
 	<td></td>
 </tr>
 <tr>
@@ -217,8 +217,13 @@
 	<td>Typy stacji roboczej</td>
 </tr>
 <tr>
+	<td>verifyNotVisible</td>
+	<td>//span[.='WST1']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//span[.='SUB-WT']</td>
+	<td>//span[.='WST2-Sa']</td>
 	<td></td>
 </tr>
 <tr>
@@ -245,6 +250,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Sub-assembly 1</td>
 </tr>
 <tr>
 	<td>assertAttribute</td>
