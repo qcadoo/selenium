@@ -4,13 +4,18 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_8_2_Assert_Division_Not_Saved</title>
+<title>3_CS_Verify_Validations_And_Add_Division</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_8_2_Assert_Division_Not_Saved</td></tr>
+<tr><td rowspan="1" colspan="3">3_CS_Verify_Validations_And_Add_Division</td></tr>
 </thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
 <tr>
 	<td>open</td>
 	<td>/main.html</td>
@@ -37,6 +42,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>id=jqgh_number</td>
 	<td>Numer</td>
@@ -50,6 +60,26 @@
 	<td>assertText</td>
 	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
 	<td>Działy:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='checkbox'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Dezaktywuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -305,6 +335,51 @@
 	<td>assertAttribute</td>
 	<td>//div[@id='window.productionLines.productionLinesLayout.workstations_gridHeader']/div/div[5]@class</td>
 	<td>headerActionButton</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.division.gridLayout.number_input</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.division.gridLayout.name_input</td>
+	<td>Division 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.division.gridLayout.comment_input</td>
+	<td>Comment</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='D1']</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
