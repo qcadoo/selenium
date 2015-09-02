@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>12_CS_Try_To_Copy_Edit_And_Remove_Sub-Assembly</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">12_CS_Try_To_Copy_Edit_And_Remove_Sub-Assembly</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Podzespoły</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;S-A1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=td[title=&quot;S-A1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A1(2)</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_input</td>
+	<td>Sub-assembly 1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstationType_input</td>
+	<td>WST2-Sa - Workstation Type 2 - Subassembly</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.serialNumber_input</td>
+	<td>SerialNumber</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.series_input</td>
+	<td>Serie</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.producer_input</td>
+	<td>Producer</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.productionDate_input</td>
+	<td>${date}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.subassembly.gridLayout.number_error_messages']/div/p</td>
+	<td>W systemie wprowadzono już inny rekord o tej samej wartości tego parametru.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_input</td>
+	<td>Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;S-A1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=td[title=&quot;S-A1(1)&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_input</td>
+	<td>Sub-assembly 3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.number_input</td>
+	<td>S-A4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.name_input</td>
+	<td>Sub-assembly 4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.1</td>
+	<td>S-A1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.2</td>
+	<td>Sub-assembly 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.4</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.5</td>
+	<td>${date}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.1.6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.1</td>
+	<td>S-A2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.2</td>
+	<td>Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.4</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.5</td>
+	<td>${date}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.2.6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.1</td>
+	<td>S-A3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.2</td>
+	<td>Sub-assembly 3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.4</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.5</td>
+	<td>${date}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.3.6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.1</td>
+	<td>S-A4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.2</td>
+	<td>Sub-assembly 4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.4</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.5</td>
+	<td>${date}</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_subassemblies_grid.4.6</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

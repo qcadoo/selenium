@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_5_3_Assert_Workstation_Not_Saved</title>
+<title>9_CS_Verify_Validations_And_Add_Workstation</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_5_3_Assert_Workstation_Not_Saved</td></tr>
+<tr><td rowspan="1" colspan="3">9_CS_Verify_Validations_And_Add_Workstation</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -34,6 +34,11 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Stacje robocze</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Stacje robocze</td>
 	<td></td>
 </tr>
 <tr>
@@ -90,6 +95,36 @@
 	<td>verifyText</td>
 	<td>id=window.mainTab.workstation.gridLayout.workstationType_labelDiv</td>
 	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.serialNumber_labelDiv</td>
+	<td>Nr fabryczny</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.udtNumber_labelDiv</td>
+	<td>Numer UDT</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.series_labelDiv</td>
+	<td>Seria</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.producer_labelDiv</td>
+	<td>Producent</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.productionDate_labelDiv</td>
+	<td>Data produkcji</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstation.gridLayout.wnkNumber_labelDiv</td>
+	<td>Nr inwentarzowy</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -217,9 +252,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.ui-pnotify-text</td>
-	<td></td>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.number_input</td>
+	<td>WS1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
+	<td>Workstation 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.description_input</td>
+	<td>Workstation Description</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -233,12 +278,17 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[.='FIS']</td>
+	<td>//span[.='WST1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>//span[.='WST2-Sa']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='FIS']</td>
+	<td>//span[.='WST1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -248,12 +298,52 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_input</td>
+	<td>id=window.mainTab.workstation.gridLayout.serialNumber_input</td>
+	<td>javascript{&quot;1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.5 }).join(&quot;&quot;)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.udtNumber_input</td>
+	<td>javascript{&quot;1234567890&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.3 }).join(&quot;&quot;)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.series_input</td>
+	<td>javascript{&quot;1234567890&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.3 }).join(&quot;&quot;)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.producer_input</td>
+	<td>javascript{&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.5 }).join(&quot;&quot;)}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.wnkNumber_input</td>
+	<td>javascript{&quot;1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.5 }).join(&quot;&quot;)}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.workstation.gridLayout.wnkNumber_input</td>
+	<td>wnkNumber</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstation.gridLayout.productionDate_input</td>
+	<td>javascript{new Date().toISOString().substr(0, 10)}</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
+	<td>storeValue</td>
+	<td>id=window.mainTab.workstation.gridLayout.productionDate_input</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -262,23 +352,33 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=div.ui-pnotify-text</td>
-	<td>Wprowadź prawidłowe dane i spróbuj ponownie.</td>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.1</td>
+	<td>WS1</td>
 </tr>
 <tr>
-	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.number_error_icon</td>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.2</td>
+	<td>Workstation 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.3</td>
+	<td>Workstation Type 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyNotVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.workstationType_error_icon</td>
-	<td></td>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.5</td>
+	<td>${wnkNumber}</td>
 </tr>
 <tr>
-	<td>verifyVisible</td>
-	<td>id=window.mainTab.workstation.gridLayout.name_error_icon</td>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_workstations_grid.1.6</td>
 	<td></td>
 </tr>
 </tbody></table>

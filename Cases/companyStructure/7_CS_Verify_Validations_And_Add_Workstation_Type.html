@@ -4,13 +4,18 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_5_4_Assert_Workstation_Type_Not_Saved</title>
+<title>7_CS_Verify_Validations_And_Add_Workstation_Type</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_5_4_Assert_Workstation_Type_Not_Saved</td></tr>
+<tr><td rowspan="1" colspan="3">7_CS_Verify_Validations_And_Add_Workstation_Type</td></tr>
 </thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
 <tr>
 	<td>open</td>
 	<td>/main.html</td>
@@ -35,6 +40,11 @@
 	<td>clickAndWait</td>
 	<td>link=Typy stacji roboczych</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -80,6 +90,11 @@
 	<td>verifyText</td>
 	<td>id=window.mainTab.workstationType.gridLayout.description_labelDiv</td>
 	<td>Opis</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_labelDiv</td>
+	<td>Podzespół</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -227,13 +242,38 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td>type</td>
+	<td>id=window.mainTab.workstationType.gridLayout.number_input</td>
+	<td>WST1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstationType.gridLayout.name_input</td>
+	<td>Workstation Type 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.workstationType.gridLayout.description_input</td>
+	<td>Workstation Type Description</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.ui-pnotify-text</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=td[title=&quot;WST1&quot;]</td>
 	<td></td>
 </tr>
 </tbody></table>
