@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
-<title>1_7_1_Add_Production_Line</title>
+<title>5_CS_Add_Production_Line</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">1_7_1_Add_Production_Line</td></tr>
+<tr><td rowspan="1" colspan="3">5_CS_Add_Production_Line</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -47,6 +47,26 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Linie produkcyjne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_place</td>
+	<td>Miejsce</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//label[.='Dodajnowy']</td>
 	<td></td>
@@ -55,6 +75,61 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_input</td>
+	<td>000002</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_labelDiv</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.place_labelDiv</td>
+	<td>Miejsce</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.description_labelDiv</td>
+	<td>Opis</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.documentation_labelDiv</td>
+	<td>Dokumentacja</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.productionLine.mainTabGridLayout.name_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.productionLine.mainTabGridLayout.name_error_messages']/div/p</td>
+	<td>To pole jest wymagane. Wprowadź wartość.</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -69,47 +144,7 @@
 <tr>
 	<td>type</td>
 	<td>window.mainTab.productionLine.mainTabGridLayout.description_input</td>
-	<td>Production Line 1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='window.workstationsTab.workstationsGridLayout.divisions_gridHeader']/div/div[5]/a/span/div[contains(.,'Dodaj istniejący')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='D1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='D1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>Production Line Description</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -123,7 +158,7 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//span[.='PL1']</td>
+	<td>css=td[title=&quot;PL1&quot;]</td>
 	<td></td>
 </tr>
 </tbody></table>
