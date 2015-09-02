@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>60</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,12 +68,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[.='Company_Number']</td>
+	<td>//span[.='Qcadoo Limited Sp. z o.o.']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='Company_Number']</td>
+	<td>//span[.='Qcadoo Limited Sp. z o.o.']</td>
 	<td></td>
 </tr>
 <tr>
@@ -105,6 +105,11 @@
 	<td>type</td>
 	<td>window.mainTab.order.gridLayout.dateTo_timeInput</td>
 	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -207,9 +212,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>id=window.productionCounting.gridLayout.typeOfProductionRecording_input</td>
 	<td>label=dla każdej operacji</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
