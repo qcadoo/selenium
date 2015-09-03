@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>14_CS_Assert_Can_Not_Change_Type_Of_Workstation_Type_With_Workstations_Assigned</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">14_CS_Assert_Can_Not_Change_Type_Of_Workstation_Type_With_Workstations_Assigned</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Typy stacji roboczych</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WST2-Sa&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyChecked</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_input@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WST1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>id=window.mainTab.workstationType.gridLayout.subassembly_input@disabled</td>
+	<td>disabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
