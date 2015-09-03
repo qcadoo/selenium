@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>16_CS_Create_And_Modify_Relations_Between_Production_Lines_Divisions_And_Workstations</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">16_CS_Create_And_Modify_Relations_Between_Production_Lines_Divisions_And_Workstations</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Działy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;D1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.productionLines']/div/div/div/div/div[5]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Linie produkcyjne</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='PL1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='PL2']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.1.1</td>
+	<td>PL1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.1.2</td>
+	<td>Production Line 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.2.1</td>
+	<td>PL2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.2.2</td>
+	<td>Production Line 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PL1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.productionLines.productionLinesLayout.workstations']/div/div/div/div/div[5]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Stacje robocze</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS2']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_workstations_grid.1.1</td>
+	<td>WS1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_workstations_grid.1.2</td>
+	<td>Workstation 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_workstations_grid.2.1</td>
+	<td>WS2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_workstations_grid.2.2</td>
+	<td>Workstation 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Stacje robocze</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productionLines.productionLinesLayout.division_input</td>
+	<td>D1 - Division 1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input</td>
+	<td>PL1 - Production Line 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Linie produkcyjne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;PL1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.1</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.2</td>
+	<td>Division 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;D1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.1</td>
+	<td>WS2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.2</td>
+	<td>Workstation 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.2.1</td>
+	<td>WS1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.2.2</td>
+	<td>Workstation 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.divisions_gridHeader']/div/div[6]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#gview_window_workstationsTab_workstationsGridLayout_divisions_grid &gt; div.ui-jqgrid-bdiv &gt; div &gt; div.noRecordsBox</td>
+	<td>Brak znalezionych rekordów</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#gview_window_workstationsTab_workstationsGridLayout_workstations_grid &gt; div.ui-jqgrid-bdiv &gt; div &gt; div.noRecordsBox</td>
+	<td>Brak znalezionych rekordów</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Działy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;D1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_productionLines_productionLinesLayout_productionLines_grid.1.1</td>
+	<td>PL2</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>//table[@id='window_productionLines_productionLinesLayout_productionLines_grid']/tbody/tr/td[@title='PL1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Stacje robocze</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productionLines.productionLinesLayout.division_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WS3&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productionLines.productionLinesLayout.division_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;D1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;PL2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input</td>
+	<td>PL2 - Production Line 2</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=window.productionLines.productionLinesLayout.division_input</td>
+	<td>\40</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.productionLines.productionLinesLayout.division_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=window.productionLines.productionLinesLayout.division_input</td>
+	<td>\8</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.productionLines.productionLinesLayout.productionLinesLookup_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Linie produkcyjne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;PL1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.divisions_gridHeader']/div/div[5]/a/span/div[contains(.,'Dodaj istniejący')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='D1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='D1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.1</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.2</td>
+	<td>Division 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;Division 1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.workstations_gridHeader']/div/div[5]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS2']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.1</td>
+	<td>WS2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.2</td>
+	<td>Workstation 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.2.1</td>
+	<td>WS1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.2.2</td>
+	<td>Workstation 1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;PL2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.divisions_gridHeader']/div/div[5]/a/span/div[contains(.,'Dodaj istniejący')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='D2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='D2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.1</td>
+	<td>D2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.1.2</td>
+	<td>Division 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.2.1</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_divisions_grid.2.2</td>
+	<td>Division 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;Division 1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.workstations_gridHeader']/div/div[5]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>WS3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.2</td>
+	<td>Workstation 3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>WS4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.2</td>
+	<td>Workstation 4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS3']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.1</td>
+	<td>WS3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.2</td>
+	<td>Workstation 3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;Division 2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.workstationsTab.workstationsGridLayout.workstations_gridHeader']/div/div[5]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>WS4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.2</td>
+	<td>Workstation 4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='WS4']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.1</td>
+	<td>WS4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_workstationsTab_workstationsGridLayout_workstations_grid.1.2</td>
+	<td>Workstation 4</td>
+</tr>
+</tbody></table>
+</body>
+</html>
