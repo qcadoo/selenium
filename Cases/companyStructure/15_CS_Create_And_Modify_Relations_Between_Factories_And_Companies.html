@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
+<title>15_CS_Create_And_Modify_Relations_Between_Factories_And_Companies</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">15_CS_Create_And_Modify_Relations_Between_Factories_And_Companies</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Zakłady</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Zakłady</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.form.gridLayout.divisions_gridHeader']/div/div[5]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td[title=&quot;D1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td[title=&quot;D2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td[title=&quot;D3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td[title=&quot;D4&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Działy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='D1']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='D2']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='D3']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(3)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.1.1</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.1.2</td>
+	<td>Division 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.2.1</td>
+	<td>D2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.2.2</td>
+	<td>Division 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.3.1</td>
+	<td>D3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.3.2</td>
+	<td>Division 3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Działy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Działy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;D3&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.division.gridLayout.factory_input</td>
+	<td>F1 - Factory1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.division.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Zakłady</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=table.ui-jqgrid-htable.0.1</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=table.ui-jqgrid-htable.0.2</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=table.ui-jqgrid-htable.0.3</td>
+	<td>Miasto</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='F2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.division.gridLayout.factory_input</td>
+	<td>F2 - Factory2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Zakłady</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>//table[@id='window_mainTab_form_gridLayout_divisions_grid']/tbody/tr/td[@title='D3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(1)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.1.1</td>
+	<td>D3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.1.2</td>
+	<td>Division 3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.form.gridLayout.divisions_gridHeader']/div/div[5]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=td[title=&quot;D1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=td[title=&quot;D2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=td[title=&quot;D3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td[title=&quot;D4&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='D4']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.2.1</td>
+	<td>D4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_form_gridLayout_divisions_grid.2.2</td>
+	<td>Division 4</td>
+</tr>
+</tbody></table>
+</body>
+</html>
