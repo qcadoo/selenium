@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>17_CS_Create_And_Modify_Relations_Between_Workstations_And_Sub-Assemblies_And_Generate_Company_Structure</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">17_CS_Create_And_Modify_Relations_Between_Workstations_And_Sub-Assemblies_And_Generate_Company_Structure</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Stacje robocze</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.subassembliesTab.subassembliesGridLayout.subassemblies_gridHeader']/div/span</td>
+	<td>Podzespoły</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_subassembliesTab_subassembliesGridLayout_subassemblies_grid_number &gt; #jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_subassembliesTab_subassembliesGridLayout_subassemblies_grid_name &gt; #jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workstationType</td>
+	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_type</td>
+	<td>Rodzaj podzespołu</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.subassembliesTab.subassembliesGridLayout.subassemblies_gridHeader']/div/div/following::*/div[text() = 'Nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.subassembliesLookup_labelDiv</td>
+	<td>Podzespół</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.type_labelDiv</td>
+	<td>Rodzaj podzespołu</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.type_input@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.subassembliesLookup_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Podzespoły</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workstationType</td>
+	<td>Typ stacji roboczej</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;S-A1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.type_input@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.1</td>
+	<td>S-A1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.2</td>
+	<td>Sub-assembly 1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.3</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.subassembliesTab.subassembliesGridLayout.subassemblies_gridHeader']/div/div/following::*/div[text() = 'Nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.subassembliesLookup_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>css=td[title=&quot;S-A1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;S-A2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>id=window.mainTab.substituteComponent.gridLayout.type_input@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.2.1</td>
+	<td>S-A2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.2.2</td>
+	<td>Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.2.3</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.2.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Podzespoły</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_input</td>
+	<td>WS1 - Workstation 1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_input</td>
+	<td>\40</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_input</td>
+	<td>\8</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Stacje robocze</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.1</td>
+	<td>S-A2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.2</td>
+	<td>Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.3</td>
+	<td>WST2-Sa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_subassembliesTab_subassembliesGridLayout_subassemblies_grid.1.4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_companyStructure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Podzespoły</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A3&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;WS2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;S-A4&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.subassembly.gridLayout.workstation_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;WS2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Generuj strukturę']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@title='Rozwiń drzewo']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_1 &gt; a</td>
+	<td>1 - Qcadoo Limited Sp. z o.o.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_2 &gt; a</td>
+	<td>F1 - Factory1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_3 &gt; a</td>
+	<td>D1 - Division 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_4 &gt; a</td>
+	<td>PL1 - Production Line 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_5 &gt; a</td>
+	<td>WS1 - Workstation 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_6 &gt; a</td>
+	<td>S-A1 - Sub-assembly 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_7 &gt; a</td>
+	<td>S-A2 - Sub-assembly 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_8 &gt; a</td>
+	<td>WS2 - Workstation 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_9 &gt; a</td>
+	<td>S-A3 - Sub-assembly 3</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_10 &gt; a span@style</td>
+	<td>background: rgb(191, 245, 137) none repeat scroll 0% 0%; border: 1px solid rgb(139, 215, 62);</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_10 &gt; a</td>
+	<td>S-A4 - Sub-assembly 4</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_11 &gt; a</td>
+	<td>PL2 - Production Line 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_12 &gt; a</td>
+	<td>WS3 - Workstation 3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_13 &gt; a</td>
+	<td>D2 - Division 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_14 &gt; a</td>
+	<td>PL2 - Production Line 2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_15 &gt; a</td>
+	<td>WS4 - Workstation 4</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_16 &gt; a</td>
+	<td>F2 - Factory2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_17 &gt; a</td>
+	<td>D3 - Division 3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li#window\.factoryStructureTab\.factoryStructureLayout\.factoryStructure_node_18 &gt; a</td>
+	<td>D4 - Division 4</td>
+</tr>
+</tbody></table>
+</body>
+</html>
