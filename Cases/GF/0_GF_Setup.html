@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>0_GF_Setup</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">0_GF_Setup</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Parametry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Zlecenia']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul[3]/li[2]/a/span/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.masterOrderDefinitionDetails.gridLayout.name_input</td>
+	<td>nazwaFP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.masterOrderDefinitionDetails.gridLayout.number_input</td>
+	<td>FP</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pluginy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Pluginy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=gs_identifier</td>
+	<td>good</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_identifier</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gs_state</td>
+	<td>label=wyłączony</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@title='Zaznacz wszystkie rekordy na tej stronie']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Włącz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Czy na pewno chcesz włączyć zaznaczone pluginy?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='window.mainTab.gridLayout.pluginInfo']/div/div[3]/div[2]/a/span/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='window.mainTab.gridLayout.pluginInfo']/div/div[3]/div[2]/a/span/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.pluginInfoPage &gt; div</td>
+	<td>Pluginy zostały poprawnie włączone</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
