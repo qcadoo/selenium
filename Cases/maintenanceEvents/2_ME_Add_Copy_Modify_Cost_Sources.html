@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
+<title>2_ME_Add_Copy_Modify_Cost_Sources</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">2_ME_Add_Copy_Modify_Cost_Sources</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_maintenance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Źródła kosztów</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Źródła kosztów</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Źródła kosztów</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_factory</td>
+	<td>Zakład</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_defaultCost</td>
+	<td>Domyślne</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.gridLayout.name_labelDiv</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.gridLayout.factory_labelDiv</td>
+	<td>Zakład</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_labelDiv</td>
+	<td>Domyślne</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.factory_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.form.gridLayout.number_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS1_Def</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source1_Default</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>CS1_Def</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div:contains('Domyślne - Domyślne koszty już istnieją') &gt; div.ui-pnotify-text</td>
+	<td>Domyślne - Domyślne koszty już istnieją</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source2</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//div[@id='window.mainTab.form.gridLayout.defaultCost_error_messages']/div/p</td>
+	<td>Domyślne koszty już istnieją</td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS2(1)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS3_Def</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source3_Default</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Zakłady</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_city</td>
+	<td>Miasto</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>CS3_Def</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS5_Def</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source5_Default</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.gridLayout.defaultCost_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz i nowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.number_input</td>
+	<td>CS6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.form.gridLayout.name_input</td>
+	<td>Cost_Source6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.form.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.1</td>
+	<td>CS1_Def</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.2</td>
+	<td>Cost_Source1_Default</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.1.4</td>
+	<td>tak</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.2.1</td>
+	<td>CS2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.2.2</td>
+	<td>Cost_Source2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.2.3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.2.4</td>
+	<td>nie</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.3.1</td>
+	<td>CS3_Def</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.3.2</td>
+	<td>Cost_Source3_Default</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.3.3</td>
+	<td>F1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.3.4</td>
+	<td>tak</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.4.1</td>
+	<td>CS4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.4.2</td>
+	<td>Cost_Source4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.4.3</td>
+	<td>F1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.4.4</td>
+	<td>nie</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.5.1</td>
+	<td>CS5_Def</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.5.2</td>
+	<td>Cost_Source5_Default</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.5.3</td>
+	<td>F2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.5.4</td>
+	<td>tak</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.6.1</td>
+	<td>CS6</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.6.2</td>
+	<td>Cost_Source6</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.6.3</td>
+	<td>F2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_mainTab_grid_grid.6.4</td>
+	<td>nie</td>
+</tr>
+</tbody></table>
+</body>
+</html>
