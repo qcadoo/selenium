@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>50</td>
+	<td>10</td>
 	<td></td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
@@ -102,6 +102,41 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateMaterialCostsMode_input</td>
+	<td>label=nominalny</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateOperationCostsMode_input</td>
+	<td>label=akord</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutOverheads.overheads.productionCostMargin_input</td>
 	<td>15</td>
@@ -115,21 +150,6 @@
 	<td>type</td>
 	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutOverheads.overheads.additionalOverhead_input</td>
 	<td>350,55</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateMaterialCostsMode_input</td>
-	<td>label=nominalny</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.inputDataTab.formInputData.inputData.borderLayoutParameters.parameters.calculateOperationCostsMode_input</td>
-	<td>label=akord</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
