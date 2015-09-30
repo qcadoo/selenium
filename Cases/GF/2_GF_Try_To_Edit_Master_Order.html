@@ -169,12 +169,12 @@
 <tr>
 	<td>verifyValue</td>
 	<td>id=window.mainTab.order.gridLayout.plannedQuantity_input</td>
-	<td>10&nbsp;000,00</td>
+	<td>regexp:10[,.\s]000,00</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.plannedQuantity_input</td>
-	<td>3 000,00</td>
+	<td>3000</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -237,14 +237,19 @@
 	<td>false</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//span[.='Powrót']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
 	<td>id=window.productsTab.gridLayout.productQuantity.productQuantityGridLayout.cumulatedOrderQuantity_input</td>
-	<td>3&nbsp;000</td>
+	<td>3 000</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
