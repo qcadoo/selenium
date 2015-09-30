@@ -18,3 +18,5 @@ result.log
 result_firefox.html
 
 result.log.lck
+
+*.jar

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>1_GF_Try_To_Add_Master_Order</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1_GF_Try_To_Add_Master_Order</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_orders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Zlecenia nadrzędne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Zlecenia nadrzędne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Dodajnowy']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotValue</td>
+	<td>id=window.mainTab.masterOrderDetails.gridLayout.number_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.masterOrderDetails.gridLayout.masterOrderDefinition_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.masterOrderDetails.gridLayout.masterOrderDefinition_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='FP']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='FP']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.masterOrderDetails.gridLayout.startDate_input</td>
+	<td>2015-09-08</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.masterOrderDetails.gridLayout.number_input</td>
+	<td>ZK-1/2015/FP</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneEC_input</td>
+	<td>2015-09-08</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneECWithDurability_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.batch_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.pw2prod_input</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.productsTab.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='KK2_PR-A']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='KK2_PR-A']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productsTab.gridLayout.technology_input</td>
+	<td>KK2_TECH-1 - Kalkulacja Kosztów 2 Technologia 1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productsTab.gridLayout.defaultTechnology_input</td>
+	<td>KK2_TECH-1 - Kalkulacja Kosztów 2 Technologia 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneEC_input</td>
+	<td>2015-09-08</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneECWithDurability_input</td>
+	<td>2015-09-08</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.batch_input</td>
+	<td>150908-1FP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.productsTab.gridLayout.productQuantity.productQuantityGridLayout.masterOrderQuantity_input</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productsTab.gridLayout.productQuantity.productQuantityGridLayout.cumulatedOrderQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.productsTab.gridLayout.productQuantity.productQuantityGridLayout.producedOrderQuantity_input</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

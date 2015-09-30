@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>50</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -48,13 +48,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//input[@type='checkbox'])[2]</td>
+	<td>css=input[title='Zaznacz wszystkie rekordy na tej stronie']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//td/input@checked</td>
-	<td>checked</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -70,6 +70,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt nie może być usunięty, ponieważ jest użyty w innym obiekcie.</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -147,9 +152,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowy wyjątek</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -187,9 +192,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowy wyjątek</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -297,9 +302,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowy wyjątek</td>
 </tr>
 <tr>
 	<td>type</td>
