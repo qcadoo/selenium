@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>9_GF_Modify_Shifts</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">9_GF_Modify_Shifts</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_basic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Zmiany</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Test zmiany']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>06:00-14:00</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>X</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.tuesdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.wensdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.thursdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zmiana 1 KK2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>14:00-22:00</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>X</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.tuesdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.wensdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.thursdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[.='Zapisz i powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[.='Zmiana 2 KK2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.name_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>22:00-06:00</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=window.mainTab.shift.gridLayout.mondayHours_input</td>
+	<td>X</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.tuesdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.wensdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.thursdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.fridayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.saturdayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.shift.gridLayout.sundayHours_input</td>
+	<td>${X}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
