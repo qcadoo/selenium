@@ -9,11 +9,11 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">10_KK_Add_Cost_Calculation_2A</td></tr>
+<tr><td rowspan="1" colspan="3">16_KK_Add_Cost_Calculation_2A</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>50</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//span[text()='KK_ZL-2']</td>
+	<td>css=td[title=&quot;KK_ZL-2&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -83,12 +83,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='KK_ZL-2']</td>
+	<td>css=td[title=&quot;KK_ZL-2&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='KK_ZL-2']</td>
+	<td>css=td[title=&quot;KK_ZL-2&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,11 +147,6 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>setSpeed</td>
-	<td>0</td>
-	<td></td>
-</tr>
-<tr>
 	<td>verifyText</td>
 	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTechnicalProductionCost.gridTechnicalProductionCost.totalMaterialCosts_text</td>
 	<td>9,11</td>
@@ -194,12 +189,12 @@
 <tr>
 	<td>verifyText</td>
 	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTotalCost.gridLayoutTotalCost.totalCosts_text</td>
-	<td>685,56336</td>
+	<td>685,56</td>
 </tr>
 <tr>
 	<td>verifyText</td>
 	<td>id=window.calculationResultsTab.formCalculationResults.calculationResults.borderLayoutTotalCostPerUnit.gridLayoutTotalCostPerUnit.totalCostPerUnit_text</td>
-	<td>13,44242</td>
+	<td>13,44</td>
 </tr>
 </tbody></table>
 </body>
