@@ -1198,13 +1198,28 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1260,11 +1275,6 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>setSpeed</td>
-	<td>0</td>
-	<td></td>
 </tr>
 <tr>
 	<td>verifyTable</td>
@@ -1572,7 +1582,7 @@
 	<td>30</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
