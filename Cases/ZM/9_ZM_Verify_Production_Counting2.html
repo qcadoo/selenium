@@ -1173,7 +1173,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;ZM_PR-C&quot;] &gt; span</td>
+	<td>//td[span[text()='ZM_OP-C']]/preceding-sibling::td/span[text()='ZM_PR-C']</td>
 	<td></td>
 </tr>
 <tr>
@@ -1215,11 +1215,6 @@
 	<td>click</td>
 	<td>//label[.='Powrót']</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
