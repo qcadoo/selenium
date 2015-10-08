@@ -47,6 +47,21 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Zdarzenia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.contextTab.eventContextForm.gridLayout.factory_labelDiv</td>
+	<td>Zakład</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.contextTab.eventContextForm.gridLayout.division_labelDiv</td>
+	<td>Dział</td>
+</tr>
+<tr>
 	<td>verifyNotAttribute</td>
 	<td>id=window.contextTab.eventContextForm.gridLayout.factory_input@readonly</td>
 	<td>readonly</td>
@@ -97,19 +112,49 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
+	<td>click</td>
+	<td>id=window.contextTab.eventContextForm.gridLayout.factory_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>F1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>F2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Anuluj']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -130,6 +175,376 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.number_input</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.productionLine_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.workstation_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.number_labelDiv</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.type_labelDiv</td>
+	<td>Rodzaj</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_labelDiv</td>
+	<td>Zakład</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.division_labelDiv</td>
+	<td>Dział</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.productionLine_labelDiv</td>
+	<td>Linia produkcyjna</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.workstation_labelDiv</td>
+	<td>Stacja robocza</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_labelDiv</td>
+	<td>Podzespół</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_labelDiv</td>
+	<td>Typ usterki</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.description_labelDiv</td>
+	<td>Opis</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.personReceiving_labelDiv</td>
+	<td>Osoba przyjmująca</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_labelDiv</td>
+	<td>Źródło kosztów</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Czasy pracy pracowników</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workerNumber</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workerName</td>
+	<td>Imię</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_workerSurname</td>
+	<td>Nazwisko</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_laborTime</td>
+	<td>Czas pracy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_number</td>
+	<td>Numer części</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa części</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_warehouse</td>
+	<td>Magazyn</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_plannedQuantity</td>
+	<td>Ilość</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_availableQuantity</td>
+	<td>Ilość na mag.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_unit</td>
+	<td>Jednostka</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_documentsTab_documentsGridLayout_documents_grid_number &gt; #jqgh_number</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_type</td>
+	<td>Typ</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_time</td>
+	<td>Data</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_locationFrom</td>
+	<td>Z magazynu</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_user</td>
+	<td>Pracownik</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_state</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.solutionDescriptionTab.solutionDescriptionGrid.solutionDescription_labelDiv</td>
+	<td>Opis rozwiązania</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.division_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>window.mainTab.maintenanceEventForm.gridLayout.type_input</td>
+	<td>Awaria</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>window.mainTab.maintenanceEventForm.gridLayout.type_input@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
+	<td>CS1_Def</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
+	<td>CS3_Def</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.division_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>D1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>D2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;D1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
+	<td>CS3_Def</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.productionLine_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.workstation_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_input@readonly</td>
+	<td>readonly</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
+	<td>CS5_Def</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyValue</td>
