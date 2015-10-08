@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>50</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -47,8 +47,8 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//span[text()='ZM_ZL-3']</td>
+	<td>click</td>
+	<td>css=td[title=&quot;ZM_ZL-3&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -140,11 +140,6 @@
 	<td>select</td>
 	<td>id=gs_typeOfMaterial</td>
 	<td>label=surowiec</td>
-</tr>
-<tr>
-	<td>setSpeed</td>
-	<td>0</td>
-	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -583,12 +578,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_OP-B']</td>
+	<td>css=td[title=&quot;ZM_OP-B&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-B']</td>
+	<td>css=td[title=&quot;ZM_OP-B&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -633,7 +628,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_PR-X']</td>
+	<td>css=td[title=&quot;ZM_PR-X&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -667,14 +662,29 @@
 	<td>label=półprodukt</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.btnOneLabel.ribbonLabel</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -718,12 +728,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_OP-C']</td>
+	<td>css=td[title=&quot;ZM_OP-C&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-C']</td>
+	<td>css=td[title=&quot;ZM_OP-C&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -768,7 +778,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_PR-Z']</td>
+	<td>css=td[title=&quot;ZM_PR-Z&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -802,9 +812,29 @@
 	<td>label=odpad</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -848,12 +878,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_OP-D']</td>
+	<td>css=td[title=&quot;ZM_OP-D&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-D']</td>
+	<td>css=td[title=&quot;ZM_OP-D&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -903,7 +933,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_PR-Y']</td>
+	<td>css=td[title=&quot;ZM_PR-Y&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -958,12 +988,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_SUR']</td>
+	<td>css=td[title=&quot;ZM_SUR&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
+	<td>css=td[title=&quot;ZM_SUR&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -978,13 +1008,28 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1028,12 +1073,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_OP-D']</td>
+	<td>css=td[title=&quot;ZM_OP-D&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-D']</td>
+	<td>css=td[title=&quot;ZM_OP-D&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1078,7 +1123,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_PR-C']</td>
+	<td>css=td[title=&quot;ZM_PR-C&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1133,12 +1178,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[text()='ZM_SUR']</td>
+	<td>css=td[title=&quot;ZM_SUR&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_SUR']</td>
+	<td>css=td[title=&quot;ZM_SUR&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1153,13 +1198,28 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
@@ -1188,7 +1248,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-B']</td>
+	<td>css=td[title=&quot;ZM_OP-B&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1243,7 +1303,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='ZM_OP-C']</td>
+	<td>css=td[title=&quot;ZM_OP-C&quot;]&nbsp;&nbsp;&gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -1267,9 +1327,29 @@
 	<td>5</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//a[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div/@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>selectFrame</td>
