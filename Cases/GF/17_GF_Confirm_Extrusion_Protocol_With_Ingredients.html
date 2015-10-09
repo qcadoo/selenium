@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>17_GF_Confirm_Extrusion_Protocol_With_Ingredients</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">17_GF_Confirm_Extrusion_Protocol_With_Ingredients</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_terminals</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Terminal ekstruzji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.productionLine_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.day_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.shift_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='3']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Wybierz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.operator_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='ZK-1/2015/FP-001']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[starts-with(text(),'Generuj protokoły')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='E30000012015-10-07']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.mixProduct_input</td>
+	<td>7-60075C - Półfabrykat wafle cienkie kukurydziane z ziołami prowansalskimi SM (0,75%)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Podanie faktycznego czasu realizacji jest wymagane.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Podanie faktycznego czasu realizacji jest wymagane.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_timeInput</td>
+	<td>22:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_timeInput</td>
+	<td>23:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.ingredient_input</td>
+	<td>100019 - Kukurydza grits</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,36</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.ingredient_input</td>
+	<td>100001 - Ryż brązowy okrągły</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,24</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.ingredient_input</td>
+	<td>100063 - Kasza gryczana biała</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,06</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.ingredient_input</td>
+	<td>100067 - Zioła prowansalskie</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_6.gridLayout.ingredient_input</td>
+	<td>100006 - Sorgo</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_6.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,06</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_7.gridLayout.ingredient_input</td>
+	<td>100025 - Sól Morska</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_7.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,015</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_8.gridLayout.ingredient_input</td>
+	<td>100010 - Siemię brązowe</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_8.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,04</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries_line_2_removeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries_line_4_removeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries_line_6_removeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries_line_7_removeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>1,505</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries_line_4_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.ingredient_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='100019']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='100019']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>2,34</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>3,845</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Nie udało się zatwierdzić protokołu z powodu brakujących danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Nie udało się zatwierdzić protokołu z powodu brakujących danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P21']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P21']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P11']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P11']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P51']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P51']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P81']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P81']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P31']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P31']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity2_input</td>
+	<td>4,4</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>8,245</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.ingredient_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='100003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='100003']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Nie udało się zatwierdzić protokołu z powodu brakujących danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Nie udało się zatwierdzić protokołu z powodu brakujących danych.</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P22']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P22']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>2,15</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientQuantitySum_input</td>
+	<td>2,15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu będzie kontynuowana w tle.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu będzie kontynuowana w tle.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.protocolNumber_input</td>
+	<td>E30000012015-10-07</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.dayOfShiftStart_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.shiftName_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.toProduce_input</td>
+	<td>229,73333</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.changeover_input</td>
+	<td>exact:00:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.startDate_input</td>
+	<td>2015-10-07 22:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.finishDate_input</td>
+	<td>2015-10-07 23:30:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.numberOfAvailableWorkstation_input</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.placeName_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.productionLineNumber_input</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.operator_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.operator_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.orderNumber_input</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.productNameAndNumber_input</td>
+	<td>471003 - WAFLE CIENKIE KUKURYDZIANE ZIOŁA PROWANSALSKIE 105G Rom. Delikatessen</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.mixProduct_input</td>
+	<td>7-60075C - Półfabrykat wafle cienkie kukurydziane z ziołami prowansalskimi SM (0,75%)</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.protocolNumber_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.dayOfShiftStart_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.shiftName_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.toProduce_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.changeover_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.startDate_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.finishDate_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.numberOfAvailableWorkstation_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.placeName_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.productionLineNumber_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.operator_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.operator_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.orderNumber_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.productNameAndNumber_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.mixProduct_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>8,245</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.ingredient_input</td>
+	<td>100003 - Kukurydza cała</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.batch_input</td>
+	<td>P21</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>1,215</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity2_input</td>
+	<td>4,4</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity3_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.ingredient_input</td>
+	<td>100001 - Ryż brązowy okrągły</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.batch_input</td>
+	<td>P11</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,24</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.gridLayout.partialQuantity2_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.ingredient_input</td>
+	<td>100067 - Zioła prowansalskie</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.batch_input</td>
+	<td>P51</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,01</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.ingredient_input</td>
+	<td>100010 - Siemię brązowe</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.batch_input</td>
+	<td>P81</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>0,04</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.ingredient_input</td>
+	<td>100019 - Kukurydza grits</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.batch_input</td>
+	<td>P31</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>2,34</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixQuantitySum_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity2_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_1.gridLayout.gridLayout.partialQuantity3_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_2.gridLayout.gridLayout.partialQuantity2_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_3.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_4.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedMixTab.addedMixGridLayout.addedMixEntries.innerForm_5.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientQuantitySum_input</td>
+	<td>2,15</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.ingredient_input</td>
+	<td>100003 - Kukurydza cała</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.batch_input</td>
+	<td>P22</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.quantity_input</td>
+	<td>2,15</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>2,15</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientQuantitySum_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.ingredient_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.batch_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.quantity_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.addedIngredientTab.addedIngredientGridLayout.addedIngredientEntries.innerForm_1.gridLayout.gridLayout.partialQuantity1_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.takenOffMixTab.takenOffMixGridLayout.takenOffMixQuantitySum_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.takenOffMixTab.takenOffMixGridLayout.takenOffMixQuantitySum_input</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_timeInput</td>
+	<td>22:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_timeInput</td>
+	<td>23:00:00</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_timeInput</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>isEditable</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_timeInput</td>
+	<td>false</td>
+</tr>
+</tbody></table>
+</body>
+</html>

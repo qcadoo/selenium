@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>16_GF_Confirm_Extrusion_Protocol_Without_Ingredients</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">16_GF_Confirm_Extrusion_Protocol_Without_Ingredients</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_terminals</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Terminal ekstruzji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.productionLine_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.day_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.shift_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.operator_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='ZK-1/2015/FP-001']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[starts-with(text(),'Generuj protokoły')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='E20000012015-10-07']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.extrusionProtocolMain.extrusionProtocol.gridLayout.orderBorderLayout.orderGridLayout.mixProduct_input</td>
+	<td>7-60075C - Półfabrykat wafle cienkie kukurydziane z ziołami prowansalskimi SM (0,75%)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Podanie faktycznego czasu realizacji jest wymagane.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Podanie faktycznego czasu realizacji jest wymagane.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_timeInput</td>
+	<td>12:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_timeInput</td>
+	<td>11:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wystąpił błąd walidacji</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkStartDate_timeInput</td>
+	<td>16:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.extrusionEffectiveDurationTab.extrusionEffectiveDurationGridLayout.operatorBorderLayout.extrusionOperatorEffectiveDurationGridLayout.operatorWorkFinishDate_timeInput</td>
+	<td>18:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu będzie kontynuowana w tle.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu będzie kontynuowana w tle.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
