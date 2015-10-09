@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
-<title>3_ME_Verify_Correct_Cost_Source_In_Maintenance_Event_For_Selected_Factory</title>
+<title>4_ME_Verify_Can_Choose_Proper_Values_For_Object_And_Add_Failure</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">3_ME_Verify_Correct_Cost_Source_In_Maintenance_Event_For_Selected_Factory</td></tr>
+<tr><td rowspan="1" colspan="3">4_ME_Verify_Can_Choose_Proper_Values_For_Object_And_Add_Failure</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -352,6 +352,11 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyElementPresent</td>
 	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_error_icon</td>
 	<td></td>
@@ -432,6 +437,26 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Działy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
 	<td>verifyTable</td>
 	<td>id=window_grid_grid.1.1</td>
 	<td>D1</td>
@@ -477,28 +502,13 @@
 	<td>readonly</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_openLookupButton</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -507,8 +517,48 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Typy usterek</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(5)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Typ usterki</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>Fault_Type_1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>Fault_Type_2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.3.1</td>
+	<td>Fault_Type_3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.4.1</td>
+	<td>Fault_Type_4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.5.1</td>
+	<td>Inne</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td>css=td[title=&quot;Fault_Type_2&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -523,42 +573,17 @@
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS5_Def</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//label[.='Powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS1_Def</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_input</td>
+	<td>Fault_Type_2</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_openLookupButton</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.productionLine_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=1</td>
+	<td>index=6</td>
 	<td></td>
 </tr>
 <tr>
@@ -567,8 +592,38 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Linie produkcyjne</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>PL1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>PL2</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
+	<td>css=td[title=&quot;PL1&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -582,18 +637,13 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS3_Def</td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_openLookupButton</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=1</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
@@ -602,8 +652,33 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>Fault_Type_1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>Fault_Type_2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.3.1</td>
+	<td>Fault_Type_3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.4.1</td>
+	<td>Fault_Type_4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.5.1</td>
+	<td>Inne</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
+	<td>//label[.='Anuluj']</td>
 	<td></td>
 </tr>
 <tr>
@@ -617,158 +692,58 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS5_Def</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//label[.='Powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zmień kontekst']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.contextTab.eventContextForm.gridLayout.factory_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>css=td[title=&quot;F1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=td[title=&quot;F1&quot;] &gt; span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotVisible</td>
-	<td>css=td[title=&quot;F1&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Potwierdź kontekst']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//label[.='Dodajnowąawarię']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_input</td>
-	<td>F1 - Factory1</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_input@readonly</td>
+	<td>verifyNotAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.workstation_input@readonly</td>
 	<td>readonly</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS3_Def</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//label[.='Powrót']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>verifyAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//label[.='Zmień kontekst']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.contextTab.eventContextForm.gridLayout.factory_openLookupButton</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.workstation_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=2</td>
+	<td>index=7</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>css=td[title=&quot;F2&quot;]</td>
-	<td></td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Stacje robocze</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>WS1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>WS2</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=td[title=&quot;F2&quot;] &gt; span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForNotVisible</td>
-	<td>css=td[title=&quot;F2&quot;]</td>
+	<td>css=td[title=&quot;WS1&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -778,27 +753,47 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>5000</td>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_openLookupButton</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//label[.='Potwierdź kontekst']</td>
+	<td>selectFrame</td>
+	<td>index=5</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//label[.='Dodajnowąawarię']</td>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>Fault_Type_1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>Fault_Type_2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.3.1</td>
+	<td>Inne</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Anuluj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
 	<td></td>
 </tr>
 <tr>
@@ -807,19 +802,204 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_input</td>
-	<td>F2 - Factory2</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.factory_input@readonly</td>
+	<td>verifyNotAttribute</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_input@readonly</td>
 	<td>readonly</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.mainTab.maintenanceEventForm.gridLayout.sourceCost_input</td>
-	<td>CS5_Def</td>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.subassembly_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_gridName.elementHeaderTitle</td>
+	<td>Podzespoły</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.grid_header_totalNumberOfEntities.elementHeaderTitle</td>
+	<td>(2)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_lookupCode</td>
+	<td>Numer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=jqgh_name</td>
+	<td>Nazwa</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>S-A1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>S-A2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;S-A1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.1.1</td>
+	<td>Fault_Type_1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.2.1</td>
+	<td>Fault_Type_3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_grid_grid.3.1</td>
+	<td>Inne</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Anuluj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='window.mainTab.maintenanceEventForm.gridLayout.faultType']/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.maintenanceEventForm.gridLayout.faultType_error_messages']/div/p</td>
+	<td>Wybrany typ usterki nie może zostać zastosowany dla wybranych obiektów.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.faultType_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title=&quot;Inne&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.description_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window.mainTab.maintenanceEventForm.gridLayout.description_error_messages']/div/p</td>
+	<td>Opis jest wymagany dla zdarzenia z typem usterki &quot;Inne&quot;.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.maintenanceEventForm.gridLayout.description_input</td>
+	<td>Maintenance Event 000001 Description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>000001 - Awaria - Nowe</td>
 </tr>
 </tbody></table>
 </body>
