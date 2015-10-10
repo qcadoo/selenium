@@ -73,18 +73,73 @@
 </tr>
 <tr>
 	<td>verifyValue</td>
-	<td>id=window.context.extrusionTerminal.gridLayout.shift_input</td>
-	<td>2</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
 	<td>id=window.context.extrusionTerminal.gridLayout.day_input</td>
 	<td>javascript{new Date().toISOString().substring(0,10)}</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
 	<td>id=window.context.extrusionTerminal.gridLayout.operator_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.day_input</td>
+	<td>2015-10-06</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.extrusionTerminal.gridLayout.shift_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -118,107 +173,17 @@
 </tr>
 <tr>
 	<td>selectFrame</td>
-	<td>index=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='000001']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='000001']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.context.extrusionTerminal.gridLayout.day_input</td>
-	<td>2015-10-06</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.context.extrusionTerminal.gridLayout.shift_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
 	<td>index=2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[.='2']</td>
+	<td>//span[.='000001']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Potwierdź kontekst']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//label[.='Potwierdź kontekst']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyNotTable</td>
-	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
-	<td>ZK-1/2015/FP-001</td>
-</tr>
-<tr>
-	<td>verifyNotTable</td>
-	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_extrusionProtocols_grid.1.7</td>
-	<td>ZK-1/2015/FP-001</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.context.extrusionTerminal.gridLayout.operator_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[.='Ba']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='Ba']</td>
+	<td>//span[.='000001']</td>
 	<td></td>
 </tr>
 <tr>
