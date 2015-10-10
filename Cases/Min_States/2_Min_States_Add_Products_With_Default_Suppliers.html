@@ -143,11 +143,6 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=window.mainTab.product.gridLayout.catalogNumber_labelDiv</td>
-	<td>Nr katalogowy producenta</td>
-</tr>
-<tr>
-	<td>verifyText</td>
 	<td>id=window.mainTab.product.gridLayout.drawingNumber_labelDiv</td>
 	<td>Nr rysunku</td>
 </tr>
@@ -332,9 +327,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForVisible</td>
+	<td>css=td[title=&quot;Supplier1 Number&quot;]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
@@ -343,7 +338,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='Supplier1 Number']</td>
+	<td>css=td[title=&quot;Supplier1 Number&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -368,7 +363,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='Zapisz i powrót']</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Powrót']</td>
 	<td></td>
 </tr>
 <tr>
@@ -522,9 +527,9 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=window.mainTab.form.companyProductGridLayout.isDefault_input</td>
-	<td></td>
+	<td>waitForText</td>
+	<td>id=window_windowHeader</td>
+	<td>Nowy dostawca</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -542,13 +547,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForVisible</td>
+	<td>css=td[title=&quot;Supplier2 Number&quot;]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[.='Supplier2 Number']</td>
+	<td>css=td[title=&quot;Supplier2 Number&quot;] &gt; span</td>
 	<td></td>
 </tr>
 <tr>
@@ -565,6 +570,11 @@
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=window.mainTab.form.companyProductGridLayout.isDefault_input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
