@@ -162,6 +162,11 @@
 	<td>2015-10-07</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=window.mainTab.masterOrderDetails.gridLayout.startDate_timeInput</td>
 	<td>08:00:00</td>
@@ -220,11 +225,6 @@
 	<td>waitForNotText</td>
 	<td>css=div.ui-pnotify-text</td>
 	<td>Wystąpił błąd walidacji</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
 </tr>
 <!--do poprawy-->
 <tr>
@@ -368,7 +368,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForValue</td>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]/@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
 	<td>id=window.mainTab.order.gridLayout.dateFrom_input</td>
 	<td>2015-10-07</td>
 </tr>
@@ -398,21 +403,21 @@
 	<td>2015-10-07</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=window.mainTab.order.gridLayout.dateTo_timeInput</td>
 	<td>23:30:00</td>
-</tr>
-<!--Czemu tu jest zapis po zapisie ?-->
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
 </tr>
+<!--Czemu tu jest zapis po zapisie ?-->
 <tr>
 	<td>click</td>
 	<td>//label[.='Zapisz']</td>
@@ -427,11 +432,6 @@
 	<td>click</td>
 	<td>css=span.ui-icon.ui-icon-circle-close</td>
 	<td></td>
-</tr>
-<tr>
-	<td>waitForNotText</td>
-	<td>css=div.ui-pnotify-text</td>
-	<td>Zlecenie zostało zapisane.</td>
 </tr>
 <tr>
 	<td>waitForAttribute</td>
@@ -471,11 +471,6 @@
 </tr>
 <!--to setSpeed wywalamy. to by było 1,2 s pomiędzy komendami!-->
 <!--po co ta asercja ?-->
-<tr>
-	<td>assertText</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[7]/div/div/div[2]/div/ul/li/a/span/label</td>
-	<td>Produkcja<br />na zmianę</td>
-</tr>
 <!--Nie klikamy po xPathie w przyciski na ribbonie. Co jeśli dojdzie jakiś przycisk, włączymy/wyłączymy wcześniej jakiś plugin dodający przyciski, i zmieni się kolejność tego diva ? Czyli to://div[@id='window_ribbonContentWrapper']/div[7]/div/div/div[2]/div/ul/li/a/span to kosza. -->
 <!--Ponadto jak wyżej w "Utwórz zlecenie" - przechodzimy do nowej strony. Używamy więc click&wait. Dzięki temu to czekanie na atrybut przyciusku odnosi się już do kolejnego widoku-->
 <tr>
@@ -539,7 +534,7 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>//span[.='Powrót']</td>
 	<td></td>
 </tr>
