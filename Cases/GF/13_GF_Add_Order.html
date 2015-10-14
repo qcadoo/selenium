@@ -226,11 +226,10 @@
 	<td>css=div.ui-pnotify-text</td>
 	<td>Wystąpił błąd walidacji</td>
 </tr>
-<!--do poprawy-->
 <tr>
-	<td>isEditable</td>
-	<td>id=window.productsTab.gridLayout.masterOrderType_input</td>
-	<td>false</td>
+	<td>verifyAttribute</td>
+	<td>id=window.productsTab.gridLayout.masterOrderType_input@disabled</td>
+	<td>disabled</td>
 </tr>
 <tr>
 	<td>verifySelectedLabel</td>
@@ -453,26 +452,21 @@
 	<td>id=window.goodFoodTab.goodFoodGridLayout.batchNumber_input</td>
 	<td>151007-1FP</td>
 </tr>
-<!--tu też do poprawy te isEditable-->
 <tr>
-	<td>isEditable</td>
-	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneEC_input</td>
-	<td>false</td>
+	<td>verifyAttribute</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneEC_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
-	<td>isEditable</td>
-	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneECWithDurability_input</td>
-	<td>false</td>
+	<td>verifyAttribute</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.generationDateOneECWithDurability_input@readonly</td>
+	<td>readonly</td>
 </tr>
 <tr>
-	<td>isEditable</td>
-	<td>id=window.goodFoodTab.goodFoodGridLayout.batchNumber_input</td>
-	<td>false</td>
+	<td>verifyAttribute</td>
+	<td>id=window.goodFoodTab.goodFoodGridLayout.batchNumber_input@readonly</td>
+	<td>readonly</td>
 </tr>
-<!--to setSpeed wywalamy. to by było 1,2 s pomiędzy komendami!-->
-<!--po co ta asercja ?-->
-<!--Nie klikamy po xPathie w przyciski na ribbonie. Co jeśli dojdzie jakiś przycisk, włączymy/wyłączymy wcześniej jakiś plugin dodający przyciski, i zmieni się kolejność tego diva ? Czyli to://div[@id='window_ribbonContentWrapper']/div[7]/div/div/div[2]/div/ul/li/a/span to kosza. -->
-<!--Ponadto jak wyżej w "Utwórz zlecenie" - przechodzimy do nowej strony. Używamy więc click&wait. Dzięki temu to czekanie na atrybut przyciusku odnosi się już do kolejnego widoku-->
 <tr>
 	<td>clickAndWait</td>
 	<td>//label[.='Produkcjana zmianę']</td>
