@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">4_KK_Add_Order_ZL1</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/main.html</td>
 	<td></td>
@@ -52,9 +57,24 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>setSpeed</td>
-	<td>100</td>
-	<td></td>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.number_input</td>
+	<td>KK_ZL-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.name_input</td>
+	<td>Kalkulacja Kosztów ZL-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.mainTab.order.gridLayout.description_input</td>
+	<td>Kalkulacja Kosztów ZL-1</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.order.gridLayout.productionLine_input</td>
+	<td>000001 - Linia główna</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -87,14 +107,89 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.number_input</td>
-	<td>KK_ZL-1</td>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.order.gridLayout.plannedQuantity_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=window.mainTab.order.gridLayout.product_error_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>window.mainTab.order.gridLayout.product_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[contains(text(),'PR-A')]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.description_input</td>
-	<td>Kalkulacja Kosztów ZL-1</td>
+	<td>gs_lookupCode</td>
+	<td>KK</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=gs_lookupCode</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='KK_PR-B']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>window.mainTab.order.gridLayout.plannedQuantity_input</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Kalkulacja Kosztów ZL-1 - KK_ZL-1 - Oczekujące</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -102,9 +197,19 @@
 	<td>2012-01-02</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.order.gridLayout.dateFrom_timeInput</td>
 	<td>07:00:00</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -112,9 +217,19 @@
 	<td>2020-05-18</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.order.gridLayout.dateTo_timeInput</td>
 	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -122,9 +237,44 @@
 	<td>2020-05-18</td>
 </tr>
 <tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>window.mainTab.order.gridLayout.deadline_timeInput</td>
 	<td>00:00:00</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[.='Akceptuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>(Zaakceptować zlecenie?)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div:contains('Zlecenie nie ma technologii') &gt; div.ui-pnotify-text</td>
+	<td>Zlecenie nie ma technologii</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>Kalkulacja Kosztów ZL-1 - KK_ZL-1 - Oczekujące</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -172,69 +322,14 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>window.mainTab.order.gridLayout.productionLine_openLookupButton</td>
-	<td></td>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.defaultTechnology_input</td>
+	<td>KK_TECH-1 - Kalkulacja Kosztów Technologia 1</td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='000001']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='000001']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.technology_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[text()='KK_TECH-1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='KK_TECH-1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>window.mainTab.order.gridLayout.plannedQuantity_input</td>
-	<td>50</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.order.gridLayout.name_input</td>
-	<td>Kalkulacja Kosztów ZL-1</td>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.order.gridLayout.predefinedTechnology.predefinedTechnologyGridLayout.technology_input</td>
+	<td>KK_TECH-1 - Kalkulacja Kosztów Technologia 1</td>
 </tr>
 <tr>
 	<td>click</td>
