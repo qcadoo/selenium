@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>18_GF_Confirm_Context_In_Confection</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">18_GF_Confirm_Context_In_Confection</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_terminals</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Terminal konfekcji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul/li[2]/a/span/div[2]</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div[3]/ul/li/a/span/div</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/div[4]/ul/li/a/span/label</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.context.confectionTerminal.gridLayout.productionLine_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=window.context.confectionTerminal.gridLayout.place_input</td>
+	<td>- brak -</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.context.confectionTerminal.gridLayout.day_input</td>
+	<td>javascript{new Date().toISOString().substring(0,10)}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.context.confectionTerminal.gridLayout.operator_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.confectionTerminal.gridLayout.day_input</td>
+	<td>2015-10-06</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.confectionTerminal.gridLayout.shift_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.confectionTerminal.gridLayout.productionLine_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.confectionTerminal.gridLayout.day_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[2]/div/div/div[2]/ul/li[2]/a/span/div[2]</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='ZK-1/2015/FP-001']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[starts-with(text(),'Generuj protokoły')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>19_GF_Edit_And_Remove_Confection_Protocol</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">19_GF_Edit_And_Remove_Confection_Protocol</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_terminals</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Terminal konfekcji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.confectionTerminal.gridLayout.productionLine_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='000001']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.context.confectionTerminal.gridLayout.day_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.confectionTerminal.gridLayout.shift_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.context.confectionTerminal.gridLayout.operator_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[.='Potwierdź kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//label[.='Zmień kontekst']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_ordersBorderLayout_gridOrdersLayout_orders_grid.1.1</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_ordersAndProtocols_gridOrdersAndProtocolsLayout_protocolsBorderLayout_gridProtocolsLayout_confectionProtocols_grid.1.7</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='20000012015-10-07']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.orderBorderLayout.orderGridLayout.qcp5Code_input</td>
+	<td>2015-10-07 GKR1B</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.protocolNumber_input</td>
+	<td>20000012015-10-07</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.dayOfShiftStart_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.shiftName_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.toProduce_input</td>
+	<td>regexp:3[,.\s]000</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.startDate_input</td>
+	<td>2015-10-07 14:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.planOfTheOrderBorderLayout.planOfTheOrderGridLayout.finishDate_input</td>
+	<td>2015-10-07 22:00:00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.placeName_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.productionLineNumber_input</td>
+	<td>000001</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.operator_input</td>
+	<td>Ba Fl</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.state_input</td>
+	<td>Szkic</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.orderBorderLayout.orderGridLayout.orderNumber_input</td>
+	<td>ZK-1/2015/FP-001</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.orderBorderLayout.orderGridLayout.productNameAndNumber_input</td>
+	<td>471003 - WAFLE CIENKIE KUKURYDZIANE ZIOŁA PROWANSALSKIE 105G Rom. Delikatessen</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.orderBorderLayout.orderGridLayout.productionDate_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.orderBorderLayout.orderGridLayout.qcp5Code_input</td>
+	<td>2015-10-07 GKR1B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wszystkie pozycje w tabeli &quot;Pozostałe materiały&quot; muszą mieć podane ilości użyte.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Wszystkie pozycje w tabeli &quot;Pozostałe materiały&quot; muszą mieć podane ilości użyte.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy wprowadzić przynajmniej jeden materiał z kategorii ''Film''.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy wprowadzić przynajmniej jeden materiał z kategorii ''Film''.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy wprowadzić przynajmniej jednego członka obsady.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy wprowadzić przynajmniej jednego członka obsady.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy podać faktyczne czasy realizacji.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Należy podać faktyczne czasy realizacji.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zlecenie nadrzędne nie zostało zsynchronizowane z systemem zewnętrznym.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zlecenie nadrzędne nie zostało zsynchronizowane z systemem zewnętrznym.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Odśwież']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionEffectiveDurationTab.confectionEffectiveDurationGridLayout.effectiveExecutionTimeStart_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionEffectiveDurationTab.confectionEffectiveDurationGridLayout.effectiveExecutionTimeStart_timeInput</td>
+	<td>12:00:00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionEffectiveDurationTab.confectionEffectiveDurationGridLayout.effectiveExecutionTimeEnd_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionEffectiveDurationTab.confectionEffectiveDurationGridLayout.effectiveExecutionTimeEnd_timeInput</td>
+	<td>14:00:00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Obsada</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.confectionStaffTab.confectionStaffGridLayout.confectionStaffs_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=window.confectionStaffTab.confectionStaffGridLayout.confectionStaffs.innerForm_1.confectionStaffsGridLayout.staffEffectiveExecutionTimeStart_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.confectionStaffTab.confectionStaffGridLayout.confectionStaffs.innerForm_1.confectionStaffsGridLayout.worker_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Ba']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.confectionStaffTab.confectionStaffGridLayout.confectionStaffs.innerForm_1.confectionStaffsGridLayout.staffEffectiveExecutionTimeStart_input</td>
+	<td>2015-10-07</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionProducedTab.confectionProducedGridLayout.confectionProducedLeftGridLayout.restOneOfCartonsQuantity_input</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionProducedTab.confectionProducedGridLayout.confectionProducedLeftGridLayout.allPalletQuantity_input</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Materiały</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.confectionMaterialsTab.confectionMaterialsGridLayout.filmMaterialBorderLayout.filmGridLayout.inputProducts_line_0_addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=window.confectionMaterialsTab.confectionMaterialsGridLayout.filmMaterialBorderLayout.filmGridLayout.inputProducts.innerForm_1.gridLayout.takenOnQuantity_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=window.confectionMaterialsTab.confectionMaterialsGridLayout.filmMaterialBorderLayout.filmGridLayout.inputProducts.innerForm_1.gridLayout.batch_openLookupButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[.='P101']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='P101']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionMaterialsTab.confectionMaterialsGridLayout.oderMaterialBorderLayout.oderMaterialGridLayout.remainderInputProducts.innerForm_1.remainderInputProductsGridLayout.usedQuantity_input</td>
+	<td>-2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Błąd podczas zapisu obiektu zależnego.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Błąd podczas zapisu obiektu zależnego.</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=window.confectionMaterialsTab.confectionMaterialsGridLayout.oderMaterialBorderLayout.oderMaterialGridLayout.remainderInputProducts.innerForm_1.remainderInputProductsGridLayout.usedQuantity_input</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zapisz']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Zatwierdź']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zlecenie nadrzędne nie zostało zsynchronizowane z systemem zewnętrznym.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zlecenie nadrzędne nie zostało zsynchronizowane z systemem zewnętrznym.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Odrzuć']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu zakończyła się pomyślnie.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Zmiana statusu zakończyła się pomyślnie.</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>id=window.confectionProtocolMain.confectionProtocol.gridLayout.state_input</td>
+	<td>Odrzucony</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_ordersTracking</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Protokoły konfekcji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>QCD MES - Protokoły konfekcji</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[.='20000012015-10-07']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@title='20000012015-10-07']/preceding-sibling::td/input[@type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>25</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[.='Usuń']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td>a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//span[.='E20000012015-10-07']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+</tbody></table>
+</body>
+</html>
