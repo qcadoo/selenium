@@ -20,3 +20,7 @@ result_firefox.html
 result.log.lck
 
 *.jar
+
+result_firefox.html 
+
+result_firefox.html -log
