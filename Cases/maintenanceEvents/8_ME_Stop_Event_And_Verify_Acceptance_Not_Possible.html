@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/" />
-<title>8_ME_Stop_Do_Not_Accept_And_Change_To_Planned_Event</title>
+<title>8_ME_Stop_Event_And_Verify_Acceptance_Not_Possible</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">8_ME_Stop_Do_Not_Accept_And_Change_To_Planned_Event</td></tr>
+<tr><td rowspan="1" colspan="3">8_ME_Stop_Event_And_Verify_Acceptance_Not_Possible</td></tr>
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
@@ -299,212 +299,62 @@
 <tr>
 	<td>verifyText</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li/a/span/div[2]</td>
-	<td>Nie akceptuj</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li@class</td>
-	<td>btnOne enabled</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li[2]/a/span/div[2]</td>
-	<td>Akceptuj</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li[2]@class</td>
-	<td>btnOne enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[.='Nie akceptuj']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeConfirmation</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>id=window_windowHeader</td>
-	<td>Zmiana statusu</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>id=window_windowHeader</td>
-	<td>Zmiana statusu</td>
-</tr>
-<tr>
-	<td>verifySelectedLabel</td>
-	<td>window.mainTab.logging.gridLayout.previousState_input</td>
-	<td>W edycji</td>
-</tr>
-<tr>
-	<td>verifySelectedLabel</td>
-	<td>window.mainTab.logging.gridLayout.currentState_input</td>
-	<td>W trakcie</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Wykonaj']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyVisible</td>
-	<td>id=window.mainTab.logging.gridLayout.comment_error_icon</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='window.mainTab.logging.gridLayout.comment_error_messages']/div/p</td>
-	<td>Pole komentarz jest wymagane</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.mainTab.logging.gridLayout.comment_input</td>
-	<td>Reason</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Wykonaj']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyTable</td>
-	<td>id=window_mainTab_grid_grid.1.13</td>
-	<td>W trakcie</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul/li/a/span/div[2]</td>
-	<td>STOP</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul/li@class</td>
-	<td>btnOne enabled</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul/li[2]/a/span/div[2]</td>
-	<td>Unieważnij</td>
-</tr>
-<tr>
-	<td>verifyAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul/li[2]@class</td>
-	<td>btnOne enabled</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li/a/span/div[2]</td>
 	<td>Planuj</td>
 </tr>
 <tr>
 	<td>verifyAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li@class</td>
-	<td>btnOne enabled</td>
+	<td>btnOne</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li[2]/a/span/div[2]</td>
+	<td>Zamknij</td>
 </tr>
 <tr>
 	<td>verifyAttribute</td>
 	<td>//div[@id='window_ribbonContentWrapper']/div[5]/div/div/div[2]/ul[2]/li[2]@class</td>
+	<td>btnOne enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;000002&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#window_windowHeader &gt; span</td>
+	<td>000002 - Problem - W edycji</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/ul/li@class</td>
 	<td>btnOne</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//span[.='Planuj']</td>
-	<td></td>
+	<td>verifyAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/ul/li[2]@class</td>
+	<td>btnOne</td>
 </tr>
 <tr>
-	<td>storeConfirmation</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>verifyAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/ul[2]/li@class</td>
+	<td>btnOne</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=window_windowHeader</td>
-	<td>Planowanie zdarzenia</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/ul[2]/li[2]/a/span/div[2]</td>
+	<td>Zamknij</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=window.mainTab.logging.gridLayout.plannedEventType_input</td>
-	<td>label=Przegląd</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zaplanuj zdarzenie']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=div:contains('Utworzono zdarzenie planowane o numerze 000001.') &gt; div.ui-pnotify-text</td>
-	<td>Utworzono zdarzenie planowane o numerze 000001.</td>
+	<td>verifyAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div[3]/div/div/div[2]/ul[2]/li[2]@class</td>
+	<td>btnOne enabled</td>
 </tr>
 </tbody></table>
 </body>
