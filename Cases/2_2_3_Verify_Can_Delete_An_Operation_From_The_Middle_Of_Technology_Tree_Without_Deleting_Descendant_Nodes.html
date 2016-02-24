@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
+<title>2_2_3_Verify_Can_Delete_An_Operation_From_The_Middle_Of_Technology_Tree_Without_Deleting_Descendant_Nodes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">2_2_3_Verify_Can_Delete_An_Operation_From_The_Middle_Of_Technology_Tree_Without_Deleting_Descendant_Nodes</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/main.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_technology</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#secondLevelButton_technology_technologies &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td[title=&quot;ZM_Tech-1&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.technology.gridsLayout.master_input</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[.='Kopiuj']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-pnotify-text</td>
+	<td>Obiekt został poprawnie skopiowany.</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.mainTab.technology.gridsLayout.number_input</td>
+	<td>ZM_Tech-1(1)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ribbonMenu:nth-child(4) ul:nth-child(1) li:nth-child(1) a:nth-child(1)</td>
+	<td>Akceptuj</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ribbonMenu:nth-child(4) ul:nth-child(1) li:nth-child(2) a:nth-child(1)</td>
+	<td>Odrzuć</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ribbonMenu:nth-child(4) ul:nth-child(2) li:nth-child(1) a:nth-child(1)</td>
+	<td>Sprawdź poprawność</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.tree_content &gt; ul &gt; li &gt; ul &gt; li:nth-child(1) &gt; a span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=[title='Usuń ze środka'] span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeConfirmation</td>
+	<td></td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div:contains('Informacja') + div</td>
+	<td>Przeniesiono produkty: ZM_PR-E jako produkty wejściowe do operacji ZM_OP-A.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Udało się usunąć operację z drzewa technologii.</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>css=.tree_wrapper span:contains('ZM_OP-B)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.tree_wrapper span:contains('ZM_OP-A')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.jstree-clicked</td>
+	<td>1. ZM_OP-A Zapotrzebowanie Materiałowe Operacja A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_outProducts_grid.1.1</td>
+	<td>ZM_PR-A</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.2</td>
+	<td>Zapotrzebowanie Materiałowe Produkt E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.3</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.4</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.5</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.2.1</td>
+	<td>ZM_PR-C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.2.2</td>
+	<td>Zapotrzebowanie Materiałowe Produkt C</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.2.3</td>
+	<td>0,3</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.2.5</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.tree_wrapper span:contains('ZM_OP-E')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.jstree-clicked</td>
+	<td>1.A.1. ZM_OP-E Zapotrzebowanie Materiałowe Operacja E</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
+	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_outProducts_grid.1.1</td>
+	<td>ZM_PR-E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_outProducts_grid.1.2</td>
+	<td>Zapotrzebowanie Materiałowe Produkt E</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_outProducts_grid.1.3</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_outProducts_grid.1.4</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.1</td>
+	<td>ZM_PR-D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.2</td>
+	<td>Zapotrzebowanie Materiałowe Produkt D</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.3</td>
+	<td>1,25</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.4</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=window_treeTab_gridsLayout_inProducts_grid.1.5</td>
+	<td>0</td>
+</tr>
+</tbody></table>
+</body>
+</html>
