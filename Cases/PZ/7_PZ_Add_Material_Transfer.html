@@ -57,11 +57,6 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=window.generalTab.form.gridLayout.number_input</td>
-	<td>PZ_PZ1</td>
-</tr>
-<tr>
 	<td>select</td>
 	<td>id=window.generalTab.form.gridLayout.type_input</td>
 	<td>label=Przyjęcie zewnętrzne</td>
@@ -112,18 +107,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_0_addButton</td>
+	<td>waitForVisible</td>
+	<td>css=#add_new_row span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>click</td>
+	<td>css=#add_new_row span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.product_openLookupButton</td>
+	<td>css=#0_product &gt; button</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,12 +133,12 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
+	<td>//td[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-B']</td>
+	<td>//td[text()='PZ_PR-B']</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,48 +147,148 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.givenQuantity_input</td>
+	<td>id=0_quantity</td>
 	<td>23</td>
 </tr>
 <tr>
 	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.quantity_input</td>
+	<td>id=0_givenquantity</td>
 	<td>23</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_1_addButton</td>
+	<td>css=#jSaveButton_0 span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.4</td>
+	<td>PZ_PR-B</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.6</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.7</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.8</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.9</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.10</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.1.17</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>css=#add_new_row span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
+	<td>css=#grid #0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ_PR-BS']</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[text()='PZ_PR-BS']</td>
 	<td></td>
 </tr>
 <tr>
@@ -197,229 +297,464 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
+	<td>szt</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.givenUnit_input</td>
-	<td>label=para</td>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.givenQuantity_input</td>
+	<td>id=0_quantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_givenquantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=0_givenunit</td>
+	<td>label=para</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>0.5</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_givenquantity</td>
+	<td>0.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=0_givenquantity</td>
 	<td>2</td>
 </tr>
 <tr>
 	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.quantity_input</td>
+	<td>id=0_quantity</td>
 	<td>4</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_2_addButton</td>
+	<td>css=#jSaveButton_0 span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.product_openLookupButton</td>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
-	<td></td>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
 </tr>
 <tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-4S']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.givenQuantity_input</td>
-	<td>0,2</td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.quantity_input</td>
-	<td>0,2</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_3_addButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_4.positionsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=5</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-1']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_4.positionsLayout.givenQuantity_input</td>
-	<td>50</td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_4.positionsLayout.quantityLayout.quantity_input</td>
-	<td>50</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_4_addButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_5.positionsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=6</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[text()='PZ_PR-DS-2']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>relative=up</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=window.positionsListTab.positions.innerForm_5.positionsLayout.givenUnit_input</td>
-	<td>label=para</td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_5.positionsLayout.givenQuantity_input</td>
-	<td>0,0025</td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_5.positionsLayout.quantityLayout.quantity_input</td>
-	<td>0,005</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//label[.='Zapisz']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
-</tr>
-<tr>
-	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.numberLabel_input</td>
-	<td>1</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.numberLabel_input</td>
-	<td>1</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.numberLabel_input</td>
+	<td>verifyTable</td>
+	<td>id=grid.2.3</td>
 	<td>2</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.numberLabel_input</td>
+	<td>verifyTable</td>
+	<td>id=grid.2.4</td>
+	<td>PZ_PR-BS</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.6</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.7</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.8</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.9</td>
+	<td>para</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.2.10</td>
+	<td>0.5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#add_new_row span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[text()='PZ_PR-4S']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=0_quantity</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_givenquantity</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#jSaveButton_0 span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.3</td>
 	<td>3</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_4.positionsLayout.numberLabel_input</td>
+	<td>verifyTable</td>
+	<td>id=grid.3.4</td>
+	<td>PZ_PR-4S</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.6</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.7</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.8</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.9</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.3.10</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#add_new_row span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[text()='PZ_PR-DS-1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=0_quantity</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_givenquantity</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#jSaveButton_0 span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.3</td>
 	<td>4</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_5.positionsLayout.numberLabel_input</td>
+	<td>verifyTable</td>
+	<td>id=grid.4.4</td>
+	<td>PZ_PR-DS-1</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.6</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.7</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.8</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.9</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.4.10</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#add_new_row span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td[title='PZ_PR-DS-2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=0_givenunit</td>
+	<td>label=para</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_conversion</td>
+	<td>0.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=0_quantity</td>
+	<td>0.005</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=0_givenquantity</td>
+	<td>0.0025</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#jSaveButton_0 span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.3</td>
 	<td>5</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.4</td>
+	<td>PZ_PR-DS-2</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.6</td>
+	<td>0.005</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.7</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.8</td>
+	<td>0.0025</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.9</td>
+	<td>para</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=grid.5.10</td>
+	<td>0.5</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -428,8 +763,13 @@
 </tr>
 <tr>
 	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
+	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
 	<td>ribbonBigElement enabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Dokument został zaakceptowany.</td>
 </tr>
 </tbody></table>
 </body>

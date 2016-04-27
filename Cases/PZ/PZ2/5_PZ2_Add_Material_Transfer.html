@@ -67,11 +67,6 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=window.generalTab.form.gridLayout.number_input</td>
-	<td>PZ2_PZ1</td>
-</tr>
-<tr>
 	<td>select</td>
 	<td>id=window.generalTab.form.gridLayout.type_input</td>
 	<td>label=Przyjęcie zewnętrzne</td>
@@ -122,18 +117,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_0_addButton</td>
+	<td>waitForVisible</td>
+	<td>css=#add_new_row span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>click</td>
+	<td>css=#add_new_row span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.product_openLookupButton</td>
+	<td>css=#0_product &gt; button</td>
 	<td></td>
 </tr>
 <tr>
@@ -143,27 +143,27 @@
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
+	<td>//td[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
+	<td>id=gs_number</td>
 	<td>PZ2</td>
 </tr>
 <tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
+	<td>keyPress</td>
+	<td>id=gs_number</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForVisible</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ2_PR-S1']</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,73 +172,88 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.unit_text</td>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
 	<td>szt</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.givenUnit_input</td>
-	<td>label=para</td>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>verifyValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.givenQuantity_input</td>
-	<td>25</td>
+	<td>id=0_quantity</td>
+	<td>50</td>
 </tr>
 <tr>
 	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.quantity_input</td>
+	<td>id=0_givenquantity</td>
 	<td>50</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_1_addButton</td>
+	<td>css=#jSaveButton_0 span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=3</td>
+	<td>css=#add_new_row span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
+	<td>id=gs_number</td>
 	<td>PZ2</td>
 </tr>
 <tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
+	<td>keyPress</td>
+	<td>id=gs_number</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForVisible</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ2_PR-S2']</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -247,63 +262,88 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.unit_text</td>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
 	<td>szt</td>
 </tr>
 <tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.givenQuantity_input</td>
+	<td>id=0_quantity</td>
 	<td>25</td>
 </tr>
 <tr>
 	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.quantity_input</td>
+	<td>id=0_givenquantity</td>
 	<td>25</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions_line_2_addButton</td>
+	<td>css=#jSaveButton_0 span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.product_openLookupButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>index=4</td>
+	<td>css=#add_new_row span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForVisible</td>
-	<td>//span[contains(text(),'PR-A')]</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#0_product &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>index=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//td[contains(text(),'PR-A')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>gs_lookupCode</td>
+	<td>id=gs_number</td>
 	<td>PZ2</td>
 </tr>
 <tr>
-	<td>keyUp</td>
-	<td>id=gs_lookupCode</td>
+	<td>keyPress</td>
+	<td>id=gs_number</td>
 	<td>\13</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div[2]@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForVisible</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[text()='PZ2_PR-S3']</td>
+	<td>css=td[title='PZ2_PR-S1']</td>
 	<td></td>
 </tr>
 <tr>
@@ -312,29 +352,44 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.unit_text</td>
+	<td>waitForValue</td>
+	<td>id=0_unit</td>
 	<td>szt</td>
 </tr>
 <tr>
+	<td>waitForSelectedLabel</td>
+	<td>0_givenunit</td>
+	<td>szt</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=0_conversion</td>
+	<td>1</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.givenQuantity_input</td>
+	<td>id=0_quantity</td>
 	<td>220</td>
 </tr>
 <tr>
 	<td>waitForValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.quantity_input</td>
+	<td>id=0_givenquantity</td>
 	<td>220</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//label[.='Zapisz']</td>
+	<td>css=#jSaveButton_0 span</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@id='window_ribbonContentWrapper']/div/div/div/div[2]/div@class</td>
-	<td>ribbonBigElement enabled</td>
+	<td>waitForNotVisible</td>
+	<td>css=#grid #0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Obiekt został zapisany do bazy danych.</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -347,49 +402,9 @@
 	<td>ribbonBigElement enabled</td>
 </tr>
 <tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.numberLabel_input</td>
-	<td>1</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.product_input</td>
-	<td>PZ2_PR-S1 - Pokrycie Zapotrzebowania 2 Produkt S1</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_1.positionsLayout.quantityLayout.quantity_input</td>
-	<td>50</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.numberLabel_input</td>
-	<td>2</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.product_input</td>
-	<td>PZ2_PR-S2 - Pokrycie Zapotrzebowania 2 Produkt S2</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_2.positionsLayout.quantityLayout.quantity_input</td>
-	<td>25</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.numberLabel_input</td>
-	<td>3</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.product_input</td>
-	<td>PZ2_PR-S3 - Pokrycie Zapotrzebowania 2 Produkt S3</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=window.positionsListTab.positions.innerForm_3.positionsLayout.quantityLayout.quantity_input</td>
-	<td>220</td>
+	<td>verifyText</td>
+	<td>css=.ui-pnotify.ui-state-success:last-of-type .ui-pnotify-text</td>
+	<td>Dokument został zaakceptowany.</td>
 </tr>
 </tbody></table>
 </body>
