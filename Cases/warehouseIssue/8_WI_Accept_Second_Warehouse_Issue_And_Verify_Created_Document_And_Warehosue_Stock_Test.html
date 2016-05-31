@@ -369,7 +369,7 @@
 <tr>
 	<td>waitForText</td>
 	<td>css=#window_windowHeader &gt; span</td>
-	<td>000125 - Wydane</td>
+	<td>000125 - W trakcie</td>
 </tr>
 <tr>
 	<td>verifyAttribute</td>
@@ -403,7 +403,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//td[text()='PZ_ZL-1']/preceding-sibling::td[text()='PZ_Magazyn surowców']/preceding-sibling::td[text()='PZ2_Magazyn surowców']/preceding-sibling::td/span[text()='Przesunięcie międzymagazynowe']/../preceding-sibling::td/span</td>
+	<td>//td[text()='PZ_Magazyn surowcÃƒÂ³w']/preceding-sibling::td[text()='PZ2_Magazyn surowcÃƒÂ³w']/preceding-sibling::td/span[text()='PrzesuniÃ„Â™cie miÃ„Â™dzymagazynowe']/../preceding-sibling::td/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -420,6 +420,11 @@
 	<td>verifySelectedLabel</td>
 	<td>window.generalTab.form.gridLayout.type_input</td>
 	<td>Przesunięcie międzymagazynowe</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=window.generalTab.form.gridLayout.description_input</td>
+	<td>Dla zleceń : PZ_ZL-1</td>
 </tr>
 <tr>
 	<td>verifyValue</td>
