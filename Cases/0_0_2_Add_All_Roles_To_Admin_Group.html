@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://daily-build.qcadoo.org/main.html" />
 <title>0_0_2_Add_All_Roles_To_Admin_Group</title>
-<style type="text/css">.comment {color: #AA33AA; height: 1em}</style></head>
+</head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
@@ -18,12 +18,27 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>/main.html#page/qcadooUsers/groupsList.html</td>
+	<td>/main.html</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>2000</td>
+	<td>click</td>
+	<td>css=i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@id='mainTopMenu']/div[2]@class</td>
+	<td>logoDropdownBox open</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=firstLevelButton_administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Grupy</td>
 	<td></td>
 </tr>
 <tr>
